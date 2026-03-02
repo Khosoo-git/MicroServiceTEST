@@ -1,13 +1,13 @@
-package com.DataLogGen.demo.companies.impl;
+package com.microservice.companyMS.companies.impl;
 
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
-import com.DataLogGen.demo.companies.Company;
-import com.DataLogGen.demo.companies.CompanyRepository;
-import com.DataLogGen.demo.companies.CompanyService;
+import com.microservice.companyMS.companies.Company;
+import com.microservice.companyMS.companies.CompanyRepository;
+import com.microservice.companyMS.companies.CompanyService;
 
 import jakarta.transaction.Transactional;
 
@@ -32,7 +32,7 @@ public class CompanyServiceimpl implements CompanyService {
 
     @Override
     @Transactional
-    public boolean updateCompany1(Company company, Long id) {
+    public boolean updateCompany(Company company, Long id) {
         Optional<Company> companyOptional = companyRepository.findById(id);
         if (companyOptional.isPresent()) {
             Company companyToUpdate = companyOptional.get();
@@ -58,15 +58,4 @@ public class CompanyServiceimpl implements CompanyService {
     public Company getCompanyById(Long id) {
         return companyRepository.findById(id).orElse(null);
     }
-
-    @Override
-    public boolean updateCompany(Company company, Long id) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'updateCompany'");
-    }
-
-   
-
-
-
 }

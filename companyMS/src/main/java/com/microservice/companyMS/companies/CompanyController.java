@@ -1,4 +1,4 @@
-package com.DataLogGen.demo.companies;
+package com.microservice.companyMS.companies;
 
 import java.util.List;
 

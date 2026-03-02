@@ -1,4 +1,4 @@
-package com.DataLogGen.demo.companies;
+package com.microservice.companyMS.companies;
 
 import java.util.List;
 
@@ -13,7 +13,5 @@ public interface CompanyService {
     boolean deleteCompanyById(Long id);
 
     Company getCompanyById(Long id);
-
-    boolean updateCompany1(Company company, Long id);
 }
 

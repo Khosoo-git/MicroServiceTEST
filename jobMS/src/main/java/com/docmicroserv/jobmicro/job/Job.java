@@ -7,7 +7,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-@Entity 
+@Entity
 @Table(name = "job_table")
 public class Job {
     @Id
@@ -89,6 +89,6 @@ public class Job {
         this.companyId = companyId;
     }
 
-    
+
 
 }
