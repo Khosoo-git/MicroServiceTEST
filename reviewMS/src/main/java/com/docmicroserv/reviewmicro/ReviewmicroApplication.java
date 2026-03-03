@@ -9,5 +9,4 @@ public class ReviewmicroApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ReviewmicroApplication.class, args);
 	}
-
 }
