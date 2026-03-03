@@ -9,15 +9,13 @@ import com.docmicroserv.reviewmicro.reviews.ReviewRepository;
 import com.docmicroserv.reviewmicro.reviews.ReviewService;
 
 @Service
-public class ReviewServiceimpl implements ReviewService{
+public class ReviewServiceimpl implements ReviewService {
     private final ReviewRepository reviewRepository;
 
-    
-
-   public ReviewServiceimpl(ReviewRepository reviewRepository) {
-    this.reviewRepository = reviewRepository;
+    public ReviewServiceimpl(ReviewRepository reviewRepository) {
+        this.reviewRepository = reviewRepository;
     }
-    
+
     @Override
     public List<Review> getAllReviews(Long companyId) {
         List<Review> reviews = reviewRepository.findByCompanyId(companyId);
@@ -26,12 +24,12 @@ public class ReviewServiceimpl implements ReviewService{
 
     @Override
     public boolean addReview(Long companyId, Review review) {
-        
+
         if (companyId != null && review != null) {
             review.setCompanyId(companyId);
             reviewRepository.save(review);
             return true;
-        }  else {
+        } else {
             return false;
         }
     }
@@ -42,30 +40,30 @@ public class ReviewServiceimpl implements ReviewService{
     }
 
     @Override
-    public boolean updateReview( Long reviewId, Review updatedReview) {
-    Review review = reviewRepository.findById(reviewId).orElse(null);
-    
-    if (review != null) {
-        review.setTitle(updatedReview.getTitle());
-        review.setDescription(updatedReview.getDescription());
-        review.setRating(updatedReview.getRating());
-        review.setCompanyId(updatedReview.getCompanyId());
-        reviewRepository.save(review);
-        return true;
+    public boolean updateReview(Long reviewId, Review updatedReview) {
+        Review review = reviewRepository.findById(reviewId).orElse(null);
+
+        if (review != null) {
+            review.setTitle(updatedReview.getTitle());
+            review.setDescription(updatedReview.getDescription());
+            review.setRating(updatedReview.getRating());
+            review.setCompanyId(updatedReview.getCompanyId());
+            reviewRepository.save(review);
+            return true;
+        }
+        return false;
     }
-    return false;
-}
 
     @Override
-    public boolean deleteReview( Long reviewId) {
+    public boolean deleteReview(Long reviewId) {
 
         Review review = reviewRepository.findById(reviewId).orElse(null);
-        
+
         if (review != null) {
             reviewRepository.delete(review);
             return true;
-            }
+        }
         return false;
     }
-    
+
 }
