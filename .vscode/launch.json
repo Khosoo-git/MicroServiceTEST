@@ -9,6 +9,27 @@
       "name": "ReviewmicroApplication",
       "request": "launch",
       "mainClass": "com.docmicroserv.reviewmicro.ReviewmicroApplication",
+      "projectName": "demo"
+    },
+    {
+      "type": "java",
+      "name": "JobmicroApplication",
+      "request": "launch",
+      "mainClass": "com.docmicroserv.jobmicro.JobmicroApplication",
+      "projectName": "com.docmicroserv-demo"
+    },
+    {
+      "type": "java",
+      "name": "CompanyMsApplication",
+      "request": "launch",
+      "mainClass": "com.microservice.companyMS.CompanyMsApplication",
+      "projectName": "com.microservice-companyMS"
+    },
+    {
+      "type": "java",
+      "name": "ReviewmicroApplication",
+      "request": "launch",
+      "mainClass": "com.docmicroserv.reviewmicro.ReviewmicroApplication",
       "projectName": "reviewMS"
     },
     {
