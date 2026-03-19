@@ -4,57 +4,75 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+import org.springframework.core.ParameterizedTypeReference;
+import org.springframework.http.HttpMethod; // FIXED: Changed to Spring's HttpMethod
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import com.docmicroserv.jobmicro.job.Job;
 import com.docmicroserv.jobmicro.job.JobRepository;
 import com.docmicroserv.jobmicro.job.jobService;
-import com.docmicroserv.jobmicro.job.dto.JobWithCompany;
+import com.docmicroserv.jobmicro.job.Mapper.mapper;
+import com.docmicroserv.jobmicro.job.dto.JobDto;
 import com.docmicroserv.jobmicro.job.external.Company;
+import com.docmicroserv.jobmicro.job.external.Review;
 
 @Service
 public class jobServiceimpl implements jobService {
     
-    // Changed: Made fields final and added restTemplate
     private final JobRepository jobRepository;
     private final RestTemplate restTemplate;
 
-    // Changed: Constructor now injects both the repository and the restTemplate bean
     public jobServiceimpl(JobRepository jobRepository, RestTemplate restTemplate) {
         this.jobRepository = jobRepository;
         this.restTemplate = restTemplate;
     }
 
     @Override
-    public List<JobWithCompany> findAll() {
+    public List<JobDto> findAll() {
         List<Job> jobs = jobRepository.findAll();
         
-        // Return the stream directly, no unused empty lists hanging around!
         return jobs.stream()
                 .map(this::convertToDTO)
                 .collect(Collectors.toList());
     }
 
-    private JobWithCompany convertToDTO(Job job) {
-            JobWithCompany jobWithCompany = new JobWithCompany();
-            jobWithCompany.setJob(job);
+    private JobDto convertToDTO(Job job) {
+        if (job == null) {
+            return null;
+        }
 
-            if (job.getCompanyId() != null) {
-                try {
-                    // Changed: Now uses the injected 'this.restTemplate'
-                    Company company = restTemplate.getForObject(
-                        "http://localhost:8081/companies/" + job.getCompanyId(), 
-                        Company.class
-                    );
-                    jobWithCompany.setCompany(company);
-                } catch (Exception e) {
-                    System.out.println("Could not fetch company " + job.getCompanyId() + ": " + e.getMessage());
-                    jobWithCompany.setCompany(null); 
-                }
+        Company company = null;
+        List<Review> reviews = null; // Default to null
+
+        if (job.getCompanyId() != null) {
+            // 1. Fetch Company
+            try {
+                company = restTemplate.getForObject(
+                    "http://companyMS/companies/" + job.getCompanyId(), 
+                    Company.class
+                );
+            } catch (Exception e) {
+                System.out.println("Could not fetch company " + job.getCompanyId() + ": " + e.getMessage());
             }
 
-            return jobWithCompany;
+            // 2. Fetch Reviews
+            try {
+                // FIXED: Added '=', removed port 8083, moved inside the try-catch!
+                ResponseEntity<List<Review>> reviewResponse = restTemplate.exchange(
+                    "http://reviewMS/reviews?companyId=" + job.getCompanyId(), 
+                    HttpMethod.GET, 
+                    null, 
+                    new ParameterizedTypeReference<List<Review>>() {}
+                );
+                reviews = reviewResponse.getBody();
+            } catch (Exception e) {
+                System.out.println("Could not fetch reviews for company " + job.getCompanyId() + ": " + e.getMessage());
+            }
+        }
+
+        return mapper.mapToJobWithCompany(job, company, reviews);
     }
 
     @Override
@@ -63,8 +81,9 @@ public class jobServiceimpl implements jobService {
     }
 
     @Override
-    public Job getJobById(Long id) {
-        return jobRepository.findById(id).orElse(null);
+    public JobDto getJobById(Long id) {
+        Job job = jobRepository.findById(id).orElse(null);
+        return convertToDTO(job);
     }
 
     @Override

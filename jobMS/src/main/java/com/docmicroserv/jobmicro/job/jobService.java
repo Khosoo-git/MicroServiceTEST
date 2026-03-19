@@ -2,15 +2,15 @@ package com.docmicroserv.jobmicro.job;
 
 import java.util.List;
 
-import com.docmicroserv.jobmicro.job.dto.JobWithCompany;
+import com.docmicroserv.jobmicro.job.dto.JobDto;
 
 public interface jobService {
 
-    List<JobWithCompany> findAll();
+    List<JobDto> findAll();
     
     void createJob(Job job);
 
-    Job getJobById(Long id);
+    JobDto getJobById(Long id);
 
     boolean deleteJob(Long id);
     

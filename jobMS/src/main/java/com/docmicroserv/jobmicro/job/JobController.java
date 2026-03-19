@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.docmicroserv.jobmicro.job.dto.JobWithCompany;
+import com.docmicroserv.jobmicro.job.dto.JobDto;
 
 
 @RestController
@@ -26,7 +26,7 @@ public class JobController {
         }
 
     @GetMapping   
-    public ResponseEntity<List<JobWithCompany>> findAll(){
+    public ResponseEntity<List<JobDto>> findAll(){
         return ResponseEntity.ok(jobService.findAll());
     }
 
@@ -37,11 +37,11 @@ public class JobController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Job> getJobById(@PathVariable Long id) {
+    public ResponseEntity<JobDto> getJobById(@PathVariable Long id) {
         
-        Job job = jobService.getJobById(id);
-        if (job != null) {
-            return new ResponseEntity<>(job,HttpStatus.OK);
+        JobDto jobWithCompany = jobService.getJobById(id);
+        if (jobWithCompany != null) {
+            return new ResponseEntity<>(jobWithCompany,HttpStatus.OK);
         } else {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }

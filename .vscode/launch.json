@@ -9,6 +9,20 @@
       "name": "ReviewmicroApplication",
       "request": "launch",
       "mainClass": "com.docmicroserv.reviewmicro.ReviewmicroApplication",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "ServerApplication",
+      "request": "launch",
+      "mainClass": "com.server.server.ServerApplication",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "ReviewmicroApplication",
+      "request": "launch",
+      "mainClass": "com.docmicroserv.reviewmicro.ReviewmicroApplication",
       "projectName": "demo"
     },
     {
@@ -23,7 +37,8 @@
       "name": "CompanyMsApplication",
       "request": "launch",
       "mainClass": "com.microservice.companyMS.CompanyMsApplication",
-      "projectName": "com.microservice-companyMS"
+      "projectName": "com.microservice-companyMS",
+      "vmArgs": " -Dcom.sun.management.jmxremote"
     },
     {
       "type": "java",
@@ -65,6 +80,16 @@
       "request": "launch",
       "mainClass": "com.microservice.reviewMS.ReviewMsApplication",
       "projectName": "reviewMS"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-ServerApplication<com.server-server>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.server.server.ServerApplication",
+      "projectName": "com.server-server",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
     }
   ]
 }
