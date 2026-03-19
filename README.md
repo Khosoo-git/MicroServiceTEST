@@ -66,3 +66,12 @@ Url for PostgreSQL admin:
 ```
 http://localhost:5050
 ```
+
+## Spring Cloud Eureka Server
+
+Server Port for Eureka:
+
+```
+Server port: server.port=8761
+```
+
