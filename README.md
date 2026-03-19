@@ -75,3 +75,6 @@ Server Port for Eureka:
 Server port: server.port=8761
 ```
 
+```
+server Urk: http://localhost:8761/
+```
