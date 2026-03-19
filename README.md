@@ -67,7 +67,7 @@ Url for PostgreSQL admin:
 http://localhost:5050
 ```
 
-## Spring Cloud Eureka Server
+## :electric_plug: Spring Cloud Eureka Server
 
 Server Port for Eureka:
 
