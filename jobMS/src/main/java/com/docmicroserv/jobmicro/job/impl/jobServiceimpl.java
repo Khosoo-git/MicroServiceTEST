@@ -4,16 +4,14 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-import org.springframework.core.ParameterizedTypeReference;
-import org.springframework.http.HttpMethod; // FIXED: Changed to Spring's HttpMethod
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
 
 import com.docmicroserv.jobmicro.job.Job;
 import com.docmicroserv.jobmicro.job.JobRepository;
 import com.docmicroserv.jobmicro.job.jobService;
 import com.docmicroserv.jobmicro.job.Mapper.mapper;
+import com.docmicroserv.jobmicro.job.clients.CompanyClient;
+import com.docmicroserv.jobmicro.job.clients.ReviewClient;
 import com.docmicroserv.jobmicro.job.dto.JobDto;
 import com.docmicroserv.jobmicro.job.external.Company;
 import com.docmicroserv.jobmicro.job.external.Review;
@@ -21,12 +19,16 @@ import com.docmicroserv.jobmicro.job.external.Review;
 @Service
 public class jobServiceimpl implements jobService {
     
+    // Everything is clean and final!
     private final JobRepository jobRepository;
-    private final RestTemplate restTemplate;
+    private final CompanyClient companyClient;
+    private final ReviewClient reviewClient;
 
-    public jobServiceimpl(JobRepository jobRepository, RestTemplate restTemplate) {
+    // RestTemplate is GONE!
+    public jobServiceimpl(JobRepository jobRepository, CompanyClient companyClient, ReviewClient reviewClient) {
         this.jobRepository = jobRepository;
-        this.restTemplate = restTemplate;
+        this.companyClient = companyClient;
+        this.reviewClient = reviewClient;
     }
 
     @Override
@@ -44,29 +46,20 @@ public class jobServiceimpl implements jobService {
         }
 
         Company company = null;
-        List<Review> reviews = null; // Default to null
+        List<Review> reviews = null; 
 
         if (job.getCompanyId() != null) {
-            // 1. Fetch Company
+            // 1. Fetch Company using Feign!
             try {
-                company = restTemplate.getForObject(
-                    "http://companyMS/companies/" + job.getCompanyId(), 
-                    Company.class
-                );
+                company = companyClient.getCompany(job.getCompanyId());
             } catch (Exception e) {
                 System.out.println("Could not fetch company " + job.getCompanyId() + ": " + e.getMessage());
             }
 
-            // 2. Fetch Reviews
+            // 2. Fetch Reviews using Feign!
             try {
-                // FIXED: Added '=', removed port 8083, moved inside the try-catch!
-                ResponseEntity<List<Review>> reviewResponse = restTemplate.exchange(
-                    "http://reviewMS/reviews?companyId=" + job.getCompanyId(), 
-                    HttpMethod.GET, 
-                    null, 
-                    new ParameterizedTypeReference<List<Review>>() {}
-                );
-                reviews = reviewResponse.getBody();
+                // FIXED: Removed the 'List<Review>' declaration so it fills the outer variable
+                reviews = reviewClient.getReviews(job.getCompanyId());
             } catch (Exception e) {
                 System.out.println("Could not fetch reviews for company " + job.getCompanyId() + ": " + e.getMessage());
             }
