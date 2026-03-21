@@ -50,7 +50,11 @@ Docker compose container down
 docker compose down
 ```
 
----
+Added Zipkin for distributed tracing system.
+
+```
+Zipkin Dashboard (Tracing): http://localhost:9411
+```
 
 ## 🐘 PostgreSQL Configuration
 
