@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.docmicroserv</groupId>
-	<artifactId>demo</artifactId>
+	<artifactId>reviewmicro</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>reviewmicro</name>
 	<description>reviewmicroservice</description>

@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ConfigserverApplication",
+      "request": "launch",
+      "mainClass": "com.ConfigServer.configserver.ConfigserverApplication",
+      "projectName": ""
+    },
+    {
+      "type": "java",
       "name": "ReviewmicroApplication",
       "request": "launch",
       "mainClass": "com.docmicroserv.reviewmicro.ReviewmicroApplication",
@@ -23,14 +30,16 @@
       "name": "ReviewmicroApplication",
       "request": "launch",
       "mainClass": "com.docmicroserv.reviewmicro.ReviewmicroApplication",
-      "projectName": "demo"
+      "projectName": "demo",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=58834 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=demo"
     },
     {
       "type": "java",
       "name": "JobmicroApplication",
       "request": "launch",
       "mainClass": "com.docmicroserv.jobmicro.JobmicroApplication",
-      "projectName": "com.docmicroserv-demo"
+      "projectName": "com.docmicroserv-demo",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=58831 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=com.docmicroserv-demo"
     },
     {
       "type": "java",
@@ -38,7 +47,7 @@
       "request": "launch",
       "mainClass": "com.microservice.companyMS.CompanyMsApplication",
       "projectName": "com.microservice-companyMS",
-      "vmArgs": " -Dcom.sun.management.jmxremote"
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=58832 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=com.microservice-companyMS"
     },
     {
       "type": "java",
@@ -58,7 +67,8 @@
       "name": "CompanyMsApplication",
       "request": "launch",
       "mainClass": "com.microservice.companyMS.CompanyMsApplication",
-      "projectName": "companyMS"
+      "projectName": "companyMS",
+      "vmArgs": " -Dcom.sun.management.jmxremote"
     },
     {
       "type": "java",
@@ -88,6 +98,47 @@
       "cwd": "${workspaceFolder}",
       "mainClass": "com.server.server.ServerApplication",
       "projectName": "com.server-server",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=58833 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=com.server-server"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-ConfigserverApplication<configserver>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.ConfigServer.configserver.ConfigserverApplication",
+      "projectName": "configserver",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-JobmicroApplication<jobmicro>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.docmicroserv.jobmicro.JobmicroApplication",
+      "projectName": "jobmicro",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-ReviewmicroApplication<reviewmicro>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.docmicroserv.reviewmicro.ReviewmicroApplication",
+      "projectName": "reviewmicro",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-ServerApplication<server>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.server.server.ServerApplication",
+      "projectName": "server",
       "args": "",
       "envFile": "${workspaceFolder}/.env"
     }
