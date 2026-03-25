@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "GatewayApplication",
+      "request": "launch",
+      "mainClass": "com.apigateway.gateway.GatewayApplication",
+      "projectName": ""
+    },
+    {
+      "type": "java",
       "name": "ConfigserverApplication",
       "request": "launch",
       "mainClass": "com.ConfigServer.configserver.ConfigserverApplication",
@@ -110,7 +117,8 @@
       "mainClass": "com.ConfigServer.configserver.ConfigserverApplication",
       "projectName": "configserver",
       "args": "",
-      "envFile": "${workspaceFolder}/.env"
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote"
     },
     {
       "type": "java",
@@ -139,6 +147,16 @@
       "cwd": "${workspaceFolder}",
       "mainClass": "com.server.server.ServerApplication",
       "projectName": "server",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-GatewayApplication<gateway>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.apigateway.gateway.GatewayApplication",
+      "projectName": "gateway",
       "args": "",
       "envFile": "${workspaceFolder}/.env"
     }
