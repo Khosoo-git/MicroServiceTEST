@@ -8,16 +8,17 @@ import org.springframework.stereotype.Service;
 
 import com.docmicroserv.jobmicro.job.Job;
 import com.docmicroserv.jobmicro.job.JobRepository;
-import com.docmicroserv.jobmicro.job.jobService;
-import com.docmicroserv.jobmicro.job.Mapper.mapper;
+import com.docmicroserv.jobmicro.job.JobService;
+import com.docmicroserv.jobmicro.job.mapper.JobMapper;
 import com.docmicroserv.jobmicro.job.clients.CompanyClient;
 import com.docmicroserv.jobmicro.job.clients.ReviewClient;
 import com.docmicroserv.jobmicro.job.dto.JobDto;
 import com.docmicroserv.jobmicro.job.external.Company;
 import com.docmicroserv.jobmicro.job.external.Review;
 
+
 @Service
-public class jobServiceimpl implements jobService {
+public class JobServiceImpl implements JobService {
     
     // Everything is clean and final!
     private final JobRepository jobRepository;
@@ -25,7 +26,7 @@ public class jobServiceimpl implements jobService {
     private final ReviewClient reviewClient;
 
     // RestTemplate is GONE!
-    public jobServiceimpl(JobRepository jobRepository, CompanyClient companyClient, ReviewClient reviewClient) {
+    public JobServiceImpl(JobRepository jobRepository, CompanyClient companyClient, ReviewClient reviewClient) {
         this.jobRepository = jobRepository;
         this.companyClient = companyClient;
         this.reviewClient = reviewClient;
@@ -39,6 +40,8 @@ public class jobServiceimpl implements jobService {
                 .map(this::convertToDTO)
                 .collect(Collectors.toList());
     }
+
+    
 
     private JobDto convertToDTO(Job job) {
         if (job == null) {
@@ -65,7 +68,7 @@ public class jobServiceimpl implements jobService {
             }
         }
 
-        return mapper.mapToJobWithCompany(job, company, reviews);
+        return JobMapper.mapToJobWithCompany(job, company, reviews);
     }
 
     @Override

@@ -12,11 +12,11 @@ import com.microservice.companyMS.companies.CompanyService;
 import jakarta.transaction.Transactional;
 
 @Service
-public class CompanyServiceimpl implements CompanyService {
+public class CompanyServiceImpl implements CompanyService {
 
     private CompanyRepository companyRepository;
 
-    public CompanyServiceimpl(CompanyRepository companyRepository) {
+    public CompanyServiceImpl(CompanyRepository companyRepository) {
         this.companyRepository = companyRepository;
     }
 

@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.docmicroserv.jobmicro.job.dto.JobDto;
 
-public interface jobService {
+public interface JobService {
 
     List<JobDto> findAll();
     

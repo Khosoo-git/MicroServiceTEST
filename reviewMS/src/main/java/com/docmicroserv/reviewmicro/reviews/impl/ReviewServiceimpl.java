@@ -9,10 +9,10 @@ import com.docmicroserv.reviewmicro.reviews.ReviewRepository;
 import com.docmicroserv.reviewmicro.reviews.ReviewService;
 
 @Service
-public class ReviewServiceimpl implements ReviewService {
+public class ReviewServiceImpl implements ReviewService {
     private final ReviewRepository reviewRepository;
 
-    public ReviewServiceimpl(ReviewRepository reviewRepository) {
+    public ReviewServiceImpl(ReviewRepository reviewRepository) {
         this.reviewRepository = reviewRepository;
     }
 

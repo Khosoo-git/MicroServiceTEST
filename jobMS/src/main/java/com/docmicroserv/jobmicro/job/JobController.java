@@ -19,9 +19,9 @@ import com.docmicroserv.jobmicro.job.dto.JobDto;
 @RestController
 @RequestMapping("/jobs")
 public class JobController {
-    private jobService jobService;
+    private JobService jobService;
 
-        public JobController(jobService jobService) {
+        public JobController(JobService jobService) {
             this.jobService = jobService;
         }
 
