@@ -1,14 +1,16 @@
 package com.docmicroserv.jobmicro.job.impl;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 
 import com.docmicroserv.jobmicro.job.Job;
 import com.docmicroserv.jobmicro.job.JobRepository;
-import com.docmicroserv.jobmicro.job.JobService;
+import com.docmicroserv.jobmicro.job.JobService; 
 import com.docmicroserv.jobmicro.job.mapper.JobMapper;
 import com.docmicroserv.jobmicro.job.clients.CompanyClient;
 import com.docmicroserv.jobmicro.job.clients.ReviewClient;
@@ -16,70 +18,63 @@ import com.docmicroserv.jobmicro.job.dto.JobDto;
 import com.docmicroserv.jobmicro.job.external.Company;
 import com.docmicroserv.jobmicro.job.external.Review;
 
-
 @Service
 public class JobServiceImpl implements JobService {
     
-    // Everything is clean and final!
     private final JobRepository jobRepository;
     private final CompanyClient companyClient;
     private final ReviewClient reviewClient;
 
-    // RestTemplate is GONE!
     public JobServiceImpl(JobRepository jobRepository, CompanyClient companyClient, ReviewClient reviewClient) {
         this.jobRepository = jobRepository;
         this.companyClient = companyClient;
         this.reviewClient = reviewClient;
     }
 
+    // 🚀 Circuit Breaker on the PUBLIC method!
     @Override
+    @CircuitBreaker(name = "companyBreaker", fallbackMethod = "companyBreakerFallback")
     public List<JobDto> findAll() {
         List<Job> jobs = jobRepository.findAll();
-        
         return jobs.stream()
                 .map(this::convertToDTO)
                 .collect(Collectors.toList());
     }
 
-    
+    @Override
+    @CircuitBreaker(name = "companyBreaker", fallbackMethod = "companyBreakerFallbackSingle")
+    public JobDto getJobById(Long id) {
+        Job job = jobRepository.findById(id).orElse(null);
+        return convertToDTO(job);
+    }
+
+    // 🚨 FALLBACK METHODS: Runs when the circuit trips so Gateway doesn't crash!
+    public List<JobDto> companyBreakerFallback(Exception e) {
+        System.out.println("CIRCUIT BREAKER TRIPPED! Returning empty list for AIOps telemetry.");
+        return new ArrayList<>(); 
+    }
+
+    public JobDto companyBreakerFallbackSingle(Long id, Exception e) {
+        System.out.println("CIRCUIT BREAKER TRIPPED for Job ID " + id);
+        return new JobDto(); 
+    }
 
     private JobDto convertToDTO(Job job) {
-        if (job == null) {
-            return null;
-        }
+        if (job == null) return null;
 
         Company company = null;
         List<Review> reviews = null; 
 
         if (job.getCompanyId() != null) {
-            // 1. Fetch Company using Feign!
-            try {
-                company = companyClient.getCompany(job.getCompanyId());
-            } catch (Exception e) {
-                System.out.println("Could not fetch company " + job.getCompanyId() + ": " + e.getMessage());
-            }
-
-            // 2. Fetch Reviews using Feign!
-            try {
-                // FIXED: Removed the 'List<Review>' declaration so it fills the outer variable
-                reviews = reviewClient.getReviews(job.getCompanyId());
-            } catch (Exception e) {
-                System.out.println("Could not fetch reviews for company " + job.getCompanyId() + ": " + e.getMessage());
-            }
+            company = companyClient.getCompany(job.getCompanyId());
+            reviews = reviewClient.getReviews(job.getCompanyId());
         }
-
         return JobMapper.mapToJobWithCompany(job, company, reviews);
     }
 
     @Override
     public void createJob(Job job) {
         jobRepository.save(job);
-    }
-
-    @Override
-    public JobDto getJobById(Long id) {
-        Job job = jobRepository.findById(id).orElse(null);
-        return convertToDTO(job);
     }
 
     @Override

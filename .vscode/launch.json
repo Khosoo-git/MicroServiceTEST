@@ -4,6 +4,8 @@
   // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
   "configurations": [
+    
+
     {
       "type": "java",
       "name": "GatewayApplication",
@@ -157,6 +159,16 @@
       "cwd": "${workspaceFolder}",
       "mainClass": "com.apigateway.gateway.GatewayApplication",
       "projectName": "gateway",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-ConfigserverApplication<configserver>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.configserver.configserver.ConfigserverApplication",
+      "projectName": "configserver",
       "args": "",
       "envFile": "${workspaceFolder}/.env"
     }
