@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.docmicroserv.jobmicro.job.external.Review;
 
-@FeignClient(name = "reviewMS")
+@FeignClient(name = "reviewMS", url = "${review-service.url}")
 public interface ReviewClient {
      @GetMapping("/reviews")
      List<Review> getReviews(@RequestParam("companyId") Long companyId);

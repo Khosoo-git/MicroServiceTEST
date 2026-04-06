@@ -10,7 +10,7 @@ import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 
 import com.docmicroserv.jobmicro.job.Job;
 import com.docmicroserv.jobmicro.job.JobRepository;
-import com.docmicroserv.jobmicro.job.JobService; 
+import com.docmicroserv.jobmicro.job.JobService;
 import com.docmicroserv.jobmicro.job.mapper.JobMapper;
 import com.docmicroserv.jobmicro.job.clients.CompanyClient;
 import com.docmicroserv.jobmicro.job.clients.ReviewClient;
@@ -20,7 +20,7 @@ import com.docmicroserv.jobmicro.job.external.Review;
 
 @Service
 public class JobServiceImpl implements JobService {
-    
+
     private final JobRepository jobRepository;
     private final CompanyClient companyClient;
     private final ReviewClient reviewClient;
@@ -51,19 +51,19 @@ public class JobServiceImpl implements JobService {
     // 🚨 FALLBACK METHODS: Runs when the circuit trips so Gateway doesn't crash!
     public List<JobDto> companyBreakerFallback(Exception e) {
         System.out.println("CIRCUIT BREAKER TRIPPED! Returning empty list for AIOps telemetry.");
-        return new ArrayList<>(); 
+        return new ArrayList<>();
     }
 
     public JobDto companyBreakerFallbackSingle(Long id, Exception e) {
         System.out.println("CIRCUIT BREAKER TRIPPED for Job ID " + id);
-        return new JobDto(); 
+        return new JobDto();
     }
 
     private JobDto convertToDTO(Job job) {
         if (job == null) return null;
 
         Company company = null;
-        List<Review> reviews = null; 
+        List<Review> reviews = null;
 
         if (job.getCompanyId() != null) {
             company = companyClient.getCompany(job.getCompanyId());
@@ -93,8 +93,8 @@ public class JobServiceImpl implements JobService {
             Job job = jobOptional.get();
             job.setTitle(updateJob.getTitle());
             job.setDescription(updateJob.getDescription());
-            job.setMinSalory(updateJob.getMinSalory());
-            job.setMaxSalory(updateJob.getMaxSalory());
+            job.setMinSalary(updateJob.getMinSalary());
+            job.setMaxSalary(updateJob.getMaxSalary());
             job.setLocation(updateJob.getLocation());
             jobRepository.save(job);
             return true;

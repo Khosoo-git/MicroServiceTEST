@@ -1,6 +1,5 @@
 package com.docmicroserv.jobmicro.job.dto;
 
-
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -9,28 +8,26 @@ import com.docmicroserv.jobmicro.job.external.Company;
 import com.docmicroserv.jobmicro.job.external.Review;
 
 @JsonPropertyOrder({
-    "id",
-    "title",
-    "description",
-    "location",
-    "minSalory", 
-    "maxSalory",
-    "company",
-    "reviews"
+        "id",
+        "title",
+        "description",
+        "location",
+        "minSalary",
+        "maxSalary",
+        "company",
+        "reviews"
 })
 
 public class JobDto {
 
     private Long id;
-    private String title ;
+    private String title;
     private String description;
-    private String minSalory;
-    private String maxSalory;
+    private String minSalary;
+    private String maxSalary;
     private String location;
     private Company company;
     private List<Review> reviews;
-
-    
 
     public Company getCompany() {
         return company;
@@ -64,20 +61,20 @@ public class JobDto {
         this.description = description;
     }
 
-    public String getMinSalory() {
-        return minSalory;
+    public String getMinSalary() {
+        return minSalary;
     }
 
-    public void setMinSalory(String minSalory) {
-        this.minSalory = minSalory;
+    public void setMinSalary(String minSalary) {
+        this.minSalary = minSalary;
     }
 
-    public String getMaxSalory() {
-        return maxSalory;
+    public String getMaxSalary() {
+        return maxSalary;
     }
 
-    public void setMaxSalory(String maxSalory) {
-        this.maxSalory = maxSalory;
+    public void setMaxSalary(String maxSalary) {
+        this.maxSalary = maxSalary;
     }
 
     public String getLocation() {
@@ -95,9 +92,4 @@ public class JobDto {
     public void setReviews(List<Review> reviews) {
         this.reviews = reviews;
     }
-
-  
-
-    
-
 }
