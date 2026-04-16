@@ -1,0 +1,138 @@
+2026-04-15T18:18:18.303Z  INFO [company,,] 1 --- [company] [main] c.m.companyMS.CompanyMsApplication       : Starting CompanyMsApplication v0.0.1-SNAPSHOT using Java 25.0.2 with PID 1 (/workspace/BOOT-INF/classes started by cnb in /workspace)
+2026-04-15T18:18:18.392Z  INFO [company,,] 1 --- [company] [main] c.m.companyMS.CompanyMsApplication       : The following 1 profile is active: "docker"
+2026-04-15T18:18:19.914Z  INFO [review,,] 1 --- [review] [main] c.d.reviewmicro.ReviewmicroApplication   : Starting ReviewmicroApplication v0.0.1-SNAPSHOT using Java 25.0.2 with PID 1 (/workspace/BOOT-INF/classes started by cnb in /workspace)
+2026-04-15T18:18:19.933Z  INFO [review,,] 1 --- [review] [main] c.d.reviewmicro.ReviewmicroApplication   : The following 1 profile is active: "docker"
+2026-04-15T18:18:29.865Z  INFO [company,,] 1 --- [company] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-15T18:18:30.325Z  INFO [review,,] 1 --- [review] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-15T18:18:31.473Z  INFO [company,,] 1 --- [company] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1556 ms. Found 1 JPA repository interface.
+2026-04-15T18:18:31.650Z  INFO [review,,] 1 --- [review] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1258 ms. Found 1 JPA repository interface.
+2026-04-15T18:18:33.502Z  INFO [review,,] 1 --- [review] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fca35238-597a-313f-a279-888e4984c665
+2026-04-15T18:18:33.669Z  INFO [company,,] 1 --- [company] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=bcd1d242-0414-3b48-98c3-5c12f991d3f5
+2026-04-15T18:18:37.757Z  INFO [review,,] 1 --- [review] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8083 (http)
+2026-04-15T18:18:37.871Z  INFO [company,,] 1 --- [company] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8081 (http)
+2026-04-15T18:18:38.029Z  INFO [review,,] 1 --- [review] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-15T18:18:38.031Z  INFO [review,,] 1 --- [review] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-15T18:18:38.088Z  INFO [company,,] 1 --- [company] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-15T18:18:38.116Z  INFO [company,,] 1 --- [company] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-15T18:18:38.448Z  INFO [review,,] 1 --- [review] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 17773 ms
+2026-04-15T18:18:38.526Z  INFO [company,,] 1 --- [company] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 19475 ms
+2026-04-15T18:18:41.664Z  INFO [review,,] 1 --- [review] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-15T18:18:42.310Z  INFO [company,,] 1 --- [company] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-15T18:18:42.484Z  INFO [review,,] 1 --- [review] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-15T18:18:43.739Z  INFO [company,,] 1 --- [company] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-15T18:18:48.266Z  INFO [review,,] 1 --- [review] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-15T18:18:48.515Z  INFO [review,,] 1 --- [review] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-15T18:18:48.580Z  INFO [company,,] 1 --- [company] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-15T18:18:48.987Z  INFO [company,,] 1 --- [company] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-15T18:18:49.853Z  INFO [review,,] 1 --- [review] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5a2e4e77
+2026-04-15T18:18:49.862Z  INFO [review,,] 1 --- [review] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-15T18:18:50.325Z  WARN [review,,] 1 --- [review] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-15T18:18:50.482Z  INFO [company,,] 1 --- [company] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1cb3de26
+2026-04-15T18:18:50.498Z  INFO [company,,] 1 --- [company] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-15T18:18:50.515Z  INFO [review,,] 1 --- [review] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://postgres:5432/review]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: review/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-15T18:18:50.816Z  WARN [company,,] 1 --- [company] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-15T18:18:51.152Z  INFO [company,,] 1 --- [company] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://postgres:5432/company]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: company/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-15T18:18:56.775Z  INFO [review,,] 1 --- [review] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-15T18:18:56.988Z  INFO [company,,] 1 --- [company] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-15T18:18:57.073Z  INFO [review,,] 1 --- [review] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-15T18:18:57.429Z  INFO [company,,] 1 --- [company] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-15T18:18:57.624Z  INFO [review,,] 1 --- [review] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-15T18:18:58.306Z  INFO [company,,] 1 --- [company] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-15T18:18:59.033Z  WARN [company,,] 1 --- [company] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-15T18:18:59.215Z  WARN [review,,] 1 --- [review] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-15T18:19:03.003Z  INFO [company,,] 1 --- [company] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-04-15T18:19:03.174Z  WARN [company,,] 1 --- [company] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-04-15T18:19:03.219Z  INFO [review,,] 1 --- [review] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-04-15T18:19:03.379Z  INFO [company,,] 1 --- [company] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoints beneath base path '/actuator'
+2026-04-15T18:19:03.417Z  WARN [review,,] 1 --- [review] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-04-15T18:19:03.453Z  INFO [review,,] 1 --- [review] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2026-04-15T18:19:03.741Z  INFO [company,,] 1 --- [company] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-04-15T18:19:03.764Z  INFO [review,,] 1 --- [review] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-04-15T18:19:03.869Z  INFO [company,,] 1 --- [company] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-04-15T18:19:03.884Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-04-15T18:19:03.889Z  INFO [company,,] 1 --- [company] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-15T18:19:03.912Z  INFO [review,,] 1 --- [review] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-15T18:19:03.945Z  INFO [company,,] 1 --- [company] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-04-15T18:19:03.946Z  INFO [company,,] 1 --- [company] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-04-15T18:19:03.947Z  INFO [company,,] 1 --- [company] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-04-15T18:19:03.948Z  INFO [company,,] 1 --- [company] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-04-15T18:19:03.948Z  INFO [company,,] 1 --- [company] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-04-15T18:19:03.949Z  INFO [company,,] 1 --- [company] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-04-15T18:19:03.951Z  INFO [company,,] 1 --- [company] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-04-15T18:19:03.961Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-04-15T18:19:03.961Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-04-15T18:19:03.962Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-04-15T18:19:03.963Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-04-15T18:19:03.965Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-04-15T18:19:03.965Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-04-15T18:19:03.966Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-04-15T18:19:06.152Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-04-15T18:19:06.165Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-04-15T18:19:06.181Z  INFO [review,,] 1 --- [review] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-04-15T18:19:06.190Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1776277146187 with initial instances count: 6
+2026-04-15T18:19:06.198Z  INFO [review,,] 1 --- [review] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application REVIEW with eureka with status UP
+2026-04-15T18:19:06.202Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1776277146201, current=UP, previous=STARTING]
+2026-04-15T18:19:06.213Z  INFO [review,,] 1 --- [review] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_REVIEW/26df0d516ec1:review:8083: registering service...
+2026-04-15T18:19:06.220Z  INFO [company,,] 1 --- [company] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-04-15T18:19:06.230Z  INFO [company,,] 1 --- [company] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-04-15T18:19:06.251Z  INFO [company,,] 1 --- [company] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-04-15T18:19:06.275Z  INFO [review,,] 1 --- [review] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8083 (http) with context path '/'
+2026-04-15T18:19:06.279Z  INFO [review,,] 1 --- [review] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2026-04-15T18:19:06.318Z  INFO [review,,] 1 --- [review] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_REVIEW/26df0d516ec1:review:8083 - registration status: 204
+2026-04-15T18:19:06.331Z  INFO [company,,] 1 --- [company] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1776277146328 with initial instances count: 6
+2026-04-15T18:19:06.355Z  INFO [review,,] 1 --- [review] [main] c.d.reviewmicro.ReviewmicroApplication   : Started ReviewmicroApplication in 50.552 seconds (process running for 69.95)
+2026-04-15T18:19:06.359Z  INFO [company,,] 1 --- [company] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application COMPANY with eureka with status UP
+2026-04-15T18:19:06.362Z  INFO [company,,] 1 --- [company] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1776277146362, current=UP, previous=STARTING]
+2026-04-15T18:19:06.372Z  INFO [company,,] 1 --- [company] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_COMPANY/64b4f0add525:company:8081: registering service...
+2026-04-15T18:19:06.433Z  INFO [company,,] 1 --- [company] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8081 (http) with context path '/'
+2026-04-15T18:19:06.441Z  INFO [company,,] 1 --- [company] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2026-04-15T18:19:06.492Z  INFO [company,,] 1 --- [company] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_COMPANY/64b4f0add525:company:8081 - registration status: 204
+2026-04-15T18:19:06.498Z  INFO [company,,] 1 --- [company] [main] c.m.companyMS.CompanyMsApplication       : Started CompanyMsApplication in 51.352 seconds (process running for 70.073)
+2026-04-15T18:19:08.509Z  INFO [company,,] 1 --- [company] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-15T18:19:08.510Z  INFO [company,,] 1 --- [company] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-15T18:19:08.513Z  INFO [company,,] 1 --- [company] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-04-15T18:19:09.800Z  INFO [review,,] 1 --- [review] [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-15T18:19:09.801Z  INFO [review,,] 1 --- [review] [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-15T18:19:09.803Z  INFO [review,,] 1 --- [review] [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-04-15T18:19:44.024Z  INFO [company,,] 1 --- [company] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application COMPANY with eureka with status DOWN
+2026-04-15T18:19:44.030Z  INFO [company,,] 1 --- [company] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1776277184030, current=DOWN, previous=UP]
+2026-04-15T18:19:44.032Z  INFO [company,,] 1 --- [company] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_COMPANY/64b4f0add525:company:8081: registering service...
+2026-04-15T18:19:44.047Z  INFO [company,,] 1 --- [company] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-15T18:19:44.076Z  INFO [review,,] 1 --- [review] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application REVIEW with eureka with status DOWN
+2026-04-15T18:19:44.086Z  INFO [company,,] 1 --- [company] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_COMPANY/64b4f0add525:company:8081 - registration status: 204
+2026-04-15T18:19:44.105Z  INFO [company,,] 1 --- [company] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-04-15T18:19:44.109Z  INFO [review,,] 1 --- [review] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1776277184109, current=DOWN, previous=UP]
+2026-04-15T18:19:44.133Z  INFO [review,,] 1 --- [review] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_REVIEW/26df0d516ec1:review:8083: registering service...
+2026-04-15T18:19:44.160Z  INFO [review,,] 1 --- [review] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_REVIEW/26df0d516ec1:review:8083 - registration status: 204
+2026-04-15T18:19:44.170Z  INFO [review,,] 1 --- [review] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-15T18:19:44.181Z  INFO [review,,] 1 --- [review] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-04-15T18:19:44.224Z  INFO [review,,] 1 --- [review] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-15T18:19:44.240Z  INFO [review,,] 1 --- [review] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-15T18:19:44.284Z  INFO [company,,] 1 --- [company] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-15T18:19:44.426Z  INFO [company,,] 1 --- [company] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-15T18:19:44.457Z  INFO [company,,] 1 --- [company] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-15T18:19:44.434Z  INFO [review,,] 1 --- [review] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-15T18:19:44.464Z  INFO [company,,] 1 --- [company] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-04-15T18:19:44.509Z  INFO [review,,] 1 --- [review] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...

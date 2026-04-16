@@ -1,0 +1,18 @@
+{
+	"ulid": "01KP8CYKS30RAS75TRPEXNVY0C",
+	"minTime": 1776240000274,
+	"maxTime": 1776247200000,
+	"stats": {
+		"numSamples": 7832124,
+		"numFloatSamples": 7832124,
+		"numSeries": 5572,
+		"numChunks": 66798
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01KP8CYKS30RAS75TRPEXNVY0C"
+		]
+	},
+	"version": 1
+}

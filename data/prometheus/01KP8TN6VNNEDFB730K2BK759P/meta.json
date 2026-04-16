@@ -1,0 +1,18 @@
+{
+	"ulid": "01KP8TN6VNNEDFB730K2BK759P",
+	"minTime": 1776254400380,
+	"maxTime": 1776261600000,
+	"stats": {
+		"numSamples": 6809028,
+		"numFloatSamples": 6809028,
+		"numSeries": 5572,
+		"numChunks": 55788
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01KP8TN6VNNEDFB730K2BK759P"
+		]
+	},
+	"version": 1
+}

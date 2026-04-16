@@ -1,0 +1,571 @@
+2026-04-15 05:42:43 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 05:59:55 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 06:04:55 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 06:09:55 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 06:18:53 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m29s39ms109µs310ns).
+2026-04-15 06:18:53 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 06:23:53 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 06:28:53 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 06:33:53 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 06:39:46 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 06:39:46 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m22s521ms540µs417ns).
+2026-04-15 06:44:46 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 06:49:46 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 06:54:46 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 06:59:46 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 07:04:46 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 07:23:34 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m48s602ms744µs678ns).
+2026-04-15 07:23:35 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 07:34:23 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 07:34:23 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m18s406ms401µs133ns).
+2026-04-15 07:42:43 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 07:42:43 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m20s5ms621µs206ns).
+2026-04-15 07:47:44 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 07:52:44 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 07:57:44 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 08:02:44 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 08:07:44 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 08:12:44 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 08:17:44 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 08:22:44 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 08:27:44 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 08:32:44 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 08:37:44 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 08:42:44 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 08:47:44 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 08:52:44 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 08:57:44 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 09:02:44 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 09:07:44 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 09:12:44 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 09:17:44 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 09:22:44 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 09:27:44 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 09:32:44 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 09:37:44 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 09:42:44 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 09:47:23 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m38s326ms672µs435ns).
+2026-04-15 09:47:44 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 09:52:44 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 09:57:44 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 10:02:44 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 10:07:44 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 10:12:44 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 10:17:44 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 10:22:44 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 10:27:44 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 10:32:44 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 10:37:44 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 10:42:44 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 10:47:44 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 11:03:16 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 11:03:17 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m51s385ms184µs208ns).
+2026-04-15 11:19:51 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m33s975ms9µs949ns).
+2026-04-15 11:19:51 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 11:30:27 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 11:30:27 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m5s359ms457µs984ns).
+2026-04-15 11:35:28 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 11:47:46 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m48s218ms87µs746ns).
+2026-04-15 11:47:46 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 11:52:46 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 12:00:43 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m27s272ms554µs601ns).
+2026-04-15 12:00:44 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 12:19:20 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 12:19:20 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m36s380ms574µs802ns).
+2026-04-15 12:22:16 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m56s492ms551µs740ns).
+2026-04-15 12:24:20 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 12:29:20 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 12:34:20 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 12:39:20 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 12:44:20 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 12:49:20 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 12:54:20 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 12:59:20 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 13:04:20 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 13:09:20 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 13:14:20 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 13:19:20 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 13:24:20 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 13:29:20 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 13:34:20 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 13:39:20 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 13:44:20 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 13:49:20 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 13:52:08 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=50s512ms466µs18ns).
+2026-04-15 13:54:20 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 13:59:20 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 14:04:20 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 14:09:20 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 14:14:20 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 14:19:20 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 14:25:29 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 14:25:31 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m53s620ms808µs227ns).
+2026-04-15 14:31:55 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 14:31:56 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m24s683ms163µs343ns).
+2026-04-15 14:36:56 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 14:41:56 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 14:46:12 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m45s986ms413µs125ns).
+2026-04-15 14:46:56 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 14:51:56 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 14:56:34 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m21s540ms249µs534ns).
+2026-04-15 14:56:56 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 15:02:49 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m15s24ms981µs397ns).
+2026-04-15 15:02:49 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 15:07:49 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 15:12:49 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 15:20:22 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m32s192ms934µs783ns).
+2026-04-15 15:20:22 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 15:25:22 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 15:30:22 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 15:34:57 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m4s991ms148µs575ns).
+2026-04-15 15:35:22 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 15:40:22 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 15:45:22 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 15:50:22 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 15:55:22 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 16:00:22 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 16:10:30 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 16:10:30 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m33s708ms306µs978ns).
+2026-04-15 16:15:31 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 16:20:31 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 16:25:31 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 16:30:31 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 16:35:31 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 16:40:31 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-04-15 16:41:27 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application REVIEW with eureka with status DOWN
+2026-04-15 16:41:27 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1776271287586, current=DOWN, previous=UP]
+2026-04-15 16:41:27 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_REVIEW/e3253d89b3f7:review:8083: registering service...
+2026-04-15 16:41:27 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_REVIEW/e3253d89b3f7:review:8083 - registration status: 204
+2026-04-15 16:41:27 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-15 16:41:28 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-04-15 16:41:28 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-15T18:20:09.926Z  INFO [review,,] 1 --- [review] [main] c.d.reviewmicro.ReviewmicroApplication   : Starting ReviewmicroApplication v0.0.1-SNAPSHOT using Java 25.0.2 with PID 1 (/workspace/BOOT-INF/classes started by cnb in /workspace)
+2026-04-15T18:20:09.961Z  INFO [review,,] 1 --- [review] [main] c.d.reviewmicro.ReviewmicroApplication   : The following 1 profile is active: "docker"
+2026-04-15T18:20:18.145Z  INFO [review,,] 1 --- [review] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-15T18:20:20.039Z  INFO [review,,] 1 --- [review] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1855 ms. Found 1 JPA repository interface.
+2026-04-15T18:20:22.090Z  INFO [review,,] 1 --- [review] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fca35238-597a-313f-a279-888e4984c665
+2026-04-15T18:20:26.672Z  INFO [review,,] 1 --- [review] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8083 (http)
+2026-04-15T18:20:26.809Z  INFO [review,,] 1 --- [review] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-15T18:20:26.821Z  INFO [review,,] 1 --- [review] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-15T18:20:27.164Z  INFO [review,,] 1 --- [review] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 16481 ms
+2026-04-15T18:20:31.375Z  INFO [review,,] 1 --- [review] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-15T18:20:32.843Z  INFO [review,,] 1 --- [review] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-15T18:20:38.696Z  INFO [review,,] 1 --- [review] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-15T18:20:38.916Z  INFO [review,,] 1 --- [review] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-15T18:20:40.591Z  INFO [review,,] 1 --- [review] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@358caf3a
+2026-04-15T18:20:40.608Z  INFO [review,,] 1 --- [review] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-15T18:20:40.786Z  WARN [review,,] 1 --- [review] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-15T18:20:40.980Z  INFO [review,,] 1 --- [review] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://postgres:5432/review]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: review/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-15T18:20:48.069Z  INFO [review,,] 1 --- [review] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-15T18:20:48.369Z  INFO [review,,] 1 --- [review] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-15T18:20:48.655Z  INFO [review,,] 1 --- [review] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-15T18:20:49.538Z  WARN [review,,] 1 --- [review] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-15T18:20:57.945Z  INFO [review,,] 1 --- [review] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-04-15T18:20:58.553Z  WARN [review,,] 1 --- [review] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-04-15T18:20:58.631Z  INFO [review,,] 1 --- [review] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2026-04-15T18:20:59.611Z  INFO [review,,] 1 --- [review] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-04-15T18:21:00.024Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-04-15T18:21:00.230Z  INFO [review,,] 1 --- [review] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-15T18:21:00.451Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-04-15T18:21:00.453Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-04-15T18:21:00.455Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-04-15T18:21:00.456Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-04-15T18:21:00.458Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-04-15T18:21:00.461Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-04-15T18:21:00.462Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-04-15T18:21:02.913Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-04-15T18:21:02.929Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-04-15T18:21:03.034Z  INFO [review,,] 1 --- [review] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-04-15T18:21:03.049Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1776277263044 with initial instances count: 10
+2026-04-15T18:21:03.069Z  INFO [review,,] 1 --- [review] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application REVIEW with eureka with status UP
+2026-04-15T18:21:03.075Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1776277263075, current=UP, previous=STARTING]
+2026-04-15T18:21:03.096Z  INFO [review,,] 1 --- [review] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_REVIEW/cbf2a210eb4c:review:8083: registering service...
+2026-04-15T18:21:03.157Z  INFO [review,,] 1 --- [review] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8083 (http) with context path '/'
+2026-04-15T18:21:03.163Z  INFO [review,,] 1 --- [review] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2026-04-15T18:21:03.230Z  INFO [review,,] 1 --- [review] [main] c.d.reviewmicro.ReviewmicroApplication   : Started ReviewmicroApplication in 56.587 seconds (process running for 75.437)
+2026-04-15T18:21:03.313Z  INFO [review,,] 1 --- [review] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_REVIEW/cbf2a210eb4c:review:8083 - registration status: 204
+2026-04-15T18:21:04.888Z  INFO [review,,] 1 --- [review] [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-15T18:21:04.889Z  INFO [review,,] 1 --- [review] [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-15T18:21:04.893Z  INFO [review,,] 1 --- [review] [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-04-15T18:22:54.386Z  INFO [review,,] 1 --- [review] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application REVIEW with eureka with status DOWN
+2026-04-15T18:22:54.389Z  INFO [review,,] 1 --- [review] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1776277374389, current=DOWN, previous=UP]
+2026-04-15T18:22:54.391Z  INFO [review,,] 1 --- [review] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_REVIEW/cbf2a210eb4c:review:8083: registering service...
+2026-04-15T18:22:54.404Z  INFO [review,,] 1 --- [review] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_REVIEW/cbf2a210eb4c:review:8083 - registration status: 204
+2026-04-15T18:22:54.406Z  INFO [review,,] 1 --- [review] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-15T18:22:54.418Z  INFO [review,,] 1 --- [review] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-04-15T18:22:54.468Z  INFO [review,,] 1 --- [review] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-15T18:22:54.485Z  INFO [review,,] 1 --- [review] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-15T18:22:54.504Z  INFO [review,,] 1 --- [review] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-15T18:22:54.507Z  INFO [review,,] 1 --- [review] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-04-15T18:23:17.903Z  INFO [review,,] 1 --- [review] [main] c.d.reviewmicro.ReviewmicroApplication   : Starting ReviewmicroApplication v0.0.1-SNAPSHOT using Java 25.0.2 with PID 1 (/workspace/BOOT-INF/classes started by cnb in /workspace)
+2026-04-15T18:23:17.911Z  INFO [review,,] 1 --- [review] [main] c.d.reviewmicro.ReviewmicroApplication   : The following 1 profile is active: "docker"
+2026-04-15T18:23:24.494Z  INFO [review,,] 1 --- [review] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-15T18:23:26.169Z  INFO [review,,] 1 --- [review] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1583 ms. Found 1 JPA repository interface.
+2026-04-15T18:23:28.434Z  INFO [review,,] 1 --- [review] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fca35238-597a-313f-a279-888e4984c665
+2026-04-15T18:23:31.676Z  INFO [review,,] 1 --- [review] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8083 (http)
+2026-04-15T18:23:31.909Z  INFO [review,,] 1 --- [review] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-15T18:23:31.914Z  INFO [review,,] 1 --- [review] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-15T18:23:32.491Z  INFO [review,,] 1 --- [review] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 14241 ms
+2026-04-15T18:23:36.527Z  INFO [review,,] 1 --- [review] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-15T18:23:37.069Z  INFO [review,,] 1 --- [review] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-15T18:23:41.147Z  INFO [review,,] 1 --- [review] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-15T18:23:41.415Z  INFO [review,,] 1 --- [review] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-15T18:23:42.876Z  INFO [review,,] 1 --- [review] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3f35d13d
+2026-04-15T18:23:42.897Z  INFO [review,,] 1 --- [review] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-15T18:23:43.114Z  WARN [review,,] 1 --- [review] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-15T18:23:43.234Z  INFO [review,,] 1 --- [review] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://postgres:5432/review]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: review/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-15T18:23:48.656Z  INFO [review,,] 1 --- [review] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-15T18:23:48.919Z  INFO [review,,] 1 --- [review] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-15T18:23:49.300Z  INFO [review,,] 1 --- [review] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-15T18:23:50.401Z  WARN [review,,] 1 --- [review] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-15T18:23:53.827Z  INFO [review,,] 1 --- [review] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-04-15T18:23:54.030Z  WARN [review,,] 1 --- [review] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-04-15T18:23:54.057Z  INFO [review,,] 1 --- [review] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2026-04-15T18:23:54.321Z  INFO [review,,] 1 --- [review] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-04-15T18:23:54.540Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-04-15T18:23:54.561Z  INFO [review,,] 1 --- [review] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-15T18:23:54.655Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-04-15T18:23:54.659Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-04-15T18:23:54.661Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-04-15T18:23:54.662Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-04-15T18:23:54.664Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-04-15T18:23:54.666Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-04-15T18:23:54.687Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-04-15T18:23:57.122Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-04-15T18:23:57.133Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-04-15T18:23:57.143Z  INFO [review,,] 1 --- [review] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-04-15T18:23:57.150Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1776277437148 with initial instances count: 13
+2026-04-15T18:23:57.163Z  INFO [review,,] 1 --- [review] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application REVIEW with eureka with status UP
+2026-04-15T18:23:57.185Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1776277437185, current=UP, previous=STARTING]
+2026-04-15T18:23:57.193Z  INFO [review,,] 1 --- [review] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_REVIEW/311ba443ce0c:review:8083: registering service...
+2026-04-15T18:23:57.249Z  INFO [review,,] 1 --- [review] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8083 (http) with context path '/'
+2026-04-15T18:23:57.251Z  INFO [review,,] 1 --- [review] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2026-04-15T18:23:57.300Z  INFO [review,,] 1 --- [review] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_REVIEW/311ba443ce0c:review:8083 - registration status: 204
+2026-04-15T18:23:57.305Z  INFO [review,,] 1 --- [review] [main] c.d.reviewmicro.ReviewmicroApplication   : Started ReviewmicroApplication in 42.175 seconds (process running for 59.499)
+2026-04-15T18:23:59.816Z  INFO [review,,] 1 --- [review] [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-15T18:23:59.817Z  INFO [review,,] 1 --- [review] [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-15T18:23:59.820Z  INFO [review,,] 1 --- [review] [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-04-15T18:24:03.041Z  WARN [review,,] 1 --- [review] [http-nio-8083-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'companyId' for method parameter type Long is not present]
+2026-04-15T18:24:03.341Z  WARN [review,,] 1 --- [review] [http-nio-8083-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'companyId' for method parameter type Long is not present]
+2026-04-15T18:24:03.493Z  WARN [review,,] 1 --- [review] [http-nio-8083-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'companyId' for method parameter type Long is not present]
+2026-04-15T18:24:03.638Z  WARN [review,,] 1 --- [review] [http-nio-8083-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'companyId' for method parameter type Long is not present]
+2026-04-15T18:24:03.837Z  WARN [review,,] 1 --- [review] [http-nio-8083-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'companyId' for method parameter type Long is not present]
+2026-04-15T18:24:04.001Z  WARN [review,,] 1 --- [review] [http-nio-8083-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'companyId' for method parameter type Long is not present]
+2026-04-15T18:24:04.140Z  WARN [review,,] 1 --- [review] [http-nio-8083-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'companyId' for method parameter type Long is not present]
+2026-04-15T18:24:04.289Z  WARN [review,,] 1 --- [review] [http-nio-8083-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'companyId' for method parameter type Long is not present]
+2026-04-15T18:24:04.423Z  WARN [review,,] 1 --- [review] [http-nio-8083-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'companyId' for method parameter type Long is not present]
+2026-04-15T18:24:04.558Z  WARN [review,,] 1 --- [review] [http-nio-8083-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'companyId' for method parameter type Long is not present]
+2026-04-15T18:24:41.456Z  INFO [review,,] 1 --- [review] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application REVIEW with eureka with status DOWN
+2026-04-15T18:24:41.457Z  INFO [review,,] 1 --- [review] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1776277481457, current=DOWN, previous=UP]
+2026-04-15T18:24:41.504Z  INFO [review,,] 1 --- [review] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_REVIEW/311ba443ce0c:review:8083: registering service...
+2026-04-15T18:24:41.522Z  INFO [review,,] 1 --- [review] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-15T18:24:41.527Z  INFO [review,,] 1 --- [review] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_REVIEW/311ba443ce0c:review:8083 - registration status: 204
+2026-04-15T18:24:41.582Z  INFO [review,,] 1 --- [review] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-04-15T18:24:41.644Z  INFO [review,,] 1 --- [review] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-15T18:24:41.669Z  INFO [review,,] 1 --- [review] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-15T18:24:41.693Z  INFO [review,,] 1 --- [review] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-15T18:24:41.702Z  INFO [review,,] 1 --- [review] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-04-15T18:25:08.187Z  INFO [review,,] 1 --- [review] [main] c.d.reviewmicro.ReviewmicroApplication   : Starting ReviewmicroApplication v0.0.1-SNAPSHOT using Java 25.0.2 with PID 1 (/workspace/BOOT-INF/classes started by cnb in /workspace)
+2026-04-15T18:25:08.213Z  INFO [review,,] 1 --- [review] [main] c.d.reviewmicro.ReviewmicroApplication   : The following 1 profile is active: "docker"
+2026-04-15T18:25:19.122Z  INFO [review,,] 1 --- [review] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-15T18:25:26.296Z  INFO [review,,] 1 --- [review] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7080 ms. Found 1 JPA repository interface.
+2026-04-15T18:25:32.099Z  INFO [review,,] 1 --- [review] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fca35238-597a-313f-a279-888e4984c665
+2026-04-15T18:25:36.299Z  INFO [review,,] 1 --- [review] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8083 (http)
+2026-04-15T18:25:36.487Z  INFO [review,,] 1 --- [review] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-15T18:25:36.492Z  INFO [review,,] 1 --- [review] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-15T18:25:37.062Z  INFO [review,,] 1 --- [review] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 28471 ms
+2026-04-15T18:25:41.450Z  INFO [review,,] 1 --- [review] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-15T18:25:42.427Z  INFO [review,,] 1 --- [review] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-15T18:25:48.232Z  INFO [review,,] 1 --- [review] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-15T18:25:48.840Z  INFO [review,,] 1 --- [review] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-15T18:25:50.794Z  INFO [review,,] 1 --- [review] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2fc72df3
+2026-04-15T18:25:50.840Z  INFO [review,,] 1 --- [review] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-15T18:25:51.760Z  WARN [review,,] 1 --- [review] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-15T18:25:52.354Z  INFO [review,,] 1 --- [review] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://postgres:5432/review]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: review/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-15T18:26:03.136Z  INFO [review,,] 1 --- [review] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-15T18:26:03.558Z  INFO [review,,] 1 --- [review] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-15T18:26:03.927Z  INFO [review,,] 1 --- [review] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-15T18:26:04.932Z  WARN [review,,] 1 --- [review] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-15T18:26:07.509Z  INFO [review,,] 1 --- [review] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-04-15T18:26:07.805Z  WARN [review,,] 1 --- [review] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-04-15T18:26:07.835Z  INFO [review,,] 1 --- [review] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2026-04-15T18:26:08.098Z  INFO [review,,] 1 --- [review] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-04-15T18:26:08.214Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-04-15T18:26:08.232Z  INFO [review,,] 1 --- [review] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-15T18:26:08.278Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-04-15T18:26:08.279Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-04-15T18:26:08.279Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-04-15T18:26:08.280Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-04-15T18:26:08.281Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-04-15T18:26:08.281Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-04-15T18:26:08.282Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-04-15T18:26:09.578Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-04-15T18:26:09.589Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-04-15T18:26:09.603Z  INFO [review,,] 1 --- [review] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-04-15T18:26:09.649Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1776277569645 with initial instances count: 18
+2026-04-15T18:26:09.671Z  INFO [review,,] 1 --- [review] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application REVIEW with eureka with status UP
+2026-04-15T18:26:09.689Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1776277569689, current=UP, previous=STARTING]
+2026-04-15T18:26:09.712Z  INFO [review,,] 1 --- [review] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_REVIEW/3ac0dd22bba0:review:8083: registering service...
+2026-04-15T18:26:09.776Z  INFO [review,,] 1 --- [review] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8083 (http) with context path '/'
+2026-04-15T18:26:09.780Z  INFO [review,,] 1 --- [review] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2026-04-15T18:26:09.822Z  INFO [review,,] 1 --- [review] [main] c.d.reviewmicro.ReviewmicroApplication   : Started ReviewmicroApplication in 66.038 seconds (process running for 85.016)
+2026-04-15T18:26:09.825Z  INFO [review,,] 1 --- [review] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_REVIEW/3ac0dd22bba0:review:8083 - registration status: 204
+2026-04-15T18:26:14.790Z  INFO [review,,] 1 --- [review] [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-15T18:26:14.792Z  INFO [review,,] 1 --- [review] [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-15T18:26:14.795Z  INFO [review,,] 1 --- [review] [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-04-15T18:31:08.286Z  INFO [review,,] 1 --- [review] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-15T18:33:05.673Z  INFO [review,,] 1 --- [review] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application REVIEW with eureka with status DOWN
+2026-04-15T18:33:05.688Z  INFO [review,,] 1 --- [review] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1776277985688, current=DOWN, previous=UP]
+2026-04-15T18:33:05.692Z  INFO [review,,] 1 --- [review] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_REVIEW/3ac0dd22bba0:review:8083: registering service...
+2026-04-15T18:33:05.712Z  INFO [review,,] 1 --- [review] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_REVIEW/3ac0dd22bba0:review:8083 - registration status: 204
+2026-04-15T18:33:05.721Z  INFO [review,,] 1 --- [review] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-15T18:33:05.732Z  INFO [review,,] 1 --- [review] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-04-15T18:33:05.775Z  INFO [review,,] 1 --- [review] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-15T18:33:05.788Z  INFO [review,,] 1 --- [review] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-15T18:33:05.803Z  INFO [review,,] 1 --- [review] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-15T18:33:05.807Z  INFO [review,,] 1 --- [review] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-04-15T18:34:52.840Z  INFO [reviewMS,,] 1 --- [reviewMS] [main] c.d.reviewmicro.ReviewmicroApplication   : Starting ReviewmicroApplication v0.0.1-SNAPSHOT using Java 17.0.18 with PID 1 (/app/app.jar started by root in /app)
+2026-04-15T18:34:53.051Z  INFO [reviewMS,,] 1 --- [reviewMS] [main] c.d.reviewmicro.ReviewmicroApplication   : The following 1 profile is active: "docker"
+2026-04-15T18:35:01.616Z  INFO [reviewMS,,] 1 --- [reviewMS] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-15T18:35:03.366Z  INFO [reviewMS,,] 1 --- [reviewMS] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1666 ms. Found 1 JPA repository interface.
+2026-04-15T18:35:05.881Z  INFO [reviewMS,,] 1 --- [reviewMS] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=14569a48-8b7e-3ead-8ced-a6726d80fb21
+2026-04-15T18:35:09.475Z  INFO [reviewMS,,] 1 --- [reviewMS] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8083 (http)
+2026-04-15T18:35:09.697Z  INFO [reviewMS,,] 1 --- [reviewMS] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-15T18:35:09.713Z  INFO [reviewMS,,] 1 --- [reviewMS] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-04-15T18:35:09.871Z  INFO [reviewMS,,] 1 --- [reviewMS] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 16220 ms
+2026-04-15T18:35:13.682Z  INFO [reviewMS,,] 1 --- [reviewMS] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-15T18:35:14.050Z  INFO [reviewMS,,] 1 --- [reviewMS] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-04-15T18:35:16.783Z  INFO [reviewMS,,] 1 --- [reviewMS] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-15T18:35:17.012Z  INFO [reviewMS,,] 1 --- [reviewMS] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-15T18:35:18.275Z  WARN [reviewMS,,] 1 --- [reviewMS] [main] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 0, SQLState: 08001
+2026-04-15T18:35:18.281Z  WARN [reviewMS,,] 1 --- [reviewMS] [main] org.hibernate.orm.jdbc.error             : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+2026-04-15T18:35:18.291Z  WARN [reviewMS,,] 1 --- [reviewMS] [main] org.hibernate.orm.jdbc                   : HHH100046: Could not obtain connection to query JDBC database metadata
+
+org.hibernate.exception.JDBCConnectionException: Unable to obtain isolated JDBC connection [Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.] [n/a]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:80) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:34) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:115) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:101) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:51) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:366) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironment(JdbcEnvironmentInitiator.java:143) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:120) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:80) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:133) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:260) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:235) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:212) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:44) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:251) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:203) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:170) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1392) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.populateSessionFactoryBuilder(EntityManagerFactoryBuilderImpl.java:1472) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1454) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:93) ~[spring-orm-7.0.5.jar!/:7.0.5]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:443) ~[spring-orm-7.0.5.jar!/:7.0.5]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:436) ~[spring-orm-7.0.5.jar!/:7.0.5]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:411) ~[spring-orm-7.0.5.jar!/:7.0.5]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:419) ~[spring-orm-7.0.5.jar!/:7.0.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1864) ~[spring-beans-7.0.5.jar!/:7.0.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1813) ~[spring-beans-7.0.5.jar!/:7.0.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603) ~[spring-beans-7.0.5.jar!/:7.0.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.5.jar!/:7.0.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.5.jar!/:7.0.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.5.jar!/:7.0.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.5.jar!/:7.0.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.5.jar!/:7.0.5]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:977) ~[spring-context-7.0.5.jar!/:7.0.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621) ~[spring-context-7.0.5.jar!/:7.0.5]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.0.3.jar!/:4.0.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756) ~[spring-boot-4.0.3.jar!/:4.0.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445) ~[spring-boot-4.0.3.jar!/:4.0.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.0.3.jar!/:4.0.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365) ~[spring-boot-4.0.3.jar!/:4.0.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-4.0.3.jar!/:4.0.3]
+	at com.docmicroserv.reviewmicro.ReviewmicroApplication.main(ReviewmicroApplication.java:10) ~[!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[na:na]
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:106) ~[app.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:64) ~[app.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:40) ~[app.jar:0.0.1-SNAPSHOT]
+Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:373) ~[postgresql-42.7.10.jar!/:42.7.10]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:57) ~[postgresql-42.7.10.jar!/:42.7.10]
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:290) ~[postgresql-42.7.10.jar!/:42.7.10]
+	at org.postgresql.Driver.makeConnection(Driver.java:448) ~[postgresql-42.7.10.jar!/:42.7.10]
+	at org.postgresql.Driver.connect(Driver.java:298) ~[postgresql-42.7.10.jar!/:42.7.10]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:144) ~[HikariCP-7.0.2.jar!/:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:373) ~[HikariCP-7.0.2.jar!/:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:210) ~[HikariCP-7.0.2.jar!/:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:488) ~[HikariCP-7.0.2.jar!/:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:576) ~[HikariCP-7.0.2.jar!/:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:97) ~[HikariCP-7.0.2.jar!/:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-7.0.2.jar!/:na]
+	at org.hibernate.engine.jdbc.connections.internal.DataSourceConnectionProvider.getConnection(DataSourceConnectionProvider.java:137) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:508) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:48) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	... 44 common frames omitted
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Unknown Source) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(Unknown Source) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(Unknown Source) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source) ~[na:na]
+	at java.base/java.net.Socket.connect(Unknown Source) ~[na:na]
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:261) ~[postgresql-42.7.10.jar!/:42.7.10]
+	at org.postgresql.core.PGStream.<init>(PGStream.java:122) ~[postgresql-42.7.10.jar!/:42.7.10]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:146) ~[postgresql-42.7.10.jar!/:42.7.10]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:289) ~[postgresql-42.7.10.jar!/:42.7.10]
+	... 58 common frames omitted
+
+2026-04-15T18:35:18.515Z  WARN [reviewMS,,] 1 --- [reviewMS] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-15T18:35:18.573Z  INFO [reviewMS,,] 1 --- [reviewMS] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [undefined/unknown]
+	Database driver: undefined/unknown
+	Database dialect: PostgreSQLDialect
+	Database version: 13.0
+	Default catalog/schema: unknown/unknown
+	Autocommit mode: undefined/unknown
+	Isolation level: NONE [default NONE]
+	JDBC fetch size: undefined/unknown
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-15T18:35:24.006Z  INFO [reviewMS,,] 1 --- [reviewMS] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-15T18:35:24.155Z  INFO [reviewMS,,] 1 --- [reviewMS] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-15T18:35:25.166Z  WARN [reviewMS,,] 1 --- [reviewMS] [main] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 0, SQLState: 08001
+2026-04-15T18:35:25.168Z  WARN [reviewMS,,] 1 --- [reviewMS] [main] org.hibernate.orm.jdbc.error             : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+2026-04-15T18:35:25.187Z ERROR [reviewMS,,] 1 --- [reviewMS] [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Unable to build Hibernate SessionFactory  [persistence unit: default] ; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.] [n/a]
+2026-04-15T18:35:25.192Z  WARN [reviewMS,,] 1 --- [reviewMS] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/hibernate/autoconfigure/HibernateJpaConfiguration.class]: Unable to build Hibernate SessionFactory  [persistence unit: default] ; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.] [n/a]
+2026-04-15T18:35:25.203Z  INFO [reviewMS,,] 1 --- [reviewMS] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-04-15T18:35:25.290Z  INFO [reviewMS,,] 1 --- [reviewMS] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-04-15T18:35:25.450Z ERROR [reviewMS,,] 1 --- [reviewMS] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/hibernate/autoconfigure/HibernateJpaConfiguration.class]: Unable to build Hibernate SessionFactory  [persistence unit: default] ; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.] [n/a]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1817) ~[spring-beans-7.0.5.jar!/:7.0.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603) ~[spring-beans-7.0.5.jar!/:7.0.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.5.jar!/:7.0.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.5.jar!/:7.0.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.5.jar!/:7.0.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.5.jar!/:7.0.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.5.jar!/:7.0.5]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:977) ~[spring-context-7.0.5.jar!/:7.0.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621) ~[spring-context-7.0.5.jar!/:7.0.5]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.0.3.jar!/:4.0.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756) ~[spring-boot-4.0.3.jar!/:4.0.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445) ~[spring-boot-4.0.3.jar!/:4.0.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.0.3.jar!/:4.0.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365) ~[spring-boot-4.0.3.jar!/:4.0.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-4.0.3.jar!/:4.0.3]
+	at com.docmicroserv.reviewmicro.ReviewmicroApplication.main(ReviewmicroApplication.java:10) ~[!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[na:na]
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:106) ~[app.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:64) ~[app.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:40) ~[app.jar:0.0.1-SNAPSHOT]
+Caused by: jakarta.persistence.PersistenceException: Unable to build Hibernate SessionFactory  [persistence unit: default] ; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.] [n/a]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:448) ~[spring-orm-7.0.5.jar!/:7.0.5]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:411) ~[spring-orm-7.0.5.jar!/:7.0.5]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:419) ~[spring-orm-7.0.5.jar!/:7.0.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1864) ~[spring-beans-7.0.5.jar!/:7.0.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1813) ~[spring-beans-7.0.5.jar!/:7.0.5]
+	... 22 common frames omitted
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.] [n/a]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:80) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:34) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:115) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:101) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:71) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:37) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:61) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.hibernate.tool.schema.extract.spi.ExtractionContext.getQueryResults(ExtractionContext.java:41) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.hibernate.tool.schema.extract.internal.SequenceInformationExtractorLegacyImpl.extractMetadata(SequenceInformationExtractorLegacyImpl.java:36) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.initializeSequences(DatabaseInformationImpl.java:73) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.<init>(DatabaseInformationImpl.java:63) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.hibernate.tool.schema.extract.internal.CachingDatabaseInformationImpl.<init>(CachingDatabaseInformationImpl.java:43) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.buildDatabaseInformation(GroupedSchemaMigratorImpl.java:112) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:83) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:269) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$1(SchemaManagementToolCoordinator.java:101) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at java.base/java.util.HashMap.forEach(Unknown Source) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:100) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:35) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:33) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:323) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.hibernate.internal.SessionFactoryRegistry.instantiateSessionFactory(SessionFactoryRegistry.java:64) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:437) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1456) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:93) ~[spring-orm-7.0.5.jar!/:7.0.5]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:443) ~[spring-orm-7.0.5.jar!/:7.0.5]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:436) ~[spring-orm-7.0.5.jar!/:7.0.5]
+	... 26 common frames omitted
+Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:373) ~[postgresql-42.7.10.jar!/:42.7.10]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:57) ~[postgresql-42.7.10.jar!/:42.7.10]
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:290) ~[postgresql-42.7.10.jar!/:42.7.10]
+	at org.postgresql.Driver.makeConnection(Driver.java:448) ~[postgresql-42.7.10.jar!/:42.7.10]
+	at org.postgresql.Driver.connect(Driver.java:298) ~[postgresql-42.7.10.jar!/:42.7.10]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:144) ~[HikariCP-7.0.2.jar!/:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:373) ~[HikariCP-7.0.2.jar!/:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:210) ~[HikariCP-7.0.2.jar!/:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:488) ~[HikariCP-7.0.2.jar!/:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:576) ~[HikariCP-7.0.2.jar!/:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:97) ~[HikariCP-7.0.2.jar!/:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-7.0.2.jar!/:na]
+	at org.hibernate.engine.jdbc.connections.internal.DataSourceConnectionProvider.getConnection(DataSourceConnectionProvider.java:137) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:508) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:44) ~[hibernate-core-7.2.4.Final.jar!/:7.2.4.Final]
+	... 48 common frames omitted
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Unknown Source) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(Unknown Source) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(Unknown Source) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source) ~[na:na]
+	at java.base/java.net.Socket.connect(Unknown Source) ~[na:na]
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:261) ~[postgresql-42.7.10.jar!/:42.7.10]
+	at org.postgresql.core.PGStream.<init>(PGStream.java:122) ~[postgresql-42.7.10.jar!/:42.7.10]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:146) ~[postgresql-42.7.10.jar!/:42.7.10]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:289) ~[postgresql-42.7.10.jar!/:42.7.10]
+	... 62 common frames omitted
+

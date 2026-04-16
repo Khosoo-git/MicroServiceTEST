@@ -1,0 +1,128 @@
+2026-04-13T07:10:41.468Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T07:10:41.467Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T07:15:41.665Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T07:15:41.717Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T07:20:41.673Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T07:20:41.723Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T07:25:41.683Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T07:25:41.733Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T07:30:41.689Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T07:30:41.741Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T07:35:41.696Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T07:35:41.749Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T07:40:41.694Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T07:40:41.742Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T07:45:41.715Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T07:45:41.757Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T07:50:41.723Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T07:50:41.760Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T07:55:41.734Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T07:55:41.768Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T08:00:41.741Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T08:00:41.774Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T08:05:41.747Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T08:05:41.780Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T08:10:41.664Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T08:10:41.697Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T08:18:05.640Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T08:18:05.925Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T08:18:05.821Z  WARN [job,,] 1 --- [job] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m57s418ms531µs941ns).
+2026-04-13T08:18:05.681Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m57s93ms461µs883ns).
+2026-04-13T08:23:05.935Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T08:23:06.205Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T08:28:05.953Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T08:28:06.223Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T08:33:05.961Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T08:33:06.225Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T08:38:05.968Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T08:38:06.230Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T08:43:05.984Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T08:43:06.235Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T08:48:05.989Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T08:48:06.240Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T08:53:05.994Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T08:53:06.247Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T08:58:06.013Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T08:58:06.261Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T09:03:06.018Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T09:03:06.266Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T09:08:06.021Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T09:08:06.268Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T09:13:06.100Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T09:13:06.347Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T09:22:48.361Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T09:22:48.500Z  WARN [job,,] 1 --- [job] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m12s52ms442µs197ns).
+2026-04-13T09:22:48.379Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m11s998ms50µs649ns).
+2026-04-13T09:22:48.381Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T09:27:48.743Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T09:27:49.463Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T09:32:48.796Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T09:32:49.516Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T09:37:48.800Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T09:37:49.524Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T09:42:48.803Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T09:42:49.535Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T09:47:48.818Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T09:47:49.547Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T09:55:28.710Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T09:55:29.162Z  WARN [job,,] 1 --- [job] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m40s338ms908µs182ns).
+2026-04-13T09:55:28.737Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T09:55:29.573Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m40s470ms468µs917ns).
+2026-04-13T10:00:15.189Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m15s613ms223µs128ns).
+2026-04-13T10:00:15.446Z  WARN [job,,] 1 --- [job] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m15s888ms358µs737ns).
+2026-04-13T10:00:29.556Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T10:00:29.563Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T10:02:32.893Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m47s641ms545µs860ns).
+2026-04-13T10:02:32.894Z  WARN [job,,] 1 --- [job] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m47s362ms382µs292ns).
+2026-04-13T12:01:33.319Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h59m425ms967µs951ns).
+2026-04-13T12:01:33.320Z  WARN [job,,] 1 --- [job] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h59m426ms828µs886ns).
+2026-04-13T12:01:34.175Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T12:01:33.823Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T13:02:35.388Z  WARN [job,,] 1 --- [job] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h1m1s901ms913µs124ns).
+2026-04-13T13:02:35.826Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T13:02:35.979Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T13:02:35.996Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h1m2s512ms424µs939ns).
+2026-04-13T14:03:37.462Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T14:03:37.739Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h1m1s643ms853µs702ns).
+2026-04-13T14:03:37.760Z  WARN [job,,] 1 --- [job] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h1m2s273ms462µs240ns).
+2026-04-13T14:03:37.760Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T15:04:39.389Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h1m1s587ms903µs750ns).
+2026-04-13T15:04:39.399Z  WARN [job,,] 1 --- [job] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h1m1s577ms142µs87ns).
+2026-04-13T15:04:39.402Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T15:04:39.699Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T15:19:56.461Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m16s961ms15µs898ns).
+2026-04-13T15:19:56.466Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T15:19:56.464Z  WARN [job,,] 1 --- [job] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m16s953ms574µs944ns).
+2026-04-13T15:19:56.848Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T15:26:53.792Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T15:26:53.794Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T15:26:53.812Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m57s302ms584µs345ns).
+2026-04-13T15:26:54.020Z  WARN [job,,] 1 --- [job] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m57s691ms373µs822ns).
+2026-04-13T16:05:42.134Z  WARN [job,,] 1 --- [job] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=38m18s7ms426µs622ns).
+2026-04-13T16:05:42.397Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T16:05:42.395Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T16:05:42.455Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=38m18s365ms955µs727ns).
+2026-04-13T16:25:14.502Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=19m1s805ms371µs749ns).
+2026-04-13T16:25:14.522Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T16:25:14.549Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T16:25:14.539Z  WARN [job,,] 1 --- [job] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=19m2s137ms246µs152ns).
+2026-04-13T16:36:56.234Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T16:36:56.962Z  WARN [job,,] 1 --- [job] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m42s370ms846µs342ns).
+2026-04-13T16:36:56.228Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m42s220ms334µs577ns).
+2026-04-13T16:36:56.315Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T16:46:16.532Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T16:46:16.606Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T16:51:16.567Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T16:51:16.648Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T16:56:16.570Z  INFO [job,,] 1 --- [job] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T16:56:16.649Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-13T16:58:19.943Z  INFO [company,,] 1 --- [company] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application COMPANY with eureka with status DOWN
+2026-04-13T16:58:19.953Z  INFO [company,,] 1 --- [company] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1776099499953, current=DOWN, previous=UP]
+2026-04-13T16:58:19.958Z  INFO [company,,] 1 --- [company] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_COMPANY/004483049c68:company:8081: registering service...
+2026-04-13T16:58:20.053Z  INFO [job,,] 1 --- [job] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application JOB with eureka with status DOWN
+2026-04-13T16:58:20.063Z  INFO [job,,] 1 --- [job] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1776099500063, current=DOWN, previous=UP]
+2026-04-13T16:58:20.075Z  INFO [job,,] 1 --- [job] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JOB/9abb1b6c342e:job:8082: registering service...
+2026-04-13T16:58:20.075Z  INFO [company,,] 1 --- [company] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_COMPANY/004483049c68:company:8081 - registration status: 204
+2026-04-13T16:58:20.268Z  INFO [job,,] 1 --- [job] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_JOB/9abb1b6c342e:job:8082 - registration status: 204
+2026-04-13T16:58:20.519Z  INFO [job,,] 1 --- [job] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-13T16:58:20.676Z  INFO [job,,] 1 --- [job] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete

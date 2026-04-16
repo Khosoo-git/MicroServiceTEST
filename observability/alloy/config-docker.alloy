@@ -1,0 +1,18 @@
+// Read Docker container logs directly
+loki.source.docker "containers" {
+  host = "unix:///var/run/docker.sock"
+  targets = [
+    { __meta_docker_container_name = "company" },
+    { __meta_docker_container_name = "job" },
+    { __meta_docker_container_name = "review" },
+    { __meta_docker_container_name = "gateway" },
+  ]
+  forward_to = [loki.write.loki.receiver]
+}
+
+// Write logs to Loki
+loki.write "loki" {
+  endpoint {
+    url = "http://loki:3100/loki/api/v1/push"
+  }
+}

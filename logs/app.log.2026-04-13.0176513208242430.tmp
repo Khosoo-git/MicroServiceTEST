@@ -1,0 +1,27 @@
+2026-04-14T00:03:15.378Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-14T00:03:15.079Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-14T00:03:14.781Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m11s848ms538µs812ns).
+2026-04-14T00:03:14.787Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-14T00:03:15.000Z  INFO [review,,] 1 --- [review] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-14T00:03:14.979Z  WARN [review,,] 1 --- [review] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m12s597ms499µs444ns).
+2026-04-14T00:03:16.751Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-14T00:03:21.819Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-14T00:03:26.748Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-14T00:03:31.750Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-14T00:03:36.750Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-14T00:03:41.749Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-14T00:03:46.752Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-14T00:03:51.749Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-14T00:03:56.748Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-14T00:04:01.750Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-14T00:04:06.251Z  INFO 1 --- [gateway] [SpringApplicationShutdownHook] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application GATEWAY with eureka with status DOWN
+2026-04-14T00:04:06.252Z  INFO 1 --- [gateway] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1776125046252, current=DOWN, previous=UP]
+2026-04-14T00:04:06.255Z  INFO 1 --- [gateway] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATEWAY/4d6128151b62:gateway:8084: registering service...
+2026-04-14T00:04:06.598Z  INFO [review,,] 1 --- [review] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application REVIEW with eureka with status DOWN
+2026-04-14T00:04:06.731Z  INFO [review,,] 1 --- [review] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1776125046731, current=DOWN, previous=UP]
+2026-04-14T00:04:06.786Z  INFO [review,,] 1 --- [review] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_REVIEW/bfc370de9c2e:review:8083: registering service...
+2026-04-14T00:04:06.755Z  INFO [company,,] 1 --- [company] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application COMPANY with eureka with status DOWN
+2026-04-14T00:04:06.844Z  INFO [company,,] 1 --- [company] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1776125046842, current=DOWN, previous=UP]
+2026-04-14T00:04:06.799Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-14T00:04:06.854Z  INFO [company,,] 1 --- [company] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_COMPANY/733adf1d77c8:company:8081: registering service...
+2026-04-14T00:04:06.879Z  INFO 1 --- [gateway] [SpringApplicationShutdownHook] [                                                 ] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete

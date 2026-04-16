@@ -1,0 +1,1052 @@
+2026-04-11T00:43:07.200Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T00:43:07.192Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53m39s65ms537µs1ns).
+2026-04-11T00:43:07.331Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T00:43:06.772Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T00:43:10.606Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T00:43:15.607Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T00:43:20.613Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T00:43:25.616Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T00:43:30.618Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T00:43:35.619Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T01:44:08.740Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h1m1s569ms572µs344ns).
+2026-04-11T01:44:08.753Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T01:44:08.757Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T01:44:09.052Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T01:44:10.686Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T01:44:15.688Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T01:44:20.705Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T01:44:25.701Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T01:44:30.699Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T01:44:35.693Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T02:45:08.928Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h30s262ms642µs426ns).
+2026-04-11T02:45:09.058Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T02:45:09.398Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T02:45:09.603Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T02:45:10.599Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T02:45:15.601Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T02:45:20.639Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T02:45:25.607Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T02:45:30.612Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T02:45:35.707Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T03:31:42.794Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T03:31:42.837Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=46m3s850ms246µs616ns).
+2026-04-11T03:31:43.129Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T03:31:43.137Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T03:31:45.161Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T03:31:50.162Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T03:31:55.179Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T03:32:00.171Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T03:32:05.168Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T03:32:10.187Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T03:46:10.768Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m57s716ms894µs740ns).
+2026-04-11T03:46:11.197Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T03:46:11.412Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T03:46:10.984Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T03:46:15.406Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T03:46:20.408Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T03:46:25.418Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T03:46:30.416Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T03:46:35.413Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T03:46:40.415Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T04:47:12.409Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T04:47:12.338Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T04:47:12.494Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T04:47:12.341Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h30s926ms162µs429ns).
+2026-04-11T04:47:15.406Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T04:47:20.407Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T04:47:25.461Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T04:47:30.420Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T04:47:35.437Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T04:47:40.416Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T05:23:44.523Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T05:23:44.666Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T05:23:44.543Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=36m2s137ms633µs420ns).
+2026-04-11T05:23:45.329Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T05:23:45.418Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T05:23:50.287Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T05:23:55.296Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T05:24:00.301Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T05:24:05.305Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T05:24:10.295Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T05:24:17.315Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T05:48:13.473Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T05:48:13.502Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=23m56s179ms876µs87ns).
+2026-04-11T05:48:13.462Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T05:48:13.864Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T05:48:17.340Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T05:48:22.340Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T05:48:27.357Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T05:48:32.347Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T05:48:37.350Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T05:48:42.353Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T06:49:15.201Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T06:49:15.239Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h31s584ms656µs873ns).
+2026-04-11T06:49:15.256Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T06:49:15.624Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T06:49:17.454Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T06:49:22.455Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T06:49:27.461Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T06:49:32.463Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T06:49:37.465Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T06:49:42.465Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T07:50:15.581Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T07:50:15.621Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T07:50:15.630Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h30s69ms595µs154ns).
+2026-04-11T07:50:16.472Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T07:50:17.693Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T07:50:22.694Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T07:50:27.705Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T08:51:16.657Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T08:51:16.699Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T08:51:16.599Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h1m869ms890µs327ns).
+2026-04-11T08:51:17.196Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T08:51:17.801Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T08:51:22.770Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T09:52:16.572Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T09:52:16.680Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h1m4ms896µs13ns).
+2026-04-11T09:52:16.698Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T09:52:17.005Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T09:52:17.771Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T09:52:22.772Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T10:53:17.496Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h1m813ms528µs426ns).
+2026-04-11T10:53:17.572Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T10:53:17.496Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T10:53:17.784Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T10:53:17.982Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T10:53:22.723Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T11:44:44.356Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T11:44:44.722Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T11:44:44.728Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T11:44:44.769Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=51m26s965ms914µs513ns).
+2026-04-11T11:44:48.038Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T11:44:53.038Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T11:54:19.651Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T11:54:19.661Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T11:54:19.766Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m35s38ms476µs887ns).
+2026-04-11T11:54:19.929Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T11:54:23.053Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T11:54:28.056Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T12:31:02.627Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=36m42s845ms687µs649ns).
+2026-04-11T12:31:02.627Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T12:31:02.819Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T12:31:02.847Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T12:31:03.165Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T12:31:08.082Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T12:31:48.390Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45s711ms102µs391ns).
+2026-04-11T12:55:26.935Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T12:55:30.961Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T12:55:40.377Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T12:55:41.451Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T12:55:45.961Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T12:55:50.955Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T12:55:55.955Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:40:03.742Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:40:08.737Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:40:13.737Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:40:18.736Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:40:23.736Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:40:28.737Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:40:33.738Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:40:38.737Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:40:43.739Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:40:48.738Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:40:53.737Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:40:58.737Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:41:03.738Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:41:08.739Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:41:13.740Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:41:18.740Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:41:23.740Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:41:28.741Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:41:33.740Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:41:38.741Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:41:43.741Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:41:48.742Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:41:53.741Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:41:58.740Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:42:03.741Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:42:08.741Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:42:13.741Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:42:18.741Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:42:23.741Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:42:28.742Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:42:33.742Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:42:38.740Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:42:43.740Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:42:48.742Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:42:53.740Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:42:58.741Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:43:03.742Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:43:08.743Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:43:13.741Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:43:18.744Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:43:23.742Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:43:28.743Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:43:33.744Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:43:38.743Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:43:43.529Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T14:43:43.555Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T14:43:43.744Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:43:48.743Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:43:53.745Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:43:58.742Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:44:03.745Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:44:08.744Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:44:13.745Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:44:18.745Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:44:23.746Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:44:28.744Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:44:33.753Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:44:38.747Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:44:43.748Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:44:48.747Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:44:53.747Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:44:58.745Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:45:03.746Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:45:08.746Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:45:13.746Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:45:18.746Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:45:23.747Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:45:28.746Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:45:33.748Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:45:38.747Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:45:43.748Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:45:48.754Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:45:53.746Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:45:58.747Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:46:03.748Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:46:08.749Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:46:13.747Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:46:18.748Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:46:23.747Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:46:28.748Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:46:33.749Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:46:38.749Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:46:43.749Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:46:48.748Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:46:53.748Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:46:58.748Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:47:03.749Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:47:08.749Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:47:13.750Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:47:18.749Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:47:23.752Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:47:28.749Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:47:33.750Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:47:38.749Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:47:43.749Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:47:48.750Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:47:53.751Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:47:58.751Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:48:03.752Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:48:08.752Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:48:13.752Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:48:18.753Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:48:23.753Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:48:28.751Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:48:33.752Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:48:38.752Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:48:43.545Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T14:48:43.567Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T14:48:43.752Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:48:48.752Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:48:53.753Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:48:58.751Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:49:03.753Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:49:08.753Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:49:13.753Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:49:18.754Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:49:23.753Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:49:28.752Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:49:33.754Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:49:38.752Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:49:43.753Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:49:48.753Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:49:53.754Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:49:58.752Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:50:03.754Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:50:08.754Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:50:13.755Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:50:18.754Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:50:23.756Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:50:28.755Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:50:33.758Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:50:38.759Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:50:43.758Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:50:48.759Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:50:53.759Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:50:58.758Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:51:03.764Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:51:08.763Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:51:13.764Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:51:18.764Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:51:23.765Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:51:28.764Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:51:33.765Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:51:38.765Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:51:43.765Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:51:48.764Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:51:53.766Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:51:58.766Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:52:03.768Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:52:08.766Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:52:13.767Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:52:18.767Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:52:23.768Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:52:28.767Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:52:33.766Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:52:38.768Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:52:43.768Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:52:48.769Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:52:53.768Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:52:58.767Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:53:03.767Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:53:08.770Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:53:13.769Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:53:18.769Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:53:23.767Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:53:28.767Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:53:33.766Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:53:38.769Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:53:43.561Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T14:53:43.585Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T14:53:43.767Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:53:48.811Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:53:53.770Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:53:58.766Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:54:03.771Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:54:08.769Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:54:13.771Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:54:18.770Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:54:23.770Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:54:28.771Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:54:33.770Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:54:38.771Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:54:43.772Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:54:48.771Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:54:53.771Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:54:58.771Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:55:03.772Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:55:08.773Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:55:13.772Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:55:18.773Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:55:23.774Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:55:28.774Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:55:33.761Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:55:38.762Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:55:43.762Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:55:48.762Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:55:53.762Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:55:58.761Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:56:03.762Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:56:08.763Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:56:13.764Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:56:18.762Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:56:23.762Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:56:28.763Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:56:33.764Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:56:38.762Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:56:43.764Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:56:48.762Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:56:53.762Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:56:58.763Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:57:03.764Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:57:08.764Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:57:13.762Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:57:18.764Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:57:23.763Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:57:28.763Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:57:33.763Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:57:38.762Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:57:43.764Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:57:48.762Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:57:53.764Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:57:58.763Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:58:03.765Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:58:08.765Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:58:13.766Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:58:18.765Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:58:23.765Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:58:28.765Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:58:33.767Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:58:38.766Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:58:43.564Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T14:58:43.586Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T14:58:43.767Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:58:48.767Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:58:53.766Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:58:58.765Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:59:03.769Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:59:08.767Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:59:13.767Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:59:18.767Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:59:23.766Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:59:28.766Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:59:33.769Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:59:38.768Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:59:43.770Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:59:48.787Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:59:53.767Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T14:59:58.767Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:00:03.767Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:00:08.766Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:00:13.768Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:00:18.767Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:00:23.767Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:00:28.768Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:00:33.770Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:00:38.768Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:00:43.769Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:00:48.770Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:00:53.768Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:00:58.769Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:01:03.761Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:01:08.760Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:01:13.760Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:01:18.761Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:01:23.761Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:01:28.760Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:01:33.772Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:01:38.771Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:01:43.771Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:01:48.771Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:01:53.772Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:01:58.772Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:02:03.770Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:02:08.769Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:02:13.770Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:02:18.771Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:02:23.768Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:02:28.770Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:02:33.773Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:02:38.772Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:02:43.772Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:02:48.771Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:02:53.785Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:02:58.774Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:03:03.773Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:03:08.773Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:03:13.773Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:03:18.773Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:03:23.774Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:03:28.775Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:03:33.775Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:03:38.774Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:03:43.575Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T15:03:43.596Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T15:03:43.774Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:03:48.774Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:03:53.776Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:03:58.774Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:04:03.778Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:04:08.776Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:04:13.775Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:04:18.776Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:04:23.775Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:04:28.775Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:04:33.776Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:04:38.774Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:04:43.776Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:04:48.775Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:04:53.775Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:04:58.774Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:05:03.785Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:05:08.777Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:05:13.777Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:05:18.779Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:05:23.777Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:05:28.777Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:05:33.777Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:05:38.776Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:05:43.776Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:05:48.777Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:05:53.775Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:05:58.776Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:06:03.780Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:06:08.779Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:06:13.798Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:06:18.779Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:06:23.782Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:06:28.778Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:06:33.780Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:06:38.806Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:06:43.792Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:06:48.780Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:06:53.781Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:06:58.782Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:07:03.777Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:07:08.781Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:07:13.778Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:07:18.780Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:07:23.787Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:07:28.777Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:07:33.784Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:07:38.781Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:07:43.781Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:07:48.782Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:07:53.781Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:07:58.782Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:08:03.782Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:08:08.782Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:08:13.782Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:08:18.782Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:08:23.782Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:08:28.799Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:08:33.779Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:08:38.783Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:08:43.584Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T15:08:43.603Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T15:08:43.781Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:08:48.779Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:08:53.779Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:08:58.778Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:09:03.785Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:09:08.786Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:09:13.784Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:09:18.784Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:09:23.784Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:09:28.784Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:09:33.772Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:09:38.772Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:09:43.188Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:09:43.773Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:09:48.772Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:09:53.774Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:09:58.771Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:10:03.784Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:10:08.784Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:10:13.797Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:10:18.784Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:10:23.784Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:10:28.786Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:10:33.786Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:10:38.797Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:10:43.857Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:10:48.787Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:10:53.786Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:10:58.786Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:11:03.786Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:11:08.786Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:11:13.785Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:11:18.786Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:11:23.786Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:11:28.785Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:11:33.788Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:11:38.789Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:11:43.788Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:11:48.841Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:11:53.805Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:11:58.789Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:12:03.788Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:12:08.790Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:12:13.788Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:12:18.790Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:12:23.789Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:12:28.789Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:12:33.790Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:12:38.790Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:12:43.790Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:12:48.790Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:12:53.791Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:12:58.790Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:13:03.791Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:13:08.791Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:13:13.791Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:13:18.791Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:13:23.793Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:13:28.789Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:13:33.790Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:13:38.791Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:13:43.598Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T15:13:43.616Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T15:13:43.791Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:13:48.792Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:13:53.791Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:13:58.789Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:14:03.794Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:14:08.792Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:14:13.791Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:14:18.791Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:14:23.792Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:14:28.791Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:14:33.793Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:14:38.793Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:14:43.793Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:14:48.800Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:14:53.794Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:14:58.795Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:15:03.793Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:15:08.794Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:15:13.795Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:15:18.794Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:15:23.794Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:15:28.793Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:15:33.795Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:15:38.797Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:15:43.819Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:15:48.795Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:15:53.800Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:15:58.795Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:16:03.788Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:16:08.788Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:16:13.787Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:16:18.787Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:16:23.788Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:16:28.787Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:16:33.785Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:16:38.784Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:16:43.782Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:16:48.783Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:16:53.785Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:16:58.784Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:17:03.782Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:17:08.781Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:17:13.783Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:17:18.782Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:17:23.782Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:17:28.781Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:17:33.804Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:17:38.785Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:17:43.786Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:17:48.785Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:17:53.785Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:17:58.786Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:18:03.786Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:18:08.786Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:18:13.786Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:18:18.786Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:18:23.787Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:18:28.787Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:18:33.786Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:18:38.786Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:18:43.599Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T15:18:43.616Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T15:18:43.786Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:18:48.787Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:18:53.786Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:18:58.786Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:19:03.791Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:19:08.790Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:19:13.788Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:19:18.789Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:19:23.790Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:19:28.788Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:19:33.790Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:19:38.790Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:19:43.789Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:19:48.789Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:19:53.789Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:19:58.789Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:20:03.789Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:20:08.791Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:20:13.790Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:20:18.789Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:20:23.790Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:20:28.829Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:20:33.793Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:20:38.792Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:20:43.791Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:20:48.790Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:20:53.792Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:20:58.790Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:21:03.791Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:21:08.791Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:21:13.791Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:21:18.791Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:21:23.791Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:21:28.789Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:21:33.788Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:21:38.789Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:21:43.788Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:21:48.788Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:21:53.791Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:21:58.789Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:22:03.793Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:22:08.793Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:22:13.795Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:22:18.794Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:22:23.794Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:22:28.794Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:22:33.794Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:22:38.793Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:22:43.793Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:22:48.793Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:22:53.795Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:22:58.795Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:23:03.795Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:23:08.795Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:23:13.796Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:23:18.797Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:23:23.796Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:23:28.797Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:23:33.796Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:23:38.797Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:23:43.612Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T15:23:43.628Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T15:23:43.796Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:23:48.796Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:23:53.796Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:23:58.796Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:24:03.797Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:24:08.796Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:24:13.798Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:24:18.799Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:24:23.798Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:24:28.797Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:24:33.799Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:24:38.799Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:24:43.800Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:24:48.799Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:24:53.799Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:24:58.799Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:25:03.799Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:25:08.798Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:25:13.800Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:25:18.799Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:25:23.799Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:25:28.800Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:25:33.800Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:25:38.801Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:25:43.801Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:25:48.800Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:25:53.799Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:25:58.800Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:26:03.802Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:26:08.803Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:26:13.801Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:26:18.802Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:26:23.801Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:26:28.802Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:26:33.800Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:26:38.799Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:26:43.836Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:26:48.799Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:26:53.800Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:26:58.799Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:42:29.516Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T15:42:29.199Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T15:42:29.590Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m29s715ms685µs439ns).
+2026-04-11T15:42:29.745Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:42:33.798Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:42:38.798Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:42:43.806Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:42:48.812Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:42:53.906Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:42:58.816Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:43:03.914Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:43:08.995Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:43:13.824Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:43:18.818Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:58:48.796Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m48s883ms59µs554ns).
+2026-04-11T15:58:49.058Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T15:58:48.944Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T15:58:49.146Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:58:53.848Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:58:58.850Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:59:03.876Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:59:08.868Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:59:13.864Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:59:18.861Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:59:23.893Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:59:28.892Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:59:33.866Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:59:38.865Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:59:43.866Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:59:48.865Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:59:53.878Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T15:59:58.884Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T16:00:03.880Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T16:00:08.878Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T16:00:13.878Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T16:15:41.039Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m52s37ms9µs640ns).
+2026-04-11T16:15:41.533Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T16:15:41.113Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T16:15:41.634Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T16:15:43.903Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T16:15:48.903Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T16:15:53.911Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T16:15:58.912Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T16:16:03.913Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T16:16:08.915Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T16:16:13.919Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T16:16:18.941Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T16:16:23.960Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T16:29:13.880Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T16:29:14.651Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T16:29:13.945Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m2s340ms234µs483ns).
+2026-04-11T16:29:14.622Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T16:29:14.893Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T16:29:18.938Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T16:29:23.938Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T16:29:28.938Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T16:29:33.939Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T16:29:38.938Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T16:29:43.938Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T16:29:48.952Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T16:29:53.952Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T16:29:58.952Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T16:30:03.953Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T16:30:08.951Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T16:30:13.955Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T16:30:18.968Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T16:30:23.969Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T16:30:28.969Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T16:30:33.969Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T16:30:38.968Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T16:30:43.969Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T16:30:48.972Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T16:46:15.745Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T16:46:15.795Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T16:46:15.746Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T16:46:16.092Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m31s244ms819µs120ns).
+2026-04-11T16:46:18.881Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T16:46:23.880Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T16:46:28.884Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T16:46:33.890Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T16:46:38.902Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T16:46:43.886Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T16:46:48.935Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T16:46:53.941Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T16:46:58.940Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:02:27.622Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T17:02:27.645Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T17:02:27.645Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m41s321ms727µs878ns).
+2026-04-11T17:02:28.170Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:02:28.893Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:02:33.893Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:02:38.905Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:02:43.904Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:02:48.916Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:02:53.902Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:02:58.969Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:03:03.969Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:03:08.970Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:03:13.969Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:05:12.273Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m14s11ms293µs642ns).
+2026-04-11T17:05:12.968Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:05:13.966Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:05:18.968Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:05:23.967Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:05:28.967Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:05:33.982Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:05:38.968Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:05:43.981Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:05:48.980Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:21:16.836Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T17:21:16.817Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m34s428ms728µs191ns).
+2026-04-11T17:21:16.855Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T17:21:17.165Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:21:18.999Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:21:24.000Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:21:29.014Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:21:34.019Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:21:39.012Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:21:44.009Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:21:48.988Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:21:53.992Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:21:58.977Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:37:28.017Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T17:37:28.007Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m40s836ms155µs442ns).
+2026-04-11T17:37:28.030Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T17:37:28.128Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:37:28.746Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:37:33.745Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:37:38.757Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:37:43.754Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:37:48.796Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:37:53.762Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:37:59.009Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:38:03.992Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:38:08.994Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:38:13.996Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:53:40.488Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T17:53:40.819Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m42s438ms5µs948ns).
+2026-04-11T17:53:40.501Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T17:53:41.017Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:53:43.782Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:53:48.782Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:53:53.805Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:53:58.795Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:54:03.814Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:54:08.788Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:54:14.049Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:54:19.052Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T17:54:24.055Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T18:09:52.401Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T18:09:52.405Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m41s324ms750µs185ns).
+2026-04-11T18:09:52.786Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T18:09:52.793Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T18:09:54.072Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T18:09:59.073Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T18:10:04.076Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T18:10:09.079Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T18:10:14.084Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T18:10:19.081Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T18:10:23.902Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T18:10:28.902Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T18:10:33.902Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T18:10:38.904Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T18:26:04.959Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m42s358ms101µs521ns).
+2026-04-11T18:26:04.984Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T18:26:04.992Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T18:26:05.420Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T18:26:08.919Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T18:26:13.920Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T18:26:18.929Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T18:26:23.926Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T18:26:28.928Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T18:26:33.945Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T18:26:38.903Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T18:26:43.903Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T18:26:48.913Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T18:42:19.613Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T18:42:19.580Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m44s150ms734µs415ns).
+2026-04-11T18:42:19.914Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T18:42:19.942Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T18:42:23.856Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T18:42:28.857Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T18:42:33.861Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T18:42:38.864Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T18:42:43.865Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T18:42:48.865Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T18:42:53.839Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T18:42:58.839Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T18:43:03.814Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T18:58:32.720Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T18:58:33.044Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m42s908ms770µs618ns).
+2026-04-11T18:58:33.168Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T18:58:33.294Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T18:58:33.840Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T18:58:38.841Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T18:58:43.853Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T18:58:48.855Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T18:58:53.845Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T18:58:58.864Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T18:59:03.858Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T18:59:08.857Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T18:59:13.867Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T19:06:34.098Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m30s995ms582µs620ns).
+2026-04-11T19:06:34.109Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T19:06:34.100Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T19:06:34.416Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T19:06:38.490Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T19:22:08.975Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T19:22:09.303Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T19:22:08.977Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m35s240ms560µs509ns).
+2026-04-11T19:22:09.748Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T19:22:13.891Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T19:22:18.894Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T19:22:23.896Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T19:22:28.897Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T19:22:33.898Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T19:22:38.900Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T19:22:43.871Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T19:22:48.872Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T19:22:53.871Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T19:38:21.610Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m41s922ms973µs440ns).
+2026-04-11T19:38:21.645Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T19:38:21.651Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T19:38:22.170Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T19:38:23.893Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T19:38:28.894Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T19:38:33.904Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T19:38:38.902Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T19:38:43.898Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T19:38:48.903Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T19:38:53.789Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T19:38:58.808Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T19:39:03.795Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T19:54:34.277Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T19:54:34.304Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T19:54:34.409Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m42s405ms94µs83ns).
+2026-04-11T19:54:34.475Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T19:54:38.708Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T19:54:43.707Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T19:54:48.718Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T19:54:53.715Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T19:54:58.713Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T19:55:03.719Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T19:55:08.828Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T19:55:13.817Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T19:55:18.813Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T19:55:23.808Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T19:57:44.956Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m40s447ms782µs668ns).
+2026-04-11T19:57:45.349Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T19:57:48.813Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T19:57:53.814Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T20:07:34.989Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m50s22ms453µs95ns).
+2026-04-11T20:07:35.023Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T20:07:35.006Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T20:07:35.109Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T20:07:38.825Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T20:07:43.826Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T20:23:10.162Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T20:23:10.165Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m35s164ms764µs783ns).
+2026-04-11T20:23:10.218Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T20:23:10.444Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T20:23:13.717Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T20:23:18.717Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T20:23:23.730Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T20:23:28.728Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T20:23:33.756Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T20:23:38.724Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T20:23:43.954Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T20:23:48.971Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T20:23:53.955Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T20:39:22.545Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m42s36ms396µs29ns).
+2026-04-11T20:39:22.629Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T20:39:22.639Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T20:39:22.928Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T20:39:23.954Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T20:39:28.954Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T20:39:33.967Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T20:39:38.964Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T20:39:43.961Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T20:39:48.966Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T20:39:53.974Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T20:39:58.975Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T20:40:03.979Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T20:55:34.769Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m42s142ms728µs609ns).
+2026-04-11T20:55:34.801Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T20:55:35.297Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T20:55:35.431Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T20:55:38.996Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T20:55:43.996Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T20:55:49.010Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T20:55:54.001Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T20:55:59.005Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T20:56:04.011Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T20:56:08.889Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T20:56:13.890Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T20:56:18.890Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T21:08:36.965Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m31s741ms894µs585ns).
+2026-04-11T21:08:37.024Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T21:08:37.299Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T21:08:37.323Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T21:08:38.900Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T21:08:43.902Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T21:08:48.921Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T21:08:53.907Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T21:08:58.921Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T21:09:03.931Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T21:09:08.902Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T21:09:13.901Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T21:09:18.900Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T21:24:48.989Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T21:24:48.992Z  INFO 1 --- [gateway] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-11T21:24:48.991Z  WARN [company,,] 1 --- [company] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m41s603ms12µs207ns).
+2026-04-11T21:24:49.572Z TRACE 1 --- [gateway] [http-nio-8084-exec-9] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T21:24:53.904Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T21:24:58.905Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T21:25:03.909Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T21:25:08.912Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T21:25:13.909Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T21:25:18.917Z TRACE 1 --- [gateway] [http-nio-8084-exec-2] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T21:25:23.897Z TRACE 1 --- [gateway] [http-nio-8084-exec-5] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T21:25:28.901Z TRACE 1 --- [gateway] [http-nio-8084-exec-7] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T21:25:33.900Z TRACE 1 --- [gateway] [http-nio-8084-exec-4] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T22:09:45.169Z TRACE 1 --- [gateway] [http-nio-8084-exec-6] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T22:09:48.697Z TRACE 1 --- [gateway] [http-nio-8084-exec-1] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T22:09:53.696Z TRACE 1 --- [gateway] [http-nio-8084-exec-10] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T22:09:58.698Z TRACE 1 --- [gateway] [http-nio-8084-exec-3] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}
+2026-04-11T22:10:03.697Z TRACE 1 --- [gateway] [http-nio-8084-exec-8] [                                                 ] o.s.c.g.s.m.f.WeightCalculatorFilter     : Weights attr: {}

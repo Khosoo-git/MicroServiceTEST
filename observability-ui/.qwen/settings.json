@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(sleep *)",
+      "Bash(docker logs *)"
+    ]
+  },
+  "$version": 3
+}

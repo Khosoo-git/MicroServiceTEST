@@ -1,0 +1,88 @@
+2026-04-10T04:09:12.617Z  INFO [review,,] 1 --- [review] [main] c.d.reviewmicro.ReviewmicroApplication   : Starting ReviewmicroApplication v0.0.1-SNAPSHOT using Java 25.0.2 with PID 1 (/workspace/BOOT-INF/classes started by cnb in /workspace)
+2026-04-10T04:09:12.652Z  INFO [review,,] 1 --- [review] [main] c.d.reviewmicro.ReviewmicroApplication   : The following 1 profile is active: "docker"
+2026-04-10T04:09:21.144Z  INFO [review,,] 1 --- [review] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-10T04:09:21.920Z  INFO [review,,] 1 --- [review] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 702 ms. Found 1 JPA repository interface.
+2026-04-10T04:09:23.693Z  INFO [review,,] 1 --- [review] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=14569a48-8b7e-3ead-8ced-a6726d80fb21
+2026-04-10T04:09:28.030Z  INFO [review,,] 1 --- [review] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8083 (http)
+2026-04-10T04:09:28.225Z  INFO [review,,] 1 --- [review] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-10T04:09:28.233Z  INFO [review,,] 1 --- [review] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-10T04:09:28.558Z  INFO [review,,] 1 --- [review] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 15272 ms
+2026-04-10T04:09:31.935Z  INFO [review,,] 1 --- [review] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-10T04:09:32.378Z  INFO [review,,] 1 --- [review] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-10T04:09:37.331Z  INFO [review,,] 1 --- [review] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-10T04:09:37.506Z  INFO [review,,] 1 --- [review] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-10T04:09:38.643Z  INFO [review,,] 1 --- [review] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@15fd3088
+2026-04-10T04:09:38.650Z  INFO [review,,] 1 --- [review] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-10T04:09:39.067Z  WARN [review,,] 1 --- [review] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-10T04:09:39.313Z  INFO [review,,] 1 --- [review] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://postgres:5432/review]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: review/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-10T04:09:44.290Z  INFO [review,,] 1 --- [review] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-10T04:09:44.586Z  INFO [review,,] 1 --- [review] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-10T04:09:45.126Z  INFO [review,,] 1 --- [review] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-10T04:09:46.292Z  WARN [review,,] 1 --- [review] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-10T04:09:49.117Z  INFO [review,,] 1 --- [review] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-04-10T04:09:49.282Z  WARN [review,,] 1 --- [review] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-04-10T04:09:49.321Z  INFO [review,,] 1 --- [review] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoints beneath base path '/actuator'
+2026-04-10T04:09:49.602Z  INFO [review,,] 1 --- [review] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-04-10T04:09:49.658Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-04-10T04:09:49.664Z  INFO [review,,] 1 --- [review] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-10T04:09:49.680Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-04-10T04:09:49.681Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-04-10T04:09:49.681Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-04-10T04:09:49.682Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-04-10T04:09:49.683Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-04-10T04:09:49.684Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-04-10T04:09:49.684Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-04-10T04:09:50.503Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-04-10T04:09:50.505Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-04-10T04:09:50.508Z  INFO [review,,] 1 --- [review] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-04-10T04:09:50.511Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1775794190510 with initial instances count: 0
+2026-04-10T04:09:50.516Z  INFO [review,,] 1 --- [review] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application REVIEW with eureka with status UP
+2026-04-10T04:09:50.518Z  INFO [review,,] 1 --- [review] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1775794190518, current=UP, previous=STARTING]
+2026-04-10T04:09:50.521Z  INFO [review,,] 1 --- [review] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_REVIEW/bfca95255d4f:review:8083: registering service...
+2026-04-10T04:09:50.553Z  INFO [review,,] 1 --- [review] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8083 (http) with context path '/'
+2026-04-10T04:09:50.555Z  INFO [review,,] 1 --- [review] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2026-04-10T04:09:50.585Z  INFO [review,,] 1 --- [review] [main] c.d.reviewmicro.ReviewmicroApplication   : Started ReviewmicroApplication in 41.728 seconds (process running for 46.746)
+2026-04-10T04:09:50.598Z  INFO [review,,] 1 --- [review] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_REVIEW/bfca95255d4f:review:8083 - registration status: 204
+2026-04-10T04:09:53.901Z  INFO [review,,] 1 --- [review] [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-10T04:09:53.902Z  INFO [review,,] 1 --- [review] [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-10T04:09:53.905Z  INFO [review,,] 1 --- [review] [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-04-10T04:10:20.508Z  INFO [review,,] 1 --- [review] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-04-10T04:10:20.510Z  INFO [review,,] 1 --- [review] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-04-10T04:10:20.511Z  INFO [review,,] 1 --- [review] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-04-10T04:10:20.512Z  INFO [review,,] 1 --- [review] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-04-10T04:10:20.513Z  INFO [review,,] 1 --- [review] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-04-10T04:10:20.514Z  INFO [review,,] 1 --- [review] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-04-10T04:10:20.515Z  INFO [review,,] 1 --- [review] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-04-10T04:10:20.566Z  INFO [review,,] 1 --- [review] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-04-10T04:14:49.677Z  INFO [review,,] 1 --- [review] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-10T04:19:49.668Z  INFO [review,,] 1 --- [review] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-10T04:24:49.580Z  INFO [review,,] 1 --- [review] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-10T04:29:49.567Z  INFO [review,,] 1 --- [review] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-10T04:34:49.555Z  INFO [review,,] 1 --- [review] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-10T04:39:49.542Z  INFO [review,,] 1 --- [review] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-10T04:44:49.529Z  INFO [review,,] 1 --- [review] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-10T04:46:27.939Z  WARN [review,,] 1 --- [review] [http-nio-8083-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'companyId' for method parameter type Long is not present]
+2026-04-10T04:49:33.820Z  WARN [review,,] 1 --- [review] [http-nio-8083-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'companyId' for method parameter type Long is not present]
+2026-04-10T04:49:39.493Z  WARN [review,,] 1 --- [review] [http-nio-8083-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'companyId' for method parameter type Long is not present]
+2026-04-10T04:49:49.516Z  INFO [review,,] 1 --- [review] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-10T04:49:59.853Z  INFO [review,,] 1 --- [review] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application REVIEW with eureka with status DOWN
+2026-04-10T04:49:59.858Z  INFO [review,,] 1 --- [review] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1775796599858, current=DOWN, previous=UP]
+2026-04-10T04:49:59.879Z  INFO [review,,] 1 --- [review] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_REVIEW/bfca95255d4f:review:8083: registering service...
+2026-04-10T04:49:59.938Z  INFO [review,,] 1 --- [review] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-10T04:49:59.965Z  INFO [review,,] 1 --- [review] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_REVIEW/bfca95255d4f:review:8083 - registration status: 204
+2026-04-10T04:49:59.971Z  INFO [review,,] 1 --- [review] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-04-10T04:50:00.052Z  INFO [review,,] 1 --- [review] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-10T04:50:00.090Z  INFO [review,,] 1 --- [review] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-10T04:50:00.101Z  INFO [review,,] 1 --- [review] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-10T04:50:00.106Z  INFO [review,,] 1 --- [review] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...

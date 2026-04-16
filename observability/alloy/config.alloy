@@ -1,0 +1,17 @@
+// Read log files from /logs folder
+loki.source.file "logs" {
+  targets = [
+    { __path__ = "/logs/company.log", job = "company" },
+    { __path__ = "/logs/job.log", job = "job" },
+    { __path__ = "/logs/review.log", job = "review" },
+    { __path__ = "/logs/gateway.log", job = "gateway" },
+  ]
+  forward_to = [loki.write.lokiwrite.receiver]
+}
+
+// Write logs to Loki
+loki.write "lokiwrite" {
+  endpoint {
+    url = "http://loki:3100/loki/api/v1/push"
+  }
+}

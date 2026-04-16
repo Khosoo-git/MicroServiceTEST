@@ -1,0 +1,17 @@
+{"properties": [
+  {
+    "name": "job-service.url",
+    "type": "java.lang.String",
+    "description": "A description for 'job-service.url'"
+  },
+  {
+    "name": "company-service.url",
+    "type": "java.lang.String",
+    "description": "A description for 'company-service.url'"
+  },
+  {
+    "name": "review-service.url",
+    "type": "java.lang.String",
+    "description": "A description for 'review-service.url'"
+  }
+]}

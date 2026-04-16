@@ -1,0 +1,33 @@
+2026-04-12T06:42:44.100Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-12T06:47:44.113Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-12T06:52:44.113Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-12T06:57:42.092Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-12T07:02:42.079Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-12T07:07:42.064Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-12T07:12:42.020Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-12T07:17:42.005Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-12T07:22:41.990Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-12T07:27:41.975Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-12T07:32:41.959Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-12T07:37:41.942Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-12T07:42:41.927Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-12T07:47:41.960Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-12T07:52:41.962Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-12T07:57:41.949Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-12T08:02:41.934Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-12T08:07:41.919Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-12T08:12:41.907Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-12T08:17:41.894Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-12T08:22:41.885Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-12T08:27:42.060Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-12T08:32:42.052Z  INFO [company,,] 1 --- [company] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-12T08:35:48.775Z  INFO [company,,] 1 --- [company] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application COMPANY with eureka with status DOWN
+2026-04-12T08:35:48.814Z  INFO [company,,] 1 --- [company] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1775982948814, current=DOWN, previous=UP]
+2026-04-12T08:35:48.820Z  INFO [company,,] 1 --- [company] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_COMPANY/c73936827074:company:8081: registering service...
+2026-04-12T08:35:49.101Z  INFO [company,,] 1 --- [company] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-12T08:35:49.149Z  INFO [company,,] 1 --- [company] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-04-12T08:35:49.336Z  INFO [company,,] 1 --- [company] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_COMPANY/c73936827074:company:8081 - registration status: 204
+2026-04-12T08:35:49.361Z  INFO [company,,] 1 --- [company] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-12T08:35:49.499Z  INFO [company,,] 1 --- [company] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-12T08:35:49.569Z  INFO [company,,] 1 --- [company] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-12T08:35:49.589Z  INFO [company,,] 1 --- [company] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
