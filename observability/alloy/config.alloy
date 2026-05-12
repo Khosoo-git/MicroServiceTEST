@@ -1,10 +1,37 @@
-// Read log files from /logs folder
-loki.source.file "logs" {
+// ======================================
+// LOGS - Collect from /logs folder
+// ======================================
+loki.source.file "company_logs" {
   targets = [
     { __path__ = "/logs/company.log", job = "company" },
+  ]
+  forward_to = [loki.write.lokiwrite.receiver]
+}
+
+loki.source.file "job_logs" {
+  targets = [
     { __path__ = "/logs/job.log", job = "job" },
+  ]
+  forward_to = [loki.write.lokiwrite.receiver]
+}
+
+loki.source.file "review_logs" {
+  targets = [
     { __path__ = "/logs/review.log", job = "review" },
+  ]
+  forward_to = [loki.write.lokiwrite.receiver]
+}
+
+loki.source.file "gateway_logs" {
+  targets = [
     { __path__ = "/logs/gateway.log", job = "gateway" },
+  ]
+  forward_to = [loki.write.lokiwrite.receiver]
+}
+
+loki.source.file "app_logs" {
+  targets = [
+    { __path__ = "/logs/app.log", job = "app" },
   ]
   forward_to = [loki.write.lokiwrite.receiver]
 }
@@ -13,5 +40,71 @@ loki.source.file "logs" {
 loki.write "lokiwrite" {
   endpoint {
     url = "http://loki:3100/loki/api/v1/push"
+    tenant_id = "fake"
+  }
+}
+
+// ======================================
+// METRICS - Receive from OTLP exporters
+// ======================================
+otelcol.receiver.otlp "otlp_metrics" {
+  http {
+    endpoint = "0.0.0.0:4318"
+  }
+  grpc {
+    endpoint = "0.0.0.0:4317"
+  }
+  output {
+    metrics = [otelcol.processor.batch.batch_metrics.input]
+  }
+}
+
+otelcol.processor.batch "batch_metrics" {
+  send_batch_size = 1024
+  timeout = "1s"
+  output {
+    metrics = [otelcol.exporter.prometheus.default.input]
+  }
+}
+
+otelcol.exporter.prometheus "default" {
+  forward_to = [prometheus.remote_write.prometheus.receiver]
+}
+
+prometheus.remote_write "prometheus" {
+  endpoint {
+    url = "http://prometheus:9090/api/v1/write"
+  }
+}
+
+// ======================================
+// TRACES - Receive from OTLP exporters
+// ======================================
+otelcol.receiver.otlp "otlp_traces" {
+  http {
+    endpoint = "0.0.0.0:4319"
+  }
+  grpc {
+    endpoint = "0.0.0.0:4320"
+  }
+  output {
+    traces = [otelcol.processor.batch.batch_traces.input]
+  }
+}
+
+otelcol.processor.batch "batch_traces" {
+  send_batch_size = 1024
+  timeout = "1s"
+  output {
+    traces = [otelcol.exporter.otlp.tempo.input]
+  }
+}
+
+otelcol.exporter.otlp "tempo" {
+  client {
+    endpoint = "tempo:4317"
+    tls {
+      insecure = true
+    }
   }
 }

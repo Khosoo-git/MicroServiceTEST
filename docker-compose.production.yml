@@ -1,0 +1,209 @@
+version: '3.8'
+
+services:
+  # ======================
+  # NGINX REVERSE PROXY
+  # ======================
+  nginx:
+    image: nginx:alpine
+    container_name: nginx-proxy
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/.htpasswd:/etc/nginx/.htpasswd:ro
+      - ./nginx/ssl:/etc/nginx/ssl:ro
+      - ./nginx/logs:/var/log/nginx
+    depends_on:
+      - observability-dashboard-ui
+      - service-registry-api
+      - prometheus
+      - loki
+      - tempo
+      - grafana
+    networks:
+      - proxy-network
+      - microservice-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "nginx", "-t"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # ======================
+  # SERVICE REGISTRY API
+  # ======================
+  service-registry-api:
+    build:
+      context: .
+      dockerfile: services/service-registry-api/Dockerfile
+    container_name: service-registry-api
+    expose:
+      - "8085"
+    depends_on:
+      - postgres
+    networks:
+      - microservice-network
+      - postgres
+    volumes:
+      - ./observability:/observability:rw
+      - ./logs:/logs:rw
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/observability
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=1234
+      - OBSERVABILITY_CONFIG_DIR=/observability
+      - LOGS_DIR=/logs
+      - AUTH_ENABLED=false
+    restart: unless-stopped
+
+  # ======================
+  # OBSERVABILITY DASHBOARD UI
+  # ======================
+  observability-dashboard-ui:
+    build:
+      context: ./observability-dashboard-ui
+      dockerfile: Dockerfile
+    container_name: observability-dashboard-ui
+    expose:
+      - "3000"
+    networks:
+      - microservice-network
+    environment:
+      - NEXT_PUBLIC_API_URL=http://service-registry-api:8085
+      - NEXT_PUBLIC_PROXY_URL=https://monitoring.local
+    restart: unless-stopped
+
+  # ======================
+  # PROMETHEUS - Metrics
+  # ======================
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    expose:
+      - "9090"
+    volumes:
+      - ./observability/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus_data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.enable-lifecycle'
+      - '--web.enable-admin-api'
+    networks:
+      - microservice-network
+    restart: unless-stopped
+
+  # ======================
+  # ALERTMANAGER
+  # ======================
+  alertmanager:
+    image: prom/alertmanager:latest
+    container_name: alertmanager
+    expose:
+      - "9093"
+    volumes:
+      - ./observability/alertmanager/alertmanager.yml:/etc/alertmanager/alertmanager.yml
+      - alertmanager_data:/alertmanager
+    command:
+      - '--config.file=/etc/alertmanager/alertmanager.yml'
+      - '--storage.path=/alertmanager'
+    networks:
+      - microservice-network
+    restart: unless-stopped
+
+  # ======================
+  # LOKI - Logs
+  # ======================
+  loki:
+    image: grafana/loki:latest
+    container_name: loki
+    expose:
+      - "3100"
+    volumes:
+      - ./observability/loki/loki-config.yaml:/etc/loki/local-config.yaml
+      - loki_data:/loki
+    command: -config.file=/etc/loki/local-config.yaml
+    networks:
+      - microservice-network
+    restart: unless-stopped
+
+  # ======================
+  # TEMPO - Traces
+  # ======================
+  tempo:
+    image: grafana/tempo:latest
+    container_name: tempo
+    expose:
+      - "3200"
+      - "4317"
+      - "4318"
+    volumes:
+      - ./observability/tempo/tempo-config.yaml:/etc/tempo/tempo-config.yaml
+      - tempo_data:/var/tempo
+    command: -config.file=/etc/tempo/tempo-config.yaml
+    networks:
+      - microservice-network
+    restart: unless-stopped
+
+  # ======================
+  # GRAFANA
+  # ======================
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    expose:
+      - "3000"
+    volumes:
+      - ./observability/grafana/provisioning:/etc/grafana/provisioning
+      - ./observability/grafana/dashboards:/var/lib/grafana/dashboards
+      - grafana_data:/var/lib/grafana
+    depends_on:
+      - prometheus
+      - loki
+      - tempo
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_SERVER_ROOT_URL=https://monitoring.local/grafana/
+      - GF_AUTH_PROXY_ENABLED=true
+    networks:
+      - microservice-network
+    restart: unless-stopped
+
+  # ======================
+  # POSTGRESQL
+  # ======================
+  postgres:
+    image: postgres:15-alpine
+    container_name: postgres
+    expose:
+      - "5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: observability
+      PGDATA: /data/postgres
+    volumes:
+      - postgres:/data/postgres
+    networks:
+      - postgres
+    restart: unless-stopped
+
+networks:
+  proxy-network:
+    driver: bridge
+  microservice-network:
+    driver: bridge
+  postgres:
+    driver: bridge
+
+volumes:
+  prometheus_data:
+  loki_data:
+  tempo_data:
+  grafana_data:
+  postgres:
+  alertmanager_data:

@@ -78,12 +78,16 @@ services:
       - microservice-network
     restart: unless-stopped
 
-  # Grafana Alloy - Log collector (reads from /logs folder)
+  # Grafana Alloy - Unified telemetry collector (logs, metrics, traces)
   alloy:
     image: grafana/alloy:latest
     container_name: alloy
     ports:
-      - "1234:1234"
+      - "1234:1234"   # Alloy UI
+      - "4317:4317"   # OTLP gRPC (metrics)
+      - "4318:4318"   # OTLP HTTP (metrics)
+      - "4319:4319"   # OTLP HTTP (traces)
+      - "4320:4320"   # OTLP gRPC (traces)
     volumes:
       - ./observability/alloy/config.alloy:/etc/alloy/config.alloy
       - ./logs:/logs:ro
@@ -174,8 +178,9 @@ services:
     environment:
       - SPRING_PROFILES_ACTIVE=docker
       - JAVA_TOOL_OPTIONS=-javaagent:/opentelemetry-javaagent.jar -Dlogging.file.name=/logs/company.log
-      - OTEL_EXPORTER_OTLP_ENDPOINT=http://tempo:4318
-      - OTEL_EXPORTER_OTLP_TRACES_ENDPOINT=http://tempo:4318/v1/traces
+      - OTEL_EXPORTER_OTLP_ENDPOINT=http://alloy:4318
+      - OTEL_EXPORTER_OTLP_TRACES_ENDPOINT=http://alloy:4319/v1/traces
+      - OTEL_EXPORTER_OTLP_METRICS_ENDPOINT=http://alloy:4318/v1/metrics
       - OTEL_SERVICE_NAME=company
       - OTEL_RESOURCE_ATTRIBUTES=service.name=company
 
@@ -199,8 +204,9 @@ services:
       - SPRING_PROFILES_ACTIVE=docker
       - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://servicereg:8761/eureka
       - JAVA_TOOL_OPTIONS=-javaagent:/opentelemetry-javaagent.jar -Dlogging.file.name=/logs/job.log
-      - OTEL_EXPORTER_OTLP_ENDPOINT=http://tempo:4318
-      - OTEL_EXPORTER_OTLP_TRACES_ENDPOINT=http://tempo:4318/v1/traces
+      - OTEL_EXPORTER_OTLP_ENDPOINT=http://alloy:4318
+      - OTEL_EXPORTER_OTLP_TRACES_ENDPOINT=http://alloy:4319/v1/traces
+      - OTEL_EXPORTER_OTLP_METRICS_ENDPOINT=http://alloy:4318/v1/metrics
       - OTEL_SERVICE_NAME=job
       - OTEL_RESOURCE_ATTRIBUTES=service.name=job
 
@@ -223,8 +229,9 @@ services:
     environment:
       - SPRING_PROFILES_ACTIVE=docker
       - JAVA_TOOL_OPTIONS=-javaagent:/opentelemetry-javaagent.jar -Dlogging.file.name=/logs/review.log
-      - OTEL_EXPORTER_OTLP_ENDPOINT=http://tempo:4318
-      - OTEL_EXPORTER_OTLP_TRACES_ENDPOINT=http://tempo:4318/v1/traces
+      - OTEL_EXPORTER_OTLP_ENDPOINT=http://alloy:4318
+      - OTEL_EXPORTER_OTLP_TRACES_ENDPOINT=http://alloy:4319/v1/traces
+      - OTEL_EXPORTER_OTLP_METRICS_ENDPOINT=http://alloy:4318/v1/metrics
       - OTEL_SERVICE_NAME=review
       - OTEL_RESOURCE_ATTRIBUTES=service.name=review
 
@@ -245,8 +252,9 @@ services:
     environment:
       - SPRING_PROFILES_ACTIVE=docker
       - JAVA_TOOL_OPTIONS=-javaagent:/opentelemetry-javaagent.jar -Dlogging.file.name=/logs/gateway.log
-      - OTEL_EXPORTER_OTLP_ENDPOINT=http://tempo:4318
-      - OTEL_EXPORTER_OTLP_TRACES_ENDPOINT=http://tempo:4318/v1/traces
+      - OTEL_EXPORTER_OTLP_ENDPOINT=http://alloy:4318
+      - OTEL_EXPORTER_OTLP_TRACES_ENDPOINT=http://alloy:4319/v1/traces
+      - OTEL_EXPORTER_OTLP_METRICS_ENDPOINT=http://alloy:4318/v1/metrics
       - OTEL_SERVICE_NAME=gateway
       - OTEL_RESOURCE_ATTRIBUTES=service.name=gateway
 

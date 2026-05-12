@@ -1,0 +1,116 @@
+groups:
+  - name: service_health
+    interval: 5s
+    rules:
+      # Service Down Alert
+      - alert: ServiceDown
+        expr: up{job=~"company|job|review|gateway|user-services"} == 0
+        for: 30s
+        labels:
+          severity: critical
+          service: "{{ $labels.job }}"
+        annotations:
+          summary: "Service {{ $labels.job }} is DOWN"
+          description: "Service {{ $labels.job }} (instance: {{ $labels.instance }}) has been down for more than 30 seconds"
+          runbook_url: "http://localhost:3001/alerts"
+
+      # High Error Rate Alert
+      - alert: HighErrorRate
+        expr: |
+          sum(rate(http_server_requests_seconds_count{status=~"5.."}[1m]))
+          /
+          sum(rate(http_server_requests_seconds_count[1m]))
+          > 0.05
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "High error rate detected"
+          description: "Error rate is {{ $value | humanizePercentage }} (threshold: 5%)"
+          runbook_url: "http://localhost:3001/alerts"
+
+      # Service Response Time Alert
+      - alert: HighResponseTime
+        expr: |
+          histogram_quantile(0.95,
+            sum(rate(http_server_requests_seconds_bucket[5m])) by (le, job)
+          ) > 2
+        for: 5m
+        labels:
+          severity: warning
+          service: "{{ $labels.job }}"
+        annotations:
+          summary: "High response time for {{ $labels.job }}"
+          description: "95th percentile response time is {{ $value | humanizeDuration }} (threshold: 2s)"
+          runbook_url: "http://localhost:3001/alerts"
+
+      # JVM Memory High Alert
+      - alert: JVMMemoryHigh
+        expr: |
+          jvm_memory_used_bytes{area="heap"}
+          /
+          jvm_memory_max_bytes{area="heap"}
+          > 0.85
+        for: 5m
+        labels:
+          severity: warning
+          service: "{{ $labels.job }}"
+        annotations:
+          summary: "JVM memory usage high for {{ $labels.job }}"
+          description: "JVM heap memory usage is {{ $value | humanizePercentage }} (threshold: 85%)"
+          runbook_url: "http://localhost:3001/alerts"
+
+      # Database Connection Pool Exhausted
+      - alert: DatabaseConnectionPoolExhausted
+        expr: |
+          hikaricp_active_connections
+          /
+          hikaricp_max_connections
+          > 0.9
+        for: 5m
+        labels:
+          severity: critical
+          service: "{{ $labels.job }}"
+        annotations:
+          summary: "Database connection pool nearly exhausted for {{ $labels.job }}"
+          description: "Connection pool usage is {{ $value | humanizePercentage }} (threshold: 90%)"
+          runbook_url: "http://localhost:3001/alerts"
+
+      # Log Error Spike Alert
+      - alert: LogErrorSpike
+        expr: |
+          sum(rate(loki_logs_total{level="ERROR"}[5m])) > 10
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High rate of error logs detected"
+          description: "Error log rate is {{ $value }} errors/sec (threshold: 10)"
+          runbook_url: "http://localhost:3001/alerts"
+
+      # Disk Space Low (for log storage)
+      - alert: DiskSpaceLow
+        expr: |
+          (node_filesystem_avail_bytes{mountpoint="/logs"}
+          /
+          node_filesystem_size_bytes{mountpoint="/logs"})
+          < 0.1
+        for: 10m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Disk space low on log storage"
+          description: "Available disk space is {{ $value | humanizePercentage }} (threshold: 10%)"
+          runbook_url: "http://localhost:3001/alerts"
+
+      # Prometheus Target Down
+      - alert: PrometheusTargetDown
+        expr: |
+          count(up == 0) > 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "{{ $value }} Prometheus target(s) are down"
+          description: "One or more monitored services are not responding"
+          runbook_url: "http://localhost:3001/alerts"

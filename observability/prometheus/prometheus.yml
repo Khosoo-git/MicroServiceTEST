@@ -1,23 +1,61 @@
 global:
   scrape_interval: 5s
+  evaluation_interval: 5s
+
+# Alertmanager configuration
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+            - alertmanager:9093
+
+# Alert rules
+rule_files:
+  - "/etc/prometheus/rules/*.yml"
 
 scrape_configs:
-  - job_name: "spring-services"
+  # Built-in microservices
+  - job_name: "company"
     metrics_path: "/actuator/prometheus"
     static_configs:
-      - targets:
-          - companyms:8081
-          - jobms:8082
-          - reviewms:8083
-          - gateway-ms:8084
-  - job_name: "python-stress-test"
+      - targets: ["company:8081"]
+
+  - job_name: "job"
+    metrics_path: "/actuator/prometheus"
     static_configs:
-      - targets: ["host.docker.internal:8000"]
-  - job_name: "observability-infra"
+      - targets: ["job:8082"]
+
+  - job_name: "review"
+    metrics_path: "/actuator/prometheus"
     static_configs:
-      - targets:
-          - loki:3100
-          - tempo:3200
+      - targets: ["review:8083"]
+
+  - job_name: "gateway"
+    metrics_path: "/actuator/prometheus"
+    static_configs:
+      - targets: ["gateway:8084"]
+
+  # User-registered services (dynamically updated by Service Registry API)
+  - job_name: "user-services"
+    metrics_path: "/actuator/prometheus"
+    file_sd_configs:
+      - files:
+          - "/etc/prometheus/user-services.yml"
+        refresh_interval: 5s
+
+  # Observability infrastructure
+  - job_name: "prometheus"
+    static_configs:
+      - targets: ["localhost:9090"]
+
+  - job_name: "loki"
+    static_configs:
+      - targets: ["loki:3100"]
+
+  - job_name: "tempo"
+    static_configs:
+      - targets: ["tempo:3200"]
+
   - job_name: "alloy"
     static_configs:
       - targets: ["alloy:1234"]

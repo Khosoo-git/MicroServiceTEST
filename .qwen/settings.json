@@ -1,0 +1,39 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl *)",
+      "Bash(python3 *)",
+      "Bash(docker logs *)",
+      "Bash(docker network *)",
+      "Bash(sleep *)",
+      "Bash(docker compose *)",
+      "Bash(docker ps *)",
+      "Bash(mvn *)",
+      "Bash(docker-compose *)",
+      "Bash(./test.sh)",
+      "Bash(cut *)",
+      "Bash(find *)",
+      "Bash(ls *)",
+      "Bash(chmod *)",
+      "Bash(mkdir *)",
+      "Bash(npm install)",
+      "Bash(npm run *)",
+      "Bash(rm *)",
+      "Bash(./start.sh)",
+      "Bash(docker run *)",
+      "Bash(docker rm *)",
+      "Bash(./set-services-healthy.sh)",
+      "Bash(./register-demo-services.sh)",
+      "Bash(docker exec *)",
+      "Bash(nc *)",
+      "Bash(psql *)",
+      "Bash(lsof *)",
+      "Bash(docker volume *)",
+      "Bash(docker images)",
+      "Bash(bash *)",
+      "Bash(do *)",
+      "Bash(done)"
+    ]
+  },
+  "$version": 4
+}

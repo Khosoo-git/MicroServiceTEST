@@ -7,15 +7,16 @@
     <groupId>com.docmicroserv</groupId>
     <artifactId>microservice-ecosystem</artifactId>
     <version>1.0.0</version>
-    
-    <packaging>pom</packaging> 
+
+    <packaging>pom</packaging>
 
     <modules>
-        <module>companyMS</module>
-        <module>jobMS</module>
-        <module>reviewMS</module>
-        <module>gateway</module>
-        <module>configserver</module>
-        <module>server</module>
+        <module>services/company</module>
+        <module>services/job</module>
+        <module>services/review</module>
+        <module>services/gateway</module>
+        <module>services/config-server</module>
+        <module>services/server</module>
+        <module>services/service-registry-api</module>
     </modules>
 </project>

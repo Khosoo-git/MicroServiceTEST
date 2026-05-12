@@ -4,7 +4,7 @@ WORKDIR /workspace
 COPY pom.xml .
 COPY src ./src
 
-RUN mvn -DskipTests package
+RUN mvn clean package -Dmaven.test.skip=true
 
 FROM eclipse-temurin:17-jre
 WORKDIR /app

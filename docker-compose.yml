@@ -1,0 +1,411 @@
+services:
+  # ======================
+  # SERVICE REGISTRY API
+  # ======================
+  service-registry-api:
+    build:
+      context: .
+      dockerfile: services/service-registry-api/Dockerfile
+    container_name: service-registry-api
+    ports:
+      - "8085:8085"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/observability
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=1234
+      - AUTH_ENABLED=false
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://servicereg:8761/eureka/
+    depends_on:
+      - postgres
+    networks:
+      - microservice-network
+      - postgres
+      - observability
+    restart: unless-stopped
+
+  # ======================
+  # EUREKA SERVER
+  # ======================
+  servicereg:
+    image: xoco0508/servicereg:latest
+    container_name: servicereg
+    ports:
+      - "8761:8761"
+    networks:
+      - microservice-network
+      - postgres
+    restart: unless-stopped
+
+  # ======================
+  # CONFIG SERVER
+  # ======================
+  config-server-ms:
+    image: xoco0508/config-server-ms:latest
+    container_name: config-server-ms
+    ports:
+      - "8080:8080"
+    depends_on:
+      - servicereg
+    networks:
+      - microservice-network
+      - postgres
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+
+  # ======================
+  # COMPANY SERVICE
+  # ======================
+  companyms:
+    build:
+      context: ./services/company
+      dockerfile: Dockerfile
+    container_name: company
+    ports:
+      - "8081:8081"
+    depends_on:
+      - servicereg
+      - config-server-ms
+    networks:
+      - microservice-network
+      - postgres
+    volumes:
+      - ./logs:/logs
+      - ./observability/opentelemetry/opentelemetry-javaagent.jar:/opentelemetry-javaagent.jar:ro
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/company
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=1234
+      - LOGGING_FILE_NAME=/logs/company.log
+      - JAVA_TOOL_OPTIONS=-javaagent:/opentelemetry-javaagent.jar -Dlogging.file.name=/logs/company.log
+      - OTEL_EXPORTER_OTLP_ENDPOINT=http://alloy:4318
+      - OTEL_EXPORTER_OTLP_TRACES_ENDPOINT=http://alloy:4319/v1/traces
+      - OTEL_EXPORTER_OTLP_METRICS_ENDPOINT=http://alloy:4318/v1/metrics
+      - OTEL_SERVICE_NAME=company
+      - OTEL_RESOURCE_ATTRIBUTES=service.name=company
+
+  # ======================
+  # JOB SERVICE
+  # ======================
+  jobms:
+    build:
+      context: ./services/job
+      dockerfile: Dockerfile
+    container_name: job
+    ports:
+      - "8082:8082"
+    depends_on:
+      - servicereg
+      - config-server-ms
+    networks:
+      - microservice-network
+      - postgres
+    volumes:
+      - ./logs:/logs
+      - ./observability/opentelemetry/opentelemetry-javaagent.jar:/opentelemetry-javaagent.jar:ro
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/job
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=1234
+      - LOGGING_FILE_NAME=/logs/job.log
+      - JAVA_TOOL_OPTIONS=-javaagent:/opentelemetry-javaagent.jar -Dlogging.file.name=/logs/job.log
+      - OTEL_EXPORTER_OTLP_ENDPOINT=http://alloy:4318
+      - OTEL_EXPORTER_OTLP_TRACES_ENDPOINT=http://alloy:4319/v1/traces
+      - OTEL_EXPORTER_OTLP_METRICS_ENDPOINT=http://alloy:4318/v1/metrics
+      - OTEL_SERVICE_NAME=job
+      - OTEL_RESOURCE_ATTRIBUTES=service.name=job
+
+  # ======================
+  # REVIEW SERVICE
+  # ======================
+  reviewms:
+    build:
+      context: ./services/review
+      dockerfile: Dockerfile
+    container_name: review
+    ports:
+      - "8083:8083"
+    depends_on:
+      - servicereg
+      - config-server-ms
+    networks:
+      - microservice-network
+      - postgres
+    volumes:
+      - ./logs:/logs
+      - ./observability/opentelemetry/opentelemetry-javaagent.jar:/opentelemetry-javaagent.jar:ro
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/review
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=1234
+      - LOGGING_FILE_NAME=/logs/review.log
+      - JAVA_TOOL_OPTIONS=-javaagent:/opentelemetry-javaagent.jar -Dlogging.file.name=/logs/review.log
+      - OTEL_EXPORTER_OTLP_ENDPOINT=http://alloy:4318
+      - OTEL_EXPORTER_OTLP_TRACES_ENDPOINT=http://alloy:4319/v1/traces
+      - OTEL_EXPORTER_OTLP_METRICS_ENDPOINT=http://alloy:4318/v1/metrics
+      - OTEL_SERVICE_NAME=review
+      - OTEL_RESOURCE_ATTRIBUTES=service.name=review
+
+  # ======================
+  # GATEWAY SERVICE
+  # ======================
+  gateway-ms:
+    build:
+      context: ./services/gateway
+      dockerfile: Dockerfile
+    container_name: gateway
+    ports:
+      - "8084:8084"
+    depends_on:
+      - servicereg
+    networks:
+      - microservice-network
+      - postgres
+    volumes:
+      - ./logs:/logs
+      - ./observability/opentelemetry/opentelemetry-javaagent.jar:/opentelemetry-javaagent.jar:ro
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/gateway
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=1234
+      - LOGGING_FILE_NAME=/logs/gateway.log
+      - JAVA_TOOL_OPTIONS=-javaagent:/opentelemetry-javaagent.jar -Dlogging.file.name=/logs/gateway.log
+      - OTEL_EXPORTER_OTLP_ENDPOINT=http://alloy:4318
+      - OTEL_EXPORTER_OTLP_TRACES_ENDPOINT=http://alloy:4319/v1/traces
+      - OTEL_EXPORTER_OTLP_METRICS_ENDPOINT=http://alloy:4318/v1/metrics
+      - OTEL_SERVICE_NAME=gateway
+      - OTEL_RESOURCE_ATTRIBUTES=service.name=gateway
+
+  # ======================
+  # POSTGRESQL
+  # ======================
+  postgres:
+    image: postgres:15-alpine
+    container_name: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: observability
+      PGDATA: /data/postgres
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      - postgres:/data/postgres
+    networks:
+      - postgres
+    restart: unless-stopped
+
+  # ======================
+  # PGADMIN
+  # ======================
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin_container
+    ports:
+      - "5050:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-pgadmin4@pgadmin.org}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-admin}
+      PGADMIN_CONFIG_SERVER_MODE: "False"
+    networks:
+      - postgres
+    restart: unless-stopped
+
+  # ======================
+  # PROMETHEUS
+  # ======================
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./observability/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./observability/prometheus/rules:/etc/prometheus/rules
+      - prometheus-data:/prometheus
+      - prometheus_data:/prometheus
+    command:
+      - "--config.file=/etc/prometheus/prometheus.yml"
+      - "--storage.tsdb.path=/prometheus"
+      - "--web.console.libraries=/etc/prometheus/console_libraries"
+      - "--web.console.templates=/etc/prometheus/consoles"
+      - "--web.enable-lifecycle"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    networks:
+      - observability
+      - microservice-network
+    restart: unless-stopped
+
+  # ======================
+  # LOKI
+  # ======================
+  loki:
+    image: grafana/loki:latest
+    container_name: loki
+    ports:
+      - "3100:3100"
+    volumes:
+      - ./observability/loki/loki-config.yaml:/etc/loki/local-config.yaml
+      - loki-data:/loki
+      - loki_data:/loki
+    command: -config.file=/etc/loki/local-config.yaml
+    networks:
+      - observability
+    restart: unless-stopped
+
+  # ======================
+  # TEMPO
+  # ======================
+  tempo:
+    image: grafana/tempo:latest
+    container_name: tempo
+    ports:
+      - "3200:3200"
+      - "4317:4317"
+      - "4318:4318"
+    volumes:
+      - ./observability/tempo/tempo-config.yaml:/etc/tempo/tempo-config.yaml
+      - tempo-data:/var/tempo
+      - tempo_data:/var/tempo
+    command: -config.file=/etc/tempo/tempo-config.yaml
+    networks:
+      - observability
+      - microservice-network
+    restart: unless-stopped
+
+  # ======================
+  # GRAFANA
+  # ======================
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    environment:
+      GF_SECURITY_ADMIN_USER: admin
+      GF_SECURITY_ADMIN_PASSWORD: admin
+    volumes:
+      - ./observability/grafana/provisioning:/etc/grafana/provisioning
+      - ./observability/grafana/dashboards:/var/lib/grafana/dashboards
+      - grafana-data:/var/lib/grafana
+      - grafana_data:/var/lib/grafana
+    depends_on:
+      - prometheus
+      - loki
+      - tempo
+    networks:
+      - observability
+      - microservice-network
+    restart: unless-stopped
+
+  # ======================
+  # ALLOY - Unified Telemetry Collector
+  # ======================
+  alloy:
+    image: grafana/alloy:latest
+    container_name: alloy
+    ports:
+      - "1234:1234"
+    volumes:
+      - ./observability/alloy/config.alloy:/etc/alloy/config.alloy
+      - ./logs:/logs:ro
+    command: run --server.http.listen-addr=0.0.0.0:1234 --storage.path=/var/lib/alloy /etc/alloy/config.alloy
+    networks:
+      - observability
+      - microservice-network
+    restart: unless-stopped
+
+  # ======================
+  # NGINX REVERSE PROXY
+  # ======================
+  nginx:
+    image: nginx:alpine
+    container_name: nginx-proxy
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/.htpasswd:/etc/nginx/.htpasswd:ro
+      - ./nginx/ssl:/etc/nginx/ssl:ro
+      - ./nginx/logs:/var/log/nginx
+    depends_on:
+      - dashboard-ui
+      - service-registry-api
+      - prometheus
+      - loki
+      - tempo
+      - grafana
+    networks:
+      - proxy-network
+      - microservice-network
+      - observability
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "nginx", "-t"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # ======================
+  # ALERTMANAGER
+  # ======================
+  alertmanager:
+    image: prom/alertmanager:latest
+    container_name: alertmanager
+    ports:
+      - "9093:9093"
+    volumes:
+      - ./observability/alertmanager/alertmanager.yml:/etc/alertmanager/alertmanager.yml
+      - alertmanager_data:/alertmanager
+    command:
+      - "--config.file=/etc/alertmanager/alertmanager.yml"
+      - "--storage.path=/alertmanager"
+    networks:
+      - observability
+      - microservice-network
+    restart: unless-stopped
+
+  # ======================
+  # DASHBOARD UI
+  # ======================
+  dashboard-ui:
+    build:
+      context: ./observability-dashboard-ui
+      dockerfile: Dockerfile
+    container_name: dashboard-ui
+    ports:
+      - "3002:3000"
+    networks:
+      - microservice-network
+    environment:
+      - NEXT_PUBLIC_API_URL=http://service-registry-api:8085
+    restart: unless-stopped
+
+networks:
+  proxy-network:
+    driver: bridge
+  observability:
+    driver: bridge
+  microservice-network:
+    driver: bridge
+  postgres:
+    driver: bridge
+
+volumes:
+  postgres-data:
+  postgres:
+  prometheus-data:
+  prometheus_data:
+  loki-data:
+  loki_data:
+  tempo-data:
+  tempo_data:
+  grafana-data:
+  grafana_data:
+  alertmanager_data:

@@ -4,13 +4,13 @@ WORKDIR /workspace
 COPY pom.xml .
 COPY src ./src
 
-RUN mvn -DskipTests package
+RUN mvn clean package -Dmaven.test.skip=true
 
 FROM eclipse-temurin:17-jre
 WORKDIR /app
 
 COPY --from=build /workspace/target/*.jar /app/app.jar
 
-EXPOSE 8084
+EXPOSE 8081
 
 ENTRYPOINT ["java", "-jar", "/app/app.jar"]
