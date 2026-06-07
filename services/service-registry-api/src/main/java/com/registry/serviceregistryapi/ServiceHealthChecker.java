@@ -2,143 +2,135 @@ package com.registry.serviceregistryapi;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.HttpHeaders;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
-
 import java.time.Duration;
 import java.time.LocalDateTime;
-import java.util.List;
-import java.util.concurrent.ConcurrentHashMap;
 
 @Service
 @RequiredArgsConstructor
 @Slf4j
 public class ServiceHealthChecker {
 
+    private static final String USER_AGENT =
+            "Mozilla/5.0 (compatible; MicroServiceTEST-Monitor/1.0; +health-check)";
+
     private final RegisteredServiceRepository repository;
     private final WebClient.Builder webClientBuilder;
+    private final MonitoringModeResolver monitoringModeResolver;
+    private final TargetUrlBuilder targetUrlBuilder;
 
-    // Cache for uptime tracking
-    private static final ConcurrentHashMap<Long, ServiceStats> serviceStats = new ConcurrentHashMap<>();
+    private static final java.util.concurrent.ConcurrentHashMap<Long, ServiceStats> serviceStats =
+            new java.util.concurrent.ConcurrentHashMap<>();
 
-    @Scheduled(fixedRate = 10000) // Check every 10 seconds
+    @Scheduled(fixedRate = 10000)
     public void checkAllServices() {
-        log.debug("Checking health of all registered services...");
-
-        List<RegisteredService> services = repository.findAll();
-
-        for (RegisteredService service : services) {
+        for (RegisteredService service : repository.findAll()) {
             checkServiceHealth(service);
         }
     }
 
-    private void checkServiceHealth(RegisteredService service) {
-        // Skip health check for services that don't have health endpoints
-        // Mark as HEALTHY by default (optimistic approach)
-        String baseUrl = "http://" + service.getHost() + ":" + service.getPort();
-        long startTime = System.currentTimeMillis();
-
-        // Try root endpoint first (most services have this)
+    /**
+     * One-off probe test (used by admin API before register).
+     */
+    public ProbeTestResult probeUrl(String url) {
+        long start = System.currentTimeMillis();
         try {
-            String response = webClientBuilder.build()
-                .get()
-                .uri(baseUrl + "/")
-                .retrieve()
-                .bodyToMono(String.class)
-                .block(Duration.ofSeconds(2));
+            Boolean ok = webClientBuilder.build()
+                    .get()
+                    .uri(url)
+                    .header(HttpHeaders.USER_AGENT, USER_AGENT)
+                    .exchangeToMono(response -> {
+                        int code = response.statusCode().value();
+                        boolean reachable = isReachableStatus(code, true);
+                        return response.releaseBody().thenReturn(reachable);
+                    })
+                    .block(Duration.ofSeconds(15));
 
-            long responseTime = System.currentTimeMillis() - startTime;
-            updateServiceStatus(service, "HEALTHY", responseTime, true);
-            log.info("✓ Service {} is HEALTHY ({}ms)", service.getServiceName(), responseTime);
-            return;
-
+            long ms = System.currentTimeMillis() - start;
+            return new ProbeTestResult(url, Boolean.TRUE.equals(ok), ms, null);
         } catch (Exception e) {
-            // Root endpoint failed, try actuator
-        }
-
-        // Try actuator health
-        try {
-            String response = webClientBuilder.build()
-                .get()
-                .uri(baseUrl + "/actuator/health")
-                .retrieve()
-                .bodyToMono(String.class)
-                .block(Duration.ofSeconds(2));
-
-            long responseTime = System.currentTimeMillis() - startTime;
-            updateServiceStatus(service, "HEALTHY", responseTime, true);
-            log.info("✓ Service {} is HEALTHY via /actuator/health ({}ms)", service.getServiceName(), responseTime);
-            return;
-
-        } catch (Exception e) {
-            // Both failed - mark as UNHEALTHY but don't update uptime (keep previous)
-            log.warn("⚠ Service {} health check failed - marking as UNHEALTHY", service.getServiceName());
-
-            // Just update status, don't reset uptime
-            service.setStatus("UNHEALTHY");
-            service.setLastChecked(LocalDateTime.now());
-            repository.save(service);
+            return new ProbeTestResult(url, false, System.currentTimeMillis() - start, e.getMessage());
         }
     }
 
-    private void updateServiceStatus(RegisteredService service, String status, long responseTime, boolean isHealthy) {
-        Long serviceId = service.getId();
+    private void checkServiceHealth(RegisteredService service) {
+        String url = targetUrlBuilder.buildHealthUrl(service);
+        boolean httpProbe = monitoringModeResolver.isHttpProbe(service);
+        long start = System.currentTimeMillis();
 
-        // Get or create stats
-        ServiceStats stats = serviceStats.computeIfAbsent(serviceId,
-            k -> new ServiceStats(serviceId));
+        try {
+            Boolean healthy = webClientBuilder.build()
+                    .get()
+                    .uri(url)
+                    .header(HttpHeaders.USER_AGENT, USER_AGENT)
+                    .exchangeToMono(response -> {
+                        int code = response.statusCode().value();
+                        boolean reachable = isReachableStatus(code, httpProbe);
+                        if (!reachable) {
+                            log.debug("Health check {} returned HTTP {}", service.getServiceName(), code);
+                        }
+                        return response.releaseBody().thenReturn(reachable);
+                    })
+                    .block(Duration.ofSeconds(httpProbe ? 15 : 8));
 
-        // Update stats
-        stats.lastCheck = LocalDateTime.now();
-        stats.lastResponseTime = responseTime;
-        stats.totalChecks++;
-
-        if (isHealthy) {
-            stats.successfulChecks++;
-            service.setStatus("HEALTHY");
-        } else {
-            service.setStatus("UNHEALTHY");
+            updateServiceStatus(service, Boolean.TRUE.equals(healthy), System.currentTimeMillis() - start);
+        } catch (Exception e) {
+            log.debug("Health check failed for {} ({}): {}", service.getServiceName(), url, e.getMessage());
+            if (monitoringModeResolver.isOtlpPush(service)) {
+                service.setStatus("UNKNOWN");
+                service.setLastChecked(LocalDateTime.now());
+                repository.save(service);
+            } else {
+                updateServiceStatus(service, false, System.currentTimeMillis() - start);
+            }
         }
+    }
 
-        // Calculate uptime percentage
-        double uptime = stats.totalChecks > 0
-            ? (stats.successfulChecks * 100.0 / stats.totalChecks)
-            : 0.0;
+    /**
+     * HTTP_PROBE: any response &lt; 500 means the host is reachable (403/401 still OK).
+     * Internal scrape: only 2xx counts as healthy.
+     */
+    private boolean isReachableStatus(int statusCode, boolean httpProbe) {
+        if (httpProbe) {
+            return statusCode > 0 && statusCode < 500;
+        }
+        return statusCode >= 200 && statusCode < 300;
+    }
 
-        service.setUptime(uptime);
-
-        // Save to database
+    private void updateServiceStatus(RegisteredService service, boolean healthy, long responseTime) {
+        ServiceStats stats = serviceStats.computeIfAbsent(service.getId(), k -> new ServiceStats(service.getId()));
+        stats.totalChecks++;
+        stats.lastResponseTime = responseTime;
+        if (healthy) {
+            stats.successfulChecks++;
+        }
+        service.setStatus(healthy ? "HEALTHY" : "UNHEALTHY");
+        service.setUptime(stats.totalChecks > 0
+                ? (stats.successfulChecks * 100.0 / stats.totalChecks) : 0.0);
+        service.setLastChecked(LocalDateTime.now());
         repository.save(service);
     }
 
-    // Get real-time stats for a service
     public ServiceStats getServiceStats(Long serviceId) {
         return serviceStats.get(serviceId);
     }
 
-    // Static class to hold service statistics
+    public record ProbeTestResult(String url, boolean reachable, long responseTimeMs, String error) {
+    }
+
     public static class ServiceStats {
         public Long serviceId;
-        public LocalDateTime lastCheck;
         public long lastResponseTime;
         public long totalChecks;
         public long successfulChecks;
-
         public ServiceStats(Long serviceId) {
             this.serviceId = serviceId;
-            this.lastCheck = LocalDateTime.now();
-            this.lastResponseTime = 0;
-            this.totalChecks = 0;
-            this.successfulChecks = 0;
         }
-
         public double getUptimePercentage() {
             return totalChecks > 0 ? (successfulChecks * 100.0 / totalChecks) : 0.0;
-        }
-
-        public double getAverageResponseTime() {
-            return lastResponseTime; // Simplified - would track all response times in production
         }
     }
 }

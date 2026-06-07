@@ -1,5 +1,9 @@
 # 📝 How to Register Your Service
 
+> **Telemetry pipeline:** When you register a service, the Service Registry API writes
+> `observability/alloy/dynamic/services.alloy` and reloads **Grafana Alloy**. Alloy collects
+> **metrics** (scrape → Prometheus remote write), **logs** (file → Loki), and **traces** (OTLP → Tempo).
+
 ## ❓ "I don't know the port and host"
 
 **Don't worry!** Here's how to figure it out:
@@ -154,10 +158,10 @@ After registering:
 1. **Check Registration:**
    - Dashboard shows your service in the list
 
-2. **Check Prometheus:**
+2. **Check Prometheus (via Alloy remote write):**
    - Go to http://localhost:9090
-   - Click "Status" → "Targets"
-   - Your service should appear
+   - Query: `up{job="your-service-name"}`
+   - Alloy UI: http://localhost:1234
 
 3. **Check Logs:**
    - Go to http://localhost:3100
@@ -195,6 +199,11 @@ That's OK! Just uncheck "Logs" when registering. You can still use Metrics and T
 - Node.js, Python, Go, etc.
 - Just provide the correct host and port
 - Use appropriate metrics/logs/tracing libraries for your language
+
+### "Can I monitor an external website (e.g. Netflix)?"
+
+**Yes.** Set **Service Type** to `external`, **Host** to `netflix.com`, **Port** to `443`.
+Alloy uses a blackbox HTTP probe (no metrics endpoint required).
 
 ### "Do I need to register the demo services (company, job, review, gateway)?"
 

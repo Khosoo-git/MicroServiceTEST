@@ -1,7 +1,7 @@
 'use client';
 
-import { useState } from 'react';
-import { X } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { X, Globe, Server, Radio } from 'lucide-react';
 
 interface RegisterServiceModalProps {
   isOpen: boolean;
@@ -9,16 +9,50 @@ interface RegisterServiceModalProps {
   onSubmit: (data: RegisterServiceData) => Promise<void>;
 }
 
-interface RegisterServiceData {
+export interface RegisterServiceData {
   serviceName: string;
   serviceType: string;
+  monitoringMode?: string;
+  targetUrl?: string;
+  scheme?: string;
   port: number;
   host: string;
   description: string;
   owner: string;
+  environment?: string;
+  metricsEndpoint?: string;
+  healthCheckEndpoint?: string;
   metricsEnabled: boolean;
   logsEnabled: boolean;
   tracingEnabled: boolean;
+}
+
+function ModeCard({
+  active,
+  icon,
+  title,
+  desc,
+  onClick,
+}: {
+  active: boolean;
+  icon: React.ReactNode;
+  title: string;
+  desc: string;
+  onClick: () => void;
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className={`p-3 rounded-xl border text-left w-full ${
+        active ? 'border-indigo-500 bg-indigo-50' : 'border-slate-200 hover:bg-slate-50'
+      }`}
+    >
+      <div className="text-indigo-600">{icon}</div>
+      <div className="font-medium text-sm text-slate-900 mt-2">{title}</div>
+      <div className="text-xs text-slate-500">{desc}</div>
+    </button>
+  );
 }
 
 export default function RegisterServiceModal({
@@ -29,21 +63,48 @@ export default function RegisterServiceModal({
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState<RegisterServiceData>({
     serviceName: '',
-    serviceType: 'web',
-    port: 8080,
+    serviceType: 'external',
+    monitoringMode: 'HTTP_PROBE',
+    targetUrl: '',
+    scheme: 'https',
+    port: 443,
     host: '',
     description: '',
     owner: '',
-    metricsEnabled: true,
-    logsEnabled: true,
-    tracingEnabled: true,
+    environment: 'production',
+    metricsEnabled: false,
+    logsEnabled: false,
+    tracingEnabled: false,
+    metricsEndpoint: '/actuator/prometheus',
+    healthCheckEndpoint: '/',
   });
+
+  const isHttpProbe =
+    formData.monitoringMode === 'HTTP_PROBE' || formData.serviceType === 'external';
+  const isOtlp = formData.monitoringMode === 'OTLP_PUSH';
+
+  useEffect(() => {
+    if (formData.serviceType === 'external') {
+      setFormData((prev) => ({
+        ...prev,
+        monitoringMode: 'HTTP_PROBE',
+        metricsEnabled: false,
+        logsEnabled: false,
+        tracingEnabled: false,
+        port: 443,
+        scheme: 'https',
+      }));
+    }
+  }, [formData.serviceType]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
     try {
-      await onSubmit(formData);
+      const payload: RegisterServiceData = { ...formData };
+      if (!payload.monitoringMode) delete payload.monitoringMode;
+      if (!payload.targetUrl?.trim()) delete payload.targetUrl;
+      await onSubmit(payload);
       onClose();
     } catch (error) {
       console.error('Failed to register service:', error);
@@ -56,231 +117,50 @@ export default function RegisterServiceModal({
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center">
-      {/* Backdrop */}
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
       <div
         className="absolute inset-0 bg-black/50 backdrop-blur-sm"
         onClick={onClose}
       />
-
-      {/* Modal */}
-      <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-2xl mx-4 animate-fade-in">
-        {/* Header */}
-        <div className="flex items-center justify-between p-6 border-b border-slate-200">
+      <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto">
+        <div className="flex items-center justify-between p-6 border-b sticky top-0 bg-white z-10">
           <div>
-            <h2 className="text-xl font-bold text-slate-900">
-              Register New Service
-            </h2>
-            <p className="text-sm text-slate-500 mt-1">
-              Add a new system to monitor
-            </p>
+            <h2 className="text-xl font-bold text-slate-900">Register Production System</h2>
+            <p className="text-sm text-slate-500 mt-1">Any URL, cloud API, or remote server</p>
           </div>
-          <button
-            onClick={onClose}
-            className="p-2 hover:bg-slate-100 rounded-lg transition-colors"
-          >
+          <button type="button" onClick={onClose} className="p-2 hover:bg-slate-100 rounded-lg">
             <X className="w-5 h-5 text-slate-500" />
           </button>
         </div>
-
-        {/* Form */}
-        <form onSubmit={handleSubmit} className="p-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-            {/* Service Name */}
-            <div className="md:col-span-2">
-              <label className="block text-sm font-medium text-slate-700 mb-1">
-                Service Name *
-              </label>
-              <input
-                type="text"
-                required
-                value={formData.serviceName}
-                onChange={(e) =>
-                  setFormData({ ...formData, serviceName: e.target.value })
-                }
-                placeholder="e.g., Production API, Netflix, AWS EC2"
-                className="input-modern"
-              />
-            </div>
-
-            {/* Service Type */}
+        <form onSubmit={handleSubmit} className="p-6 space-y-5">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+            <ModeCard active={isHttpProbe} icon={<Globe className="w-5 h-5" />} title="HTTP Probe" desc="Public URLs worldwide" onClick={() => setFormData({ ...formData, monitoringMode: 'HTTP_PROBE', serviceType: 'external', metricsEnabled: false, logsEnabled: false, tracingEnabled: false, port: 443 })} />
+            <ModeCard active={formData.monitoringMode === 'METRICS_SCRAPE' || (!isHttpProbe && !isOtlp)} icon={<Server className="w-5 h-5" />} title="Metrics" desc="Scrape /metrics endpoint" onClick={() => setFormData({ ...formData, monitoringMode: 'METRICS_SCRAPE', metricsEnabled: true, port: 8080, scheme: 'http' })} />
+            <ModeCard active={isOtlp} icon={<Radio className="w-5 h-5" />} title="OTLP" desc="Push to Alloy" onClick={() => setFormData({ ...formData, monitoringMode: 'OTLP_PUSH', metricsEnabled: false, tracingEnabled: true })} />
+          </div>
+          <div>
+            <label className="block text-sm font-medium text-slate-700 mb-1">Service Name *</label>
+            <input type="text" required value={formData.serviceName} onChange={(e) => setFormData({ ...formData, serviceName: e.target.value })} className="input-modern" placeholder="netflix-status, stripe-api" />
+          </div>
+          {isHttpProbe && (
             <div>
-              <label className="block text-sm font-medium text-slate-700 mb-1">
-                Service Type *
-              </label>
-              <select
-                value={formData.serviceType}
-                onChange={(e) =>
-                  setFormData({ ...formData, serviceType: e.target.value })
-                }
-                className="input-modern"
-              >
-                <option value="web">Web Application</option>
-                <option value="api">API / REST Service</option>
-                <option value="cloud">Cloud Service (AWS, Azure, GCP)</option>
-                <option value="database">Database</option>
-                <option value="server">Server / VM</option>
-                <option value="container">Container / Kubernetes</option>
-                <option value="external">External Internet Service</option>
-                <option value="microservice">Microservice</option>
-                <option value="other">Other</option>
-              </select>
+              <label className="block text-sm font-medium text-slate-700 mb-1">Target URL</label>
+              <input type="url" value={formData.targetUrl} onChange={(e) => setFormData({ ...formData, targetUrl: e.target.value })} className="input-modern" placeholder="https://www.netflix.com" />
             </div>
-
-            {/* Port */}
+          )}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <label className="block text-sm font-medium text-slate-700 mb-1">
-                Port *
-              </label>
-              <input
-                type="number"
-                required
-                value={formData.port}
-                onChange={(e) =>
-                  setFormData({ ...formData, port: parseInt(e.target.value) })
-                }
-                placeholder="8080"
-                className="input-modern"
-              />
+              <label className="block text-sm font-medium text-slate-700 mb-1">Host / Domain *</label>
+              <input type="text" required value={formData.host} onChange={(e) => setFormData({ ...formData, host: e.target.value })} className="input-modern" placeholder="api.example.com" />
             </div>
-
-            {/* Host */}
-            <div className="md:col-span-2">
-              <label className="block text-sm font-medium text-slate-700 mb-1">
-                Host / IP / Domain *
-              </label>
-              <input
-                type="text"
-                required
-                value={formData.host}
-                onChange={(e) =>
-                  setFormData({ ...formData, host: e.target.value })
-                }
-                placeholder="e.g., localhost, netflix.com, ec2-52-12-34-56.compute.amazonaws.com"
-                className="input-modern"
-              />
-              <p className="text-xs text-slate-500 mt-1">
-                Can be: Domain name, Public IP, Private IP, DNS name
-              </p>
-            </div>
-
-            {/* Description */}
-            <div className="md:col-span-2">
-              <label className="block text-sm font-medium text-slate-700 mb-1">
-                Description
-              </label>
-              <textarea
-                value={formData.description}
-                onChange={(e) =>
-                  setFormData({ ...formData, description: e.target.value })
-                }
-                placeholder="Brief description of the service..."
-                rows={2}
-                className="input-modern resize-none"
-              />
-            </div>
-
-            {/* Owner */}
-            <div className="md:col-span-2">
-              <label className="block text-sm font-medium text-slate-700 mb-1">
-                Owner / Team
-              </label>
-              <input
-                type="text"
-                value={formData.owner}
-                onChange={(e) =>
-                  setFormData({ ...formData, owner: e.target.value })
-                }
-                placeholder="e.g., Platform Team, DevOps"
-                className="input-modern"
-              />
-            </div>
-
-            {/* Monitoring Options */}
-            <div className="md:col-span-2">
-              <label className="block text-sm font-medium text-slate-700 mb-2">
-                Monitoring Capabilities
-              </label>
-              <div className="space-y-2">
-                <label className="flex items-center gap-3 p-3 border border-slate-200 rounded-lg hover:bg-slate-50 cursor-pointer transition-colors">
-                  <input
-                    type="checkbox"
-                    checked={formData.metricsEnabled}
-                    onChange={(e) =>
-                      setFormData({
-                        ...formData,
-                        metricsEnabled: e.target.checked,
-                      })
-                    }
-                    className="w-4 h-4 text-indigo-600 rounded focus:ring-indigo-500"
-                  />
-                  <div className="flex-1">
-                    <div className="font-medium text-slate-900">Metrics</div>
-                    <div className="text-xs text-slate-500">
-                      Prometheus metrics endpoint (/actuator/prometheus)
-                    </div>
-                  </div>
-                </label>
-
-                <label className="flex items-center gap-3 p-3 border border-slate-200 rounded-lg hover:bg-slate-50 cursor-pointer transition-colors">
-                  <input
-                    type="checkbox"
-                    checked={formData.logsEnabled}
-                    onChange={(e) =>
-                      setFormData({
-                        ...formData,
-                        logsEnabled: e.target.checked,
-                      })
-                    }
-                    className="w-4 h-4 text-indigo-600 rounded focus:ring-indigo-500"
-                  />
-                  <div className="flex-1">
-                    <div className="font-medium text-slate-900">Logs</div>
-                    <div className="text-xs text-slate-500">
-                      Centralized logging (writes to /logs/{'<service>'}.log)
-                    </div>
-                  </div>
-                </label>
-
-                <label className="flex items-center gap-3 p-3 border border-slate-200 rounded-lg hover:bg-slate-50 cursor-pointer transition-colors">
-                  <input
-                    type="checkbox"
-                    checked={formData.tracingEnabled}
-                    onChange={(e) =>
-                      setFormData({
-                        ...formData,
-                        tracingEnabled: e.target.checked,
-                      })
-                    }
-                    className="w-4 h-4 text-indigo-600 rounded focus:ring-indigo-500"
-                  />
-                  <div className="flex-1">
-                    <div className="font-medium text-slate-900">Tracing</div>
-                    <div className="text-xs text-slate-500">
-                      OpenTelemetry tracing (OTLP endpoint)
-                    </div>
-                  </div>
-                </label>
-              </div>
+            <div>
+              <label className="block text-sm font-medium text-slate-700 mb-1">Port *</label>
+              <input type="number" required value={formData.port} onChange={(e) => setFormData({ ...formData, port: parseInt(e.target.value, 10) || 443 })} className="input-modern" />
             </div>
           </div>
-
-          {/* Actions */}
-          <div className="flex items-center gap-3 pt-4 border-t border-slate-200">
-            <button
-              type="button"
-              onClick={onClose}
-              className="flex-1 btn-secondary"
-            >
-              Cancel
-            </button>
-            <button
-              type="submit"
-              disabled={loading}
-              className="flex-1 btn-primary disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-              {loading ? 'Registering...' : 'Register Service'}
-            </button>
+          <div className="flex gap-3 pt-4 border-t">
+            <button type="button" onClick={onClose} className="flex-1 btn-secondary">Cancel</button>
+            <button type="submit" disabled={loading} className="flex-1 btn-primary disabled:opacity-50">{loading ? 'Registering...' : 'Register'}</button>
           </div>
         </form>
       </div>

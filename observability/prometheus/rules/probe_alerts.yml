@@ -1,0 +1,32 @@
+groups:
+  - name: http_probe_alerts
+    interval: 30s
+    rules:
+      - alert: EndpointDown
+        expr: probe_success{job="http_probe"} == 0
+        for: 2m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Endpoint {{ $labels.instance }} is unreachable"
+          description: "HTTP probe failed for {{ $labels.instance }} (service {{ $labels.service }}) for more than 2 minutes."
+          service_name: "{{ $labels.service }}"
+
+      - alert: EndpointSlow
+        expr: probe_duration_seconds{job="http_probe"} > 3
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Slow response from {{ $labels.instance }}"
+          description: "Probe duration {{ $value }}s exceeds 3s threshold."
+          service_name: "{{ $labels.service }}"
+
+      - alert: EndpointSslExpiringSoon
+        expr: (probe_ssl_earliest_cert_expiry{job="http_probe"} - time()) < 86400 * 14
+        for: 1h
+        labels:
+          severity: warning
+        annotations:
+          summary: "TLS certificate expiring soon for {{ $labels.instance }}"
+          description: "Certificate expires in less than 14 days."

@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Sidebar from "../../components/Sidebar";
 import TopBar from "../../components/TopBar";
 import RegisterServiceModal from "../../components/RegisterServiceModal";
+import { getApiBase } from "../../lib/api";
 import {
   Search,
   Filter,
@@ -47,7 +48,7 @@ export default function ServicesPage() {
   // Fetch REAL services from API
   const loadServices = async () => {
     try {
-      const response = await fetch("http://localhost:8085/api/services");
+      const response = await fetch(`${getApiBase()}/api/services`);
       if (response.ok) {
         const data = await response.json();
         setServices(data);
@@ -64,7 +65,7 @@ export default function ServicesPage() {
   const loadHealthStats = async () => {
     try {
       const response = await fetch(
-        "http://localhost:8085/api/admin/health-stats",
+        `${getApiBase()}/api/admin/health-stats`,
       );
       if (response.ok) {
         const healthData = await response.json();
@@ -102,7 +103,7 @@ export default function ServicesPage() {
 
   const handleRegisterService = async (data: any) => {
     try {
-      const response = await fetch("http://localhost:8085/api/services", {
+      const response = await fetch(`${getApiBase()}/api/services`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
@@ -124,7 +125,7 @@ export default function ServicesPage() {
   const handleDeleteService = async (id: number) => {
     if (!confirm("Are you sure?")) return;
     try {
-      await fetch(`http://localhost:8085/api/services/${id}`, {
+      await fetch(`${getApiBase()}/api/services/${id}`, {
         method: "DELETE",
       });
       await loadServices();

@@ -18,9 +18,23 @@ public class RegisterServiceRequest {
 
     private String host = "localhost";
 
+    /** HTTP_PROBE | METRICS_SCRAPE | OTLP_PUSH (optional – auto-detected from type) */
+    private String monitoringMode;
+
+    /** e.g. https://status.netflix.com – for internet / SaaS monitoring */
+    private String targetUrl;
+
+    private String scheme = "http";
+
+    private String environment = "production";
+
     private String description;
 
     private String owner;
+
+    private String metricsEndpoint;
+
+    private String healthCheckEndpoint;
 
     private Boolean metricsEnabled = true;
 

@@ -16,6 +16,7 @@ public class AlertService {
 
     private final AlertRepository alertRepository;
     private final ActivityLogRepository activityLogRepository;
+    private final IncidentService incidentService;
 
     /**
      * Process alert from Alertmanager webhook
@@ -72,7 +73,15 @@ public class AlertService {
         alert.setSummary(summary);
         alert.setDescription(description);
 
-        alertRepository.save(alert);
+        alert = alertRepository.save(alert);
+
+        if ("critical".equalsIgnoreCase(severity)) {
+            try {
+                incidentService.createFromAlert(alert);
+            } catch (Exception e) {
+                log.warn("Failed to auto-create incident for alert {}: {}", alertName, e.getMessage());
+            }
+        }
 
         // Log activity
         ActivityLog activity = new ActivityLog();

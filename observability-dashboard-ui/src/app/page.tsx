@@ -6,6 +6,7 @@ import TopBar from "../components/TopBar";
 import StatsCard from "../components/StatsCard";
 import ProtectedRoute from "../components/ProtectedRoute";
 import { useAuth } from "../contexts/AuthContext";
+import { getApiBase } from "../lib/api";
 import {
   AlertTriangle,
   CheckCircle,
@@ -49,7 +50,7 @@ function DashboardContent() {
   const loadDashboardData = async () => {
     try {
       // Load services count and health
-      const servicesRes = await fetch("http://localhost:8085/api/services");
+      const servicesRes = await fetch(`${getApiBase()}/api/services`);
       const services = await servicesRes.json();
 
       setStats({
@@ -61,7 +62,7 @@ function DashboardContent() {
 
       // Load activities
       const activitiesRes = await fetch(
-        "http://localhost:8085/api/activities?limit=5",
+        `${getApiBase()}/api/activities?limit=5`,
       );
       const activities = await activitiesRes.json();
       setActivities(activities);

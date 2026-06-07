@@ -4,7 +4,7 @@ groups:
     rules:
       # Service Down Alert
       - alert: ServiceDown
-        expr: up{job=~"company|job|review|gateway|user-services"} == 0
+        expr: up == 0
         for: 30s
         labels:
           severity: critical

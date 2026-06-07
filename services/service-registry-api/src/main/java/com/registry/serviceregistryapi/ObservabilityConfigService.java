@@ -17,97 +17,181 @@ import java.util.stream.Collectors;
 @Slf4j
 public class ObservabilityConfigService {
 
+    private static final String BLACKBOX_ADDRESS = "blackbox-exporter:9115";
+
     @Value("${observability.config_dir:/observability}")
     private String observabilityConfigDir;
 
     private final RegisteredServiceRepository repository;
+    private final AlloyReloadService alloyReloadService;
+    private final MonitoringModeResolver monitoringModeResolver;
+    private final TargetUrlBuilder targetUrlBuilder;
 
     public void updateAllConfigs() {
         try {
-            updatePrometheusConfig();
-            updateAlloyConfig();
-            log.info("Updated all observability configurations");
+            updateAlloyDynamicConfig();
+            alloyReloadService.reload();
+            log.info("Updated Alloy dynamic observability configuration");
         } catch (Exception e) {
-            log.warn("Config update failed (this is OK for development): {}", e.getMessage());
-            // Don't throw - config update is optional
+            log.warn("Alloy config update failed: {}", e.getMessage());
         }
     }
 
-    public void updatePrometheusConfig() {
-        try {
-            List<RegisteredService> services = repository.findAll().stream()
-                    .filter(RegisteredService::getMetricsEnabled)
-                    .collect(Collectors.toList());
+    public void updateAlloyDynamicConfig() throws IOException {
+        List<RegisteredService> services = repository.findAll();
 
-            StringBuilder sb = new StringBuilder();
-            sb.append("- targets:\n");
+        List<RegisteredService> metricsServices = services.stream()
+                .filter(monitoringModeResolver::isMetricsScrape)
+                .filter(s -> Boolean.TRUE.equals(s.getMetricsEnabled()))
+                .collect(Collectors.toList());
 
-            for (RegisteredService service : services) {
-                sb.append("    - \"").append(service.getHost())
-                  .append(":").append(service.getPort()).append("\"\n");
-            }
+        List<RegisteredService> probeServices = services.stream()
+                .filter(monitoringModeResolver::isHttpProbe)
+                .collect(Collectors.toList());
 
-            Path prometheusPath = Paths.get(observabilityConfigDir, "prometheus/user-services.yml");
-            Files.writeString(prometheusPath, sb.toString());
+        List<RegisteredService> logServices = services.stream()
+                .filter(s -> Boolean.TRUE.equals(s.getLogsEnabled()))
+                .collect(Collectors.toList());
 
-            log.info("Updated Prometheus config with {} user services", services.size());
+        String content = buildDynamicAlloyConfig(metricsServices, probeServices, logServices);
 
-        } catch (IOException e) {
-            log.error("Failed to update Prometheus config", e);
-            throw new RuntimeException("Failed to update Prometheus config", e);
-        }
+        Path alloyPath = Paths.get(observabilityConfigDir, "alloy/services.alloy");
+        Files.createDirectories(alloyPath.getParent());
+        Files.writeString(alloyPath, content);
+
+        log.info("Alloy dynamic: {} scrape, {} http probe, {} log source(s)",
+                metricsServices.size(), probeServices.size(), logServices.size());
     }
 
-    public void updateAlloyConfig() {
-        try {
-            List<RegisteredService> services = repository.findAll().stream()
-                    .filter(RegisteredService::getLogsEnabled)
-                    .collect(Collectors.toList());
+    private String buildDynamicAlloyConfig(
+            List<RegisteredService> metricsServices,
+            List<RegisteredService> probeServices,
+            List<RegisteredService> logServices) {
 
-            StringBuilder sb = new StringBuilder();
-            sb.append("// Read log files from /logs folder\n");
-            sb.append("loki.source.file \"logs\" {\n");
-            sb.append("  targets = [\n");
-
-            // Built-in services
-            sb.append("    { __path__ = \"/logs/company.log\", job = \"company\" },\n");
-            sb.append("    { __path__ = \"/logs/job.log\", job = \"job\" },\n");
-            sb.append("    { __path__ = \"/logs/review.log\", job = \"review\" },\n");
-            sb.append("    { __path__ = \"/logs/gateway.log\", job = \"gateway\" },\n");
-
-            // User-registered services
-            for (RegisteredService service : services) {
-                String logFile = "/logs/" + service.getServiceName().toLowerCase() + ".log";
-                String jobName = service.getServiceName().toLowerCase().replaceAll("[^a-z0-9]", "_");
-                sb.append("    { __path__ = \"").append(logFile)
-                  .append("\", job = \"").append(jobName).append("\" },\n");
-            }
-
-            // Remove trailing comma and close
-            String content = sb.toString();
-            if (content.endsWith(",\n")) {
-                content = content.substring(0, content.length() - 2) + "\n";
-            }
-            content += "  ]\n";
-            content += "  forward_to = [loki.write.lokiwrite.receiver]\n";
-            content += "}\n\n";
-
-            content += "// Write logs to Loki\n";
-            content += "loki.write \"lokiwrite\" {\n";
-            content += "  endpoint {\n";
-            content += "    url = \"http://loki:3100/loki/api/v1/push\"\n";
-            content += "    tenant_id = \"fake\"\n";
-            content += "  }\n";
-            content += "}\n";
-
-            Path alloyPath = Paths.get(observabilityConfigDir, "alloy/config.alloy");
-            Files.writeString(alloyPath, content);
-
-            log.info("Updated Alloy config with {} user services", services.size());
-
-        } catch (IOException e) {
-            log.error("Failed to update Alloy config", e);
-            throw new RuntimeException("Failed to update Alloy config", e);
+        if (metricsServices.isEmpty() && probeServices.isEmpty() && logServices.isEmpty()) {
+            return "// Auto-generated – no registered services\n";
         }
+
+        StringBuilder sb = new StringBuilder();
+        sb.append("// Auto-generated by Service Registry API\n\n");
+
+        boolean needsProm = !metricsServices.isEmpty() || !probeServices.isEmpty();
+        if (needsProm) {
+            sb.append("prometheus.remote_write \"registered\" {\n");
+            sb.append("  endpoint { url = \"http://prometheus:9090/api/v1/write\" }\n");
+            sb.append("}\n\n");
+        }
+
+        if (!logServices.isEmpty()) {
+            sb.append("loki.write \"registered\" {\n");
+            sb.append("  endpoint {\n");
+            sb.append("    url       = \"http://loki:3100/loki/api/v1/push\"\n");
+            sb.append("    tenant_id = \"fake\"\n");
+            sb.append("  }\n");
+            sb.append("}\n\n");
+        }
+
+        for (RegisteredService service : metricsServices) {
+            appendMetricsScrape(sb, service);
+        }
+
+        if (!probeServices.isEmpty()) {
+            appendBlackboxProbes(sb, probeServices);
+        }
+
+        if (!logServices.isEmpty()) {
+            appendRegisteredLogs(sb, logServices);
+        }
+
+        return sb.toString();
+    }
+
+    private void appendMetricsScrape(StringBuilder sb, RegisteredService service) {
+        String componentName = sanitizeComponentName(service.getServiceName());
+        String jobName = sanitizeJobName(service.getServiceName());
+        String target = targetUrlBuilder.buildMetricsTarget(service);
+        String metricsPath = service.getMetricsEndpoint() != null
+                ? service.getMetricsEndpoint() : "/actuator/prometheus";
+        String scheme = service.getScheme() != null ? service.getScheme() : "http";
+
+        sb.append("prometheus.scrape \"").append(componentName).append("\" {\n");
+        sb.append("  targets         = [{ __address__ = \"").append(escape(target))
+                .append("\", job = \"").append(escape(jobName)).append("\" }]\n");
+        sb.append("  forward_to      = [prometheus.remote_write.registered.receiver]\n");
+        sb.append("  job_name        = \"").append(escape(jobName)).append("\"\n");
+        sb.append("  metrics_path    = \"").append(escape(metricsPath)).append("\"\n");
+        sb.append("  scheme          = \"").append(escape(scheme)).append("\"\n");
+        sb.append("  scrape_interval = \"30s\"\n");
+        sb.append("  scrape_timeout  = \"10s\"\n");
+        sb.append("}\n\n");
+    }
+
+    private void appendBlackboxProbes(StringBuilder sb, List<RegisteredService> probeServices) {
+        sb.append("discovery.static \"http_probes\" {\n");
+        sb.append("  targets = [\n");
+        for (RegisteredService service : probeServices) {
+            String probeUrl = targetUrlBuilder.buildProbeUrl(service);
+            String jobName = sanitizeJobName(service.getServiceName());
+            sb.append("    {\n");
+            sb.append("      __param_target = \"").append(escape(probeUrl)).append("\",\n");
+            sb.append("      job            = \"").append(escape(jobName)).append("\",\n");
+            sb.append("      service        = \"").append(escape(service.getServiceName())).append("\",\n");
+            sb.append("    },\n");
+        }
+        sb.append("  ]\n");
+        sb.append("}\n\n");
+
+        sb.append("discovery.relabel \"http_probes\" {\n");
+        sb.append("  targets = discovery.static.http_probes.targets\n\n");
+        sb.append("  rule {\n");
+        sb.append("    source_labels = [\"__param_target\"]\n");
+        sb.append("    target_label  = \"instance\"\n");
+        sb.append("  }\n\n");
+        sb.append("  rule {\n");
+        sb.append("    target_label  = \"__address__\"\n");
+        sb.append("    replacement   = \"").append(BLACKBOX_ADDRESS).append("\"\n");
+        sb.append("  }\n");
+        sb.append("}\n\n");
+
+        sb.append("prometheus.scrape \"http_probes\" {\n");
+        sb.append("  targets         = discovery.relabel.http_probes.output\n");
+        sb.append("  forward_to      = [prometheus.remote_write.registered.receiver]\n");
+        sb.append("  job_name        = \"http_probe\"\n");
+        sb.append("  metrics_path    = \"/probe\"\n");
+        sb.append("  params          = { module = [\"http_2xx\"] }\n");
+        sb.append("  scrape_interval = \"30s\"\n");
+        sb.append("  scrape_timeout  = \"15s\"\n");
+        sb.append("}\n\n");
+    }
+
+    private void appendRegisteredLogs(StringBuilder sb, List<RegisteredService> logServices) {
+        sb.append("loki.source.file \"registered_logs\" {\n");
+        sb.append("  targets = [\n");
+        for (RegisteredService service : logServices) {
+            String logPath = service.getLogsPath() != null
+                    ? service.getLogsPath()
+                    : "/logs/" + service.getServiceName().toLowerCase() + ".log";
+            sb.append("    { __path__ = \"").append(escape(logPath)).append("\", job = \"")
+                    .append(escape(sanitizeJobName(service.getServiceName()))).append("\" },\n");
+        }
+        sb.append("  ]\n");
+        sb.append("  forward_to = [loki.write.registered.receiver]\n");
+        sb.append("}\n\n");
+    }
+
+    private String sanitizeComponentName(String name) {
+        String sanitized = name.toLowerCase().replaceAll("[^a-z0-9_]", "_");
+        if (sanitized.isEmpty() || Character.isDigit(sanitized.charAt(0))) {
+            sanitized = "x_" + sanitized;
+        }
+        return "svc_" + sanitized;
+    }
+
+    private String sanitizeJobName(String name) {
+        return name.toLowerCase().replaceAll("[^a-z0-9_-]", "-");
+    }
+
+    private String escape(String value) {
+        return value.replace("\\", "\\\\").replace("\"", "\\\"");
     }
 }

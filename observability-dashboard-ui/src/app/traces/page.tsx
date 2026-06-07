@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Sidebar from "../../components/Sidebar";
 import TopBar from "../../components/TopBar";
+import { getApiBase } from "../../lib/api";
 import {
   RefreshCw,
   Zap,
@@ -33,7 +34,7 @@ export default function TracesPage() {
     try {
       setError("");
 
-      let url = `http://localhost:8085/api/proxy/tempo?limit=${limit}`;
+      let url = `${getApiBase()}/api/proxy/tempo?limit=${limit}`;
       if (serviceName) {
         url += `&service=${encodeURIComponent(serviceName)}`;
       }
@@ -141,7 +142,7 @@ export default function TracesPage() {
                         <li>
                           Configure:{" "}
                           <code className="bg-amber-100 px-1 rounded">
-                            OTEL_EXPORTER_OTLP_ENDPOINT=http://tempo:4318
+                            OTEL_EXPORTER_OTLP_TRACES_ENDPOINT=http://tempo:4318/v1/traces
                           </code>
                         </li>
                         <li>

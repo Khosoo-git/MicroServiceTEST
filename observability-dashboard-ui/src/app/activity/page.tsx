@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Sidebar from "../../components/Sidebar";
 import TopBar from "../../components/TopBar";
+import { getApiBase } from "../../lib/api";
 import {
   Search,
   Filter,
@@ -36,7 +37,7 @@ export default function ActivityPage() {
   // Fetch REAL activities from API
   const loadActivities = async () => {
     try {
-      const response = await fetch("http://localhost:8085/api/activities");
+      const response = await fetch(`${getApiBase()}/api/activities`);
       if (response.ok) {
         const data = await response.json();
         setActivities(data);

@@ -2,6 +2,7 @@
 
 import { createContext, useContext, useState, useEffect, ReactNode } from "react";
 import { useRouter } from "next/navigation";
+import { getApiBase } from "../lib/api";
 
 interface User {
   username: string;
@@ -46,7 +47,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const verifyToken = async (authToken: string) => {
     try {
-      const response = await fetch("http://localhost:8085/api/auth/me", {
+      const response = await fetch(`${getApiBase()}/api/auth/me`, {
         headers: {
           "Authorization": `Bearer ${authToken}`,
         },
@@ -80,7 +81,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const login = async (username: string, password: string) => {
     setError(null);
     try {
-      const response = await fetch("http://localhost:8085/api/auth/login", {
+      const response = await fetch(`${getApiBase()}/api/auth/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -121,7 +122,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const register = async (username: string, email: string, password: string, role: string = "USER") => {
     setError(null);
     try {
-      const response = await fetch("http://localhost:8085/api/auth/register", {
+      const response = await fetch(`${getApiBase()}/api/auth/register`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -3,24 +3,53 @@
 import { useState, useEffect } from "react";
 import Sidebar from "../../components/Sidebar";
 import TopBar from "../../components/TopBar";
+import { incidentApi } from "../../lib/api";
 import { Plus, AlertTriangle, RefreshCw, X } from "lucide-react";
 
-interface ManualIncident {
+interface ApiIncident {
+  id: number;
+  title: string;
+  description: string;
+  severity: string;
+  serviceName: string;
+  status: string;
+  source: string;
+  createdAt: string;
+  assignee?: string;
+}
+
+interface DisplayIncident {
   id: number;
   title: string;
   description: string;
   severity: "critical" | "warning" | "info";
   service: string;
   status: "open" | "investigating" | "resolved";
+  source: string;
   createdAt: string;
   assignee?: string;
+}
+
+function mapIncident(i: ApiIncident): DisplayIncident {
+  const s = i.status.toLowerCase();
+  return {
+    id: i.id,
+    title: i.title,
+    description: i.description || "",
+    severity: (i.severity?.toLowerCase() || "warning") as DisplayIncident["severity"],
+    service: i.serviceName,
+    status: s === "open" ? "open" : s === "investigating" ? "investigating" : "resolved",
+    source: i.source || "MANUAL",
+    createdAt: i.createdAt,
+    assignee: i.assignee || "Unassigned",
+  };
 }
 
 export default function IncidentsPage() {
   const [sidebarCollapsed] = useState(false);
   const [showModal, setShowModal] = useState(false);
-  const [incidents, setIncidents] = useState<ManualIncident[]>([]);
-  const [loading, setLoading] = useState(false);
+  const [incidents, setIncidents] = useState<DisplayIncident[]>([]);
+  const [loading, setLoading] = useState(true);
 
   const [formData, setFormData] = useState({
     title: "",
@@ -30,12 +59,16 @@ export default function IncidentsPage() {
     assignee: "",
   });
 
-  const loadIncidents = () => {
-    const stored = localStorage.getItem("manual-incidents");
-    if (stored) {
-      setIncidents(JSON.parse(stored));
+  const loadIncidents = async () => {
+    setLoading(true);
+    try {
+      const data: ApiIncident[] = await incidentApi.getAll();
+      setIncidents(data.map(mapIncident));
+    } catch (error) {
+      console.error("Failed to load incidents:", error);
+    } finally {
+      setLoading(false);
     }
-    setLoading(false);
   };
 
   useEffect(() => {
@@ -43,82 +76,54 @@ export default function IncidentsPage() {
   }, []);
 
   const handleCreate = async () => {
-    const newIncident: ManualIncident = {
-      id: Date.now(),
-      title: formData.title,
-      description: formData.description,
-      severity: formData.severity,
-      service: formData.service,
-      status: "open",
-      createdAt: new Date().toISOString(),
-      assignee: formData.assignee || "Unassigned",
-    };
-
-    const updated = [newIncident, ...incidents];
-    setIncidents(updated);
-    localStorage.setItem("manual-incidents", JSON.stringify(updated));
-
-    // Log to activity API
     try {
-      await fetch("http://localhost:8085/api/activities", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          action: "INCIDENT_CREATED",
-          serviceName: formData.service || "General",
-          serviceType: "incident",
-          description: `Incident created: ${formData.title}`,
-          user: "admin",
-          details: JSON.stringify({
-            severity: formData.severity,
-            assignee: formData.assignee,
-          }),
-        }),
+      await incidentApi.create({
+        title: formData.title,
+        description: formData.description,
+        severity: formData.severity,
+        serviceName: formData.service || "general",
+        assignee: formData.assignee || undefined,
+      });
+      await loadIncidents();
+      setShowModal(false);
+      setFormData({
+        title: "",
+        description: "",
+        severity: "warning",
+        service: "",
+        assignee: "",
       });
     } catch (error) {
-      console.error("Failed to log activity:", error);
+      console.error("Failed to create incident:", error);
+      alert("Failed to create incident");
     }
-
-    setShowModal(false);
-    setFormData({
-      title: "",
-      description: "",
-      severity: "warning",
-      service: "",
-      assignee: "",
-    });
   };
 
-  const handleUpdateStatus = (id: number, status: ManualIncident["status"]) => {
-    const updated = incidents.map((inc) =>
-      inc.id === id ? { ...inc, status } : inc,
-    );
-    setIncidents(updated);
-    localStorage.setItem("manual-incidents", JSON.stringify(updated));
+  const handleUpdateStatus = async (
+    id: number,
+    status: DisplayIncident["status"],
+  ) => {
+    const apiStatus =
+      status === "open"
+        ? "OPEN"
+        : status === "investigating"
+          ? "INVESTIGATING"
+          : "RESOLVED";
+    try {
+      await incidentApi.update(id, { status: apiStatus });
+      await loadIncidents();
+    } catch (error) {
+      console.error("Failed to update incident:", error);
+    }
   };
 
   const handleDelete = async (id: number) => {
-    const incident = incidents.find((i) => i.id === id);
-    const updated = incidents.filter((inc) => inc.id !== id);
-    setIncidents(updated);
-    localStorage.setItem("manual-incidents", JSON.stringify(updated));
-
-    // Log deletion to activity
-    if (incident) {
-      try {
-        await fetch("http://localhost:8085/api/activities", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            action: "INCIDENT_DELETED",
-            serviceName: incident.service,
-            description: `Incident deleted: ${incident.title}`,
-            user: "admin",
-          }),
-        });
-      } catch (error) {
-        console.error("Failed to log activity:", error);
-      }
+    if (!confirm("Delete this incident?")) return;
+    try {
+      await incidentApi.delete(id);
+      await loadIncidents();
+    } catch (error) {
+      console.error("Failed to delete incident:", error);
     }
   };
 
@@ -155,7 +160,7 @@ export default function IncidentsPage() {
               <div>
                 <h1 className="text-2xl font-bold text-slate-900">Incidents</h1>
                 <p className="text-sm text-slate-500 mt-1">
-                  Manual incident tracking and management
+                  Production incidents — auto-created from critical alerts + manual
                 </p>
               </div>
               <button

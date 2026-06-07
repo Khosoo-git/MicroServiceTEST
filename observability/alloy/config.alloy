@@ -1,100 +1,79 @@
-// ======================================
-// LOGS - Collect from /logs folder
-// ======================================
-loki.source.file "company_logs" {
-  targets = [
-    { __path__ = "/logs/company.log", job = "company" },
-  ]
-  forward_to = [loki.write.lokiwrite.receiver]
-}
+// Base Alloy config: demo microservice metrics + logs
+// User-registered services: /etc/alloy/dynamic/services.alloy (loaded via docker command)
 
-loki.source.file "job_logs" {
-  targets = [
-    { __path__ = "/logs/job.log", job = "job" },
-  ]
-  forward_to = [loki.write.lokiwrite.receiver]
-}
-
-loki.source.file "review_logs" {
-  targets = [
-    { __path__ = "/logs/review.log", job = "review" },
-  ]
-  forward_to = [loki.write.lokiwrite.receiver]
-}
-
-loki.source.file "gateway_logs" {
-  targets = [
-    { __path__ = "/logs/gateway.log", job = "gateway" },
-  ]
-  forward_to = [loki.write.lokiwrite.receiver]
-}
-
-loki.source.file "app_logs" {
-  targets = [
-    { __path__ = "/logs/app.log", job = "app" },
-  ]
-  forward_to = [loki.write.lokiwrite.receiver]
-}
-
-// Write logs to Loki
-loki.write "lokiwrite" {
-  endpoint {
-    url = "http://loki:3100/loki/api/v1/push"
-    tenant_id = "fake"
-  }
-}
-
-// ======================================
-// METRICS - Receive from OTLP exporters
-// ======================================
-otelcol.receiver.otlp "otlp_metrics" {
-  http {
-    endpoint = "0.0.0.0:4318"
-  }
-  grpc {
-    endpoint = "0.0.0.0:4317"
-  }
-  output {
-    metrics = [otelcol.processor.batch.batch_metrics.input]
-  }
-}
-
-otelcol.processor.batch "batch_metrics" {
-  send_batch_size = 1024
-  timeout = "1s"
-  output {
-    metrics = [otelcol.exporter.prometheus.default.input]
-  }
-}
-
-otelcol.exporter.prometheus "default" {
-  forward_to = [prometheus.remote_write.prometheus.receiver]
-}
-
-prometheus.remote_write "prometheus" {
+prometheus.remote_write "default" {
   endpoint {
     url = "http://prometheus:9090/api/v1/write"
   }
 }
 
-// ======================================
-// TRACES - Receive from OTLP exporters
-// ======================================
-otelcol.receiver.otlp "otlp_traces" {
-  http {
-    endpoint = "0.0.0.0:4319"
-  }
-  grpc {
-    endpoint = "0.0.0.0:4320"
-  }
-  output {
-    traces = [otelcol.processor.batch.batch_traces.input]
+// Demo microservices — always scraped (no registration required)
+prometheus.scrape "demo_company" {
+  targets         = [{ __address__ = "company:8081", job = "company" }]
+  forward_to      = [prometheus.remote_write.default.receiver]
+  job_name        = "company"
+  metrics_path    = "/actuator/prometheus"
+  scheme          = "http"
+  scrape_interval = "30s"
+  scrape_timeout  = "10s"
+}
+
+prometheus.scrape "demo_job" {
+  targets         = [{ __address__ = "job:8082", job = "job" }]
+  forward_to      = [prometheus.remote_write.default.receiver]
+  job_name        = "job"
+  metrics_path    = "/actuator/prometheus"
+  scheme          = "http"
+  scrape_interval = "30s"
+  scrape_timeout  = "10s"
+}
+
+prometheus.scrape "demo_review" {
+  targets         = [{ __address__ = "review:8083", job = "review" }]
+  forward_to      = [prometheus.remote_write.default.receiver]
+  job_name        = "review"
+  metrics_path    = "/actuator/prometheus"
+  scheme          = "http"
+  scrape_interval = "30s"
+  scrape_timeout  = "10s"
+}
+
+prometheus.scrape "demo_gateway" {
+  targets         = [{ __address__ = "gateway:8084", job = "gateway" }]
+  forward_to      = [prometheus.remote_write.default.receiver]
+  job_name        = "gateway"
+  metrics_path    = "/actuator/prometheus"
+  scheme          = "http"
+  scrape_interval = "30s"
+  scrape_timeout  = "10s"
+}
+
+// Log files (shared volume with demo apps)
+loki.source.file "logs" {
+  targets = [
+    { __path__ = "/logs/company.log", job = "company" },
+    { __path__ = "/logs/job.log", job = "job" },
+    { __path__ = "/logs/review.log", job = "review" },
+    { __path__ = "/logs/gateway.log", job = "gateway" },
+  ]
+  forward_to = [loki.write.lokiwrite.receiver]
+}
+
+loki.write "lokiwrite" {
+  endpoint {
+    url       = "http://loki:3100/loki/api/v1/push"
+    tenant_id = "fake"
   }
 }
 
-otelcol.processor.batch "batch_traces" {
-  send_batch_size = 1024
-  timeout = "1s"
+// OTLP traces: apps → Alloy → Tempo (OTLP_PUSH registered services)
+otelcol.receiver.otlp "default" {
+  grpc {
+    endpoint = "0.0.0.0:4317"
+  }
+  http {
+    endpoint = "0.0.0.0:4318"
+  }
   output {
     traces = [otelcol.exporter.otlp.tempo.input]
   }
@@ -104,7 +83,8 @@ otelcol.exporter.otlp "tempo" {
   client {
     endpoint = "tempo:4317"
     tls {
-      insecure = true
+      insecure             = true
+      insecure_skip_verify = true
     }
   }
 }

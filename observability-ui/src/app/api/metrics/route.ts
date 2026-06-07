@@ -5,7 +5,6 @@ export async function GET() {
     "sum by (uri) (rate(http_server_requests_seconds_count[1m]))",
   );
   const url = `${PROM_URL}/api/v1/query?query=${query}`;
-
   const res = await fetch(url, { cache: "no-store" });
   if (!res.ok) {
     return Response.json(
@@ -13,7 +12,6 @@ export async function GET() {
       { status: 502 },
     );
   }
-
   const data = await res.json();
   return Response.json(data);
 }

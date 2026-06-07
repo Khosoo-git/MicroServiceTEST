@@ -19,6 +19,7 @@ services:
       - observability-dashboard-ui
       - service-registry-api
       - prometheus
+      - alloy
       - loki
       - tempo
       - grafana
@@ -44,6 +45,7 @@ services:
       - "8085"
     depends_on:
       - postgres
+      - alloy
     networks:
       - microservice-network
       - postgres
@@ -55,6 +57,7 @@ services:
       - SPRING_DATASOURCE_USERNAME=postgres
       - SPRING_DATASOURCE_PASSWORD=1234
       - OBSERVABILITY_CONFIG_DIR=/observability
+      - OBSERVABILITY_ALLOY_RELOAD_URL=http://alloy:1234/-/reload
       - LOGS_DIR=/logs
       - AUTH_ENABLED=false
     restart: unless-stopped
@@ -92,6 +95,47 @@ services:
       - '--storage.tsdb.path=/prometheus'
       - '--web.enable-lifecycle'
       - '--web.enable-admin-api'
+      - '--web.enable-remote-write-receiver'
+    networks:
+      - microservice-network
+    restart: unless-stopped
+
+  blackbox-exporter:
+    image: prom/blackbox-exporter:latest
+    container_name: blackbox-exporter
+    expose:
+      - "9115"
+    volumes:
+      - ./observability/blackbox/blackbox.yml:/etc/blackbox_exporter/config.yml:ro
+    command:
+      - "--config.file=/etc/blackbox_exporter/config.yml"
+    networks:
+      - microservice-network
+    restart: unless-stopped
+
+  # ======================
+  # GRAFANA ALLOY - unified telemetry collector
+  # ======================
+  alloy:
+    image: grafana/alloy:latest
+    container_name: alloy
+    expose:
+      - "1234"
+      - "4317"
+      - "4318"
+    volumes:
+      - ./observability/alloy:/etc/alloy:rw
+      - ./logs:/logs:ro
+    command:
+      - run
+      - --server.http.listen-addr=0.0.0.0:1234
+      - --storage.path=/var/lib/alloy
+      - /etc/alloy
+    depends_on:
+      - prometheus
+      - loki
+      - tempo
+      - blackbox-exporter
     networks:
       - microservice-network
     restart: unless-stopped

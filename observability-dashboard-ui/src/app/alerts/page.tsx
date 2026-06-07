@@ -5,6 +5,7 @@ import Sidebar from "../../components/Sidebar";
 import TopBar from "../../components/TopBar";
 import ProtectedRoute from "../../components/ProtectedRoute";
 import { useAuth } from "../../contexts/AuthContext";
+import { getApiBase } from "../../lib/api";
 import {
   AlertTriangle,
   CheckCircle,
@@ -39,7 +40,7 @@ function AlertsContent() {
 
   const loadAlerts = async () => {
     try {
-      const response = await fetch("http://localhost:8085/api/alerts/all");
+      const response = await fetch(`${getApiBase()}/api/alerts/all`);
       const data = await response.json();
       setAlerts(data);
       setLoading(false);
@@ -67,7 +68,7 @@ function AlertsContent() {
       const username = user?.username || "system";
       console.log("Acknowledging alert", alertId, "as user:", username);
 
-      await fetch(`http://localhost:8085/api/alerts/${alertId}/acknowledge`, {
+      await fetch(`${getApiBase()}/api/alerts/${alertId}/acknowledge`, {
         method: "POST",
         headers: {
           "X-User": username,

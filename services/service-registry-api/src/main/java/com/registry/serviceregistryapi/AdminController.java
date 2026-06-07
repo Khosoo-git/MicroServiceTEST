@@ -6,6 +6,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -16,6 +17,7 @@ public class AdminController {
 
     private final ServiceHealthChecker healthChecker;
     private final RegisteredServiceRepository repository;
+    private final RegisteredServiceService registeredServiceService;
 
     /**
      * Get real-time health stats for all services
@@ -28,23 +30,96 @@ public class AdminController {
         var stats = new HashMap<>();
         
         for (var service : services) {
+            var serviceData = new HashMap<String, Object>();
+            serviceData.put("status", service.getStatus());
+            serviceData.put("uptime", service.getUptime());
+            serviceData.put("monitoringMode", service.getMonitoringMode());
             var serviceStats = healthChecker.getServiceStats(service.getId());
             if (serviceStats != null) {
-                var serviceData = new HashMap<>();
-                serviceData.put("status", service.getStatus());
-                serviceData.put("uptime", service.getUptime());
                 serviceData.put("lastResponseTime", serviceStats.lastResponseTime);
                 serviceData.put("totalChecks", serviceStats.totalChecks);
                 serviceData.put("successfulChecks", serviceStats.successfulChecks);
                 serviceData.put("uptimePercentage", serviceStats.getUptimePercentage());
-                stats.put(service.getServiceName(), serviceData);
             }
+            stats.put(service.getServiceName(), serviceData);
         }
         
         response.put("services", stats);
         response.put("timestamp", java.time.LocalDateTime.now());
         
         return ResponseEntity.ok(response);
+    }
+
+    /**
+     * Easy smoke-test targets (always work for demos).
+     */
+    @GetMapping("/smoke-targets")
+    public ResponseEntity<List<Map<String, String>>> smokeTargets() {
+        return ResponseEntity.ok(List.of(
+                Map.of("id", "httpbin", "name", "HTTPBin (recommended)",
+                        "targetUrl", "https://httpbin.org/status/200",
+                        "description", "Returns 200 — best for first test"),
+                Map.of("id", "google", "name", "Google",
+                        "targetUrl", "https://www.google.com",
+                        "description", "Public HTTPS site"),
+                Map.of("id", "demo-gateway", "name", "Local Gateway (no register)",
+                        "targetUrl", "http://localhost:8084/actuator/health",
+                        "description", "Built-in demo — already monitored by Alloy")
+        ));
+    }
+
+    /**
+     * Test any URL before registering (no DB write).
+     */
+    @GetMapping("/test-url")
+    public ResponseEntity<ServiceHealthChecker.ProbeTestResult> testUrl(
+            @RequestParam String url) {
+        return ResponseEntity.ok(healthChecker.probeUrl(url));
+    }
+
+    /**
+     * One-click register a known-good external target for testing.
+     */
+    @PostMapping("/register-smoke/{preset}")
+    public ResponseEntity<RegisteredService> registerSmoke(@PathVariable String preset) {
+        RegisterServiceRequest request = buildSmokeRequest(preset);
+        repository.findByServiceName(request.getServiceName()).ifPresent(existing -> {
+            repository.deleteById(existing.getId());
+            log.info("Removed existing smoke service {} for re-register", existing.getServiceName());
+        });
+        return ResponseEntity.ok(registeredServiceService.registerService(request));
+    }
+
+    private RegisterServiceRequest buildSmokeRequest(String preset) {
+        RegisterServiceRequest request = new RegisterServiceRequest();
+        switch (preset.toLowerCase()) {
+            case "httpbin" -> {
+                request.setServiceName("httpbin-demo");
+                request.setServiceType("external");
+                request.setMonitoringMode(MonitoringMode.HTTP_PROBE);
+                request.setTargetUrl("https://httpbin.org/status/200");
+                request.setHost("httpbin.org");
+                request.setPort(443);
+                request.setScheme("https");
+            }
+            case "google" -> {
+                request.setServiceName("google-demo");
+                request.setServiceType("external");
+                request.setMonitoringMode(MonitoringMode.HTTP_PROBE);
+                request.setTargetUrl("https://www.google.com");
+                request.setHost("www.google.com");
+                request.setPort(443);
+                request.setScheme("https");
+            }
+            default -> throw new RuntimeException(
+                    "Unknown preset: " + preset + ". Use: httpbin, google");
+        }
+        request.setMetricsEnabled(false);
+        request.setLogsEnabled(false);
+        request.setTracingEnabled(false);
+        request.setOwner("smoke-test");
+        request.setDescription("Auto-registered smoke test target");
+        return request;
     }
 
     /**

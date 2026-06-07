@@ -1,1 +1,8 @@
-[]
+- targets:
+    - "company:8081"
+    - "https://www.netflix.com:8080"
+    - "job:8082"
+    - "localhost:8080"
+    - "netflix.com:443"
+    - "gateway:8084"
+    - "review:8083"

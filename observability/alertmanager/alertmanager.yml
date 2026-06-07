@@ -1,48 +1,43 @@
 global:
   resolve_timeout: 5m
 
-# Webhook receiver for incident management
 receivers:
-  - name: 'webhook'
+  - name: "webhook"
     webhook_configs:
-      - url: 'http://service-registry-api:8085/api/alerts/webhook'
+      - url: "http://service-registry-api:8085/api/alerts/webhook"
         send_resolved: true
+        http_config:
+          follow_redirects: true
 
-  # Default receiver (silent)
-  - name: 'default'
+  - name: "default"
 
-# Inhibit rules
 inhibit_rules:
-  - source_match:
-      severity: 'critical'
-    target_match:
-      severity: 'warning'
-    equal: ['alertname', 'instance']
+  - source_matchers:
+      - severity="critical"
+    target_matchers:
+      - severity="warning"
+    equal: ["alertname", "instance"]
 
-# Route tree
 route:
-  receiver: 'webhook'
-  group_by: ['alertname', 'severity', 'service']
+  receiver: "webhook"
+  group_by: ["alertname", "severity", "service"]
   group_wait: 10s
   group_interval: 10s
   repeat_interval: 1h
-  
+
   routes:
-    # Critical alerts → immediate webhook
-    - match:
-        severity: 'critical'
-      receiver: 'webhook'
+    - matchers:
+        - severity="critical"
+      receiver: "webhook"
       group_wait: 5s
       repeat_interval: 5m
-    
-    # Warning alerts → webhook
-    - match:
-        severity: 'warning'
-      receiver: 'webhook'
+
+    - matchers:
+        - severity="warning"
+      receiver: "webhook"
       group_wait: 30s
       repeat_interval: 30m
-    
-    # Info alerts → default (silent)
-    - match:
-        severity: 'info'
-      receiver: 'default'
+
+    - matchers:
+        - severity="info"
+      receiver: "default"

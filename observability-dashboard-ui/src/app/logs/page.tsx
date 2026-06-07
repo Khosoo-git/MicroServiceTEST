@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Sidebar from "../../components/Sidebar";
 import TopBar from "../../components/TopBar";
+import { getApiBase } from "../../lib/api";
 import { RefreshCw, FileText, CheckCircle, AlertCircle } from "lucide-react";
 
 interface LogEntry {
@@ -33,7 +34,7 @@ export default function LogsPage() {
       const startNs = (now - 86400000) * 1000000; // 24 hours ago
 
       // Use backend API proxy - pass as query params
-      const url = `http://localhost:8085/api/proxy/loki?filename=${encodeURIComponent(filename)}&start=${startNs}&end=${nowNs}&limit=${limit}`;
+      const url = `${getApiBase()}/api/proxy/loki?filename=${encodeURIComponent(filename)}&start=${startNs}&end=${nowNs}&limit=${limit}`;
 
       console.log("Fetching logs from:", url);
       const response = await fetch(url);

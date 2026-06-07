@@ -1,68 +1,69 @@
 groups:
-  - name: service_alerts
+  - name: service_warning_alerts
     interval: 10s
     rules:
-      # Service Down Alert
-      - alert: ServiceDown
+
+      # 🟠 Service Degradation (NOT full down)
+      - alert: ServiceDegraded
         expr: up == 0
-        for: 1m
+        for: 30s
         labels:
-          severity: critical
+          severity: warning
           service: "{{ $labels.job }}"
         annotations:
-          summary: "Service {{ $labels.job }} is down"
-          description: "Service {{ $labels.job }} on instance {{ $labels.instance }} has been down for more than 1 minute."
-          service_name: "{{ $labels.job }}"
-          status: "critical"
+          summary: "Service {{ $labels.job }} might be unstable"
+          description: "Service {{ $labels.job }} is unreachable or restarting frequently. Possible early failure signal."
+          status: "warning"
 
-      # High Response Time Alert
-      - alert: HighResponseTime
-        expr: histogram_quantile(0.95, sum(rate(http_server_requests_seconds_bucket[5m])) by (le, job)) > 2
+      # 🟠 High Response Time (early warning)
+      - alert: HighResponseTimeWarning
+        expr: histogram_quantile(0.95, sum(rate(http_server_requests_seconds_bucket[5m])) by (le, job)) > 1
+        for: 3m
+        labels:
+          severity: warning
+          service: "{{ $labels.job }}"
+        annotations:
+          summary: "Response time increasing for {{ $labels.job }}"
+          description: "P95 latency > 1s indicates performance degradation"
+          status: "warning"
+
+      # 🟠 Increasing Error Rate (trend-based early warning)
+      - alert: ErrorRateIncreasing
+        expr: |
+          (
+            sum(rate(http_server_requests_seconds_count{status=~"5.."}[5m])) by (job)
+            /
+            sum(rate(http_server_requests_seconds_count[5m])) by (job)
+          ) > 0.02
+        for: 3m
+        labels:
+          severity: warning
+          service: "{{ $labels.job }}"
+        annotations:
+          summary: "Error rate increasing for {{ $labels.job }}"
+          description: "Error rate > 2% indicates early instability"
+          status: "warning"
+
+      # 🟠 Memory Pressure (not critical yet)
+      - alert: MemoryPressureWarning
+        expr: (jvm_memory_used_bytes / jvm_memory_max_bytes) > 0.75
         for: 5m
         labels:
           severity: warning
           service: "{{ $labels.job }}"
         annotations:
-          summary: "High response time detected for {{ $labels.job }}"
-          description: "95th percentile response time is above 2 seconds for service {{ $labels.job }}"
-          service_name: "{{ $labels.job }}"
+          summary: "Memory pressure rising for {{ $labels.job }}"
+          description: "JVM memory usage above 75% - potential leak or load spike"
           status: "warning"
 
-      # High Error Rate Alert
-      - alert: HighErrorRate
-        expr: sum(rate(http_server_requests_seconds_count{status=~"5.."}[5m])) by (job) / sum(rate(http_server_requests_seconds_count[5m])) by (job) > 0.05
-        for: 5m
-        labels:
-          severity: critical
-          service: "{{ $labels.job }}"
-        annotations:
-          summary: "High error rate detected for {{ $labels.job }}"
-          description: "Error rate is above 5% for service {{ $labels.job }}"
-          service_name: "{{ $labels.job }}"
-          status: "critical"
-
-      # High Memory Usage Alert
-      - alert: HighMemoryUsage
-        expr: (jvm_memory_used_bytes / jvm_memory_max_bytes) > 0.85
-        for: 5m
+      # 🟠 DB Connection Pressure (early saturation)
+      - alert: DBConnectionPressure
+        expr: hikaricp_connections_active / hikaricp_connections_max > 0.7
+        for: 3m
         labels:
           severity: warning
           service: "{{ $labels.job }}"
         annotations:
-          summary: "High memory usage detected for {{ $labels.job }}"
-          description: "JVM memory usage is above 85% for service {{ $labels.job }}"
-          service_name: "{{ $labels.job }}"
+          summary: "DB connection usage high for {{ $labels.job }}"
+          description: "Connection pool > 70% indicates approaching saturation"
           status: "warning"
-
-      # Database Connection Pool Exhausted
-      - alert: DatabaseConnectionPoolExhausted
-        expr: hikaricp_connections_active / hikaricp_connections_max > 0.9
-        for: 5m
-        labels:
-          severity: critical
-          service: "{{ $labels.job }}"
-        annotations:
-          summary: "Database connection pool nearly exhausted for {{ $labels.job }}"
-          description: "Active connections are above 90% of max pool size for service {{ $labels.job }}"
-          service_name: "{{ $labels.job }}"
-          status: "critical"

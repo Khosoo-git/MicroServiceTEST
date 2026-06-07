@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { getApiBase } from '../../lib/api';
 
 export default function TestApiPage() {
   const [response, setResponse] = useState('');
@@ -9,7 +10,7 @@ export default function TestApiPage() {
   useEffect(() => {
     async function testApi() {
       try {
-        const res = await fetch('http://localhost:8085/api/services', {
+        const res = await fetch(`${getApiBase()}/api/services`, {
           method: 'GET',
           mode: 'cors',
           headers: {

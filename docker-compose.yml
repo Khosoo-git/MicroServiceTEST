@@ -9,14 +9,20 @@ services:
     container_name: service-registry-api
     ports:
       - "8085:8085"
+    volumes:
+      - ./observability:/observability:rw
+      - ./logs:/logs:rw
     environment:
       - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/observability
       - SPRING_DATASOURCE_USERNAME=postgres
       - SPRING_DATASOURCE_PASSWORD=1234
+      - OBSERVABILITY_CONFIG_DIR=/observability
+      - OBSERVABILITY_ALLOY_RELOAD_URL=http://alloy:1234/-/reload
       - AUTH_ENABLED=false
       - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://servicereg:8761/eureka/
     depends_on:
       - postgres
+      - alloy
     networks:
       - microservice-network
       - postgres
@@ -65,9 +71,11 @@ services:
     depends_on:
       - servicereg
       - config-server-ms
+      - tempo
     networks:
       - microservice-network
       - postgres
+      - observability
     volumes:
       - ./logs:/logs
       - ./observability/opentelemetry/opentelemetry-javaagent.jar:/opentelemetry-javaagent.jar:ro
@@ -78,9 +86,12 @@ services:
       - SPRING_DATASOURCE_PASSWORD=1234
       - LOGGING_FILE_NAME=/logs/company.log
       - JAVA_TOOL_OPTIONS=-javaagent:/opentelemetry-javaagent.jar -Dlogging.file.name=/logs/company.log
-      - OTEL_EXPORTER_OTLP_ENDPOINT=http://alloy:4318
-      - OTEL_EXPORTER_OTLP_TRACES_ENDPOINT=http://alloy:4319/v1/traces
-      - OTEL_EXPORTER_OTLP_METRICS_ENDPOINT=http://alloy:4318/v1/metrics
+      - OTEL_TRACES_EXPORTER=otlp
+      - OTEL_METRICS_EXPORTER=none
+      - OTEL_LOGS_EXPORTER=none
+      - OTEL_EXPORTER_OTLP_PROTOCOL=http/protobuf
+      - OTEL_EXPORTER_OTLP_ENDPOINT=http://tempo:4318
+      - OTEL_EXPORTER_OTLP_TRACES_ENDPOINT=http://tempo:4318/v1/traces
       - OTEL_SERVICE_NAME=company
       - OTEL_RESOURCE_ATTRIBUTES=service.name=company
 
@@ -97,9 +108,11 @@ services:
     depends_on:
       - servicereg
       - config-server-ms
+      - tempo
     networks:
       - microservice-network
       - postgres
+      - observability
     volumes:
       - ./logs:/logs
       - ./observability/opentelemetry/opentelemetry-javaagent.jar:/opentelemetry-javaagent.jar:ro
@@ -110,9 +123,12 @@ services:
       - SPRING_DATASOURCE_PASSWORD=1234
       - LOGGING_FILE_NAME=/logs/job.log
       - JAVA_TOOL_OPTIONS=-javaagent:/opentelemetry-javaagent.jar -Dlogging.file.name=/logs/job.log
-      - OTEL_EXPORTER_OTLP_ENDPOINT=http://alloy:4318
-      - OTEL_EXPORTER_OTLP_TRACES_ENDPOINT=http://alloy:4319/v1/traces
-      - OTEL_EXPORTER_OTLP_METRICS_ENDPOINT=http://alloy:4318/v1/metrics
+      - OTEL_TRACES_EXPORTER=otlp
+      - OTEL_METRICS_EXPORTER=none
+      - OTEL_LOGS_EXPORTER=none
+      - OTEL_EXPORTER_OTLP_PROTOCOL=http/protobuf
+      - OTEL_EXPORTER_OTLP_ENDPOINT=http://tempo:4318
+      - OTEL_EXPORTER_OTLP_TRACES_ENDPOINT=http://tempo:4318/v1/traces
       - OTEL_SERVICE_NAME=job
       - OTEL_RESOURCE_ATTRIBUTES=service.name=job
 
@@ -129,9 +145,11 @@ services:
     depends_on:
       - servicereg
       - config-server-ms
+      - tempo
     networks:
       - microservice-network
       - postgres
+      - observability
     volumes:
       - ./logs:/logs
       - ./observability/opentelemetry/opentelemetry-javaagent.jar:/opentelemetry-javaagent.jar:ro
@@ -142,9 +160,12 @@ services:
       - SPRING_DATASOURCE_PASSWORD=1234
       - LOGGING_FILE_NAME=/logs/review.log
       - JAVA_TOOL_OPTIONS=-javaagent:/opentelemetry-javaagent.jar -Dlogging.file.name=/logs/review.log
-      - OTEL_EXPORTER_OTLP_ENDPOINT=http://alloy:4318
-      - OTEL_EXPORTER_OTLP_TRACES_ENDPOINT=http://alloy:4319/v1/traces
-      - OTEL_EXPORTER_OTLP_METRICS_ENDPOINT=http://alloy:4318/v1/metrics
+      - OTEL_TRACES_EXPORTER=otlp
+      - OTEL_METRICS_EXPORTER=none
+      - OTEL_LOGS_EXPORTER=none
+      - OTEL_EXPORTER_OTLP_PROTOCOL=http/protobuf
+      - OTEL_EXPORTER_OTLP_ENDPOINT=http://tempo:4318
+      - OTEL_EXPORTER_OTLP_TRACES_ENDPOINT=http://tempo:4318/v1/traces
       - OTEL_SERVICE_NAME=review
       - OTEL_RESOURCE_ATTRIBUTES=service.name=review
 
@@ -160,9 +181,11 @@ services:
       - "8084:8084"
     depends_on:
       - servicereg
+      - tempo
     networks:
       - microservice-network
       - postgres
+      - observability
     volumes:
       - ./logs:/logs
       - ./observability/opentelemetry/opentelemetry-javaagent.jar:/opentelemetry-javaagent.jar:ro
@@ -173,9 +196,12 @@ services:
       - SPRING_DATASOURCE_PASSWORD=1234
       - LOGGING_FILE_NAME=/logs/gateway.log
       - JAVA_TOOL_OPTIONS=-javaagent:/opentelemetry-javaagent.jar -Dlogging.file.name=/logs/gateway.log
-      - OTEL_EXPORTER_OTLP_ENDPOINT=http://alloy:4318
-      - OTEL_EXPORTER_OTLP_TRACES_ENDPOINT=http://alloy:4319/v1/traces
-      - OTEL_EXPORTER_OTLP_METRICS_ENDPOINT=http://alloy:4318/v1/metrics
+      - OTEL_TRACES_EXPORTER=otlp
+      - OTEL_METRICS_EXPORTER=none
+      - OTEL_LOGS_EXPORTER=none
+      - OTEL_EXPORTER_OTLP_PROTOCOL=http/protobuf
+      - OTEL_EXPORTER_OTLP_ENDPOINT=http://tempo:4318
+      - OTEL_EXPORTER_OTLP_TRACES_ENDPOINT=http://tempo:4318/v1/traces
       - OTEL_SERVICE_NAME=gateway
       - OTEL_RESOURCE_ATTRIBUTES=service.name=gateway
 
@@ -234,6 +260,7 @@ services:
       - "--web.console.libraries=/etc/prometheus/console_libraries"
       - "--web.console.templates=/etc/prometheus/consoles"
       - "--web.enable-lifecycle"
+      - "--web.enable-remote-write-receiver"
     extra_hosts:
       - "host.docker.internal:host-gateway"
     networks:
@@ -304,6 +331,23 @@ services:
     restart: unless-stopped
 
   # ======================
+  # BLACKBOX EXPORTER - Internet / SaaS HTTP(S) probes
+  # ======================
+  blackbox-exporter:
+    image: prom/blackbox-exporter:latest
+    container_name: blackbox-exporter
+    ports:
+      - "9115:9115"
+    volumes:
+      - ./observability/blackbox/blackbox.yml:/etc/blackbox_exporter/config.yml:ro
+    command:
+      - "--config.file=/etc/blackbox_exporter/config.yml"
+    networks:
+      - observability
+      - microservice-network
+    restart: unless-stopped
+
+  # ======================
   # ALLOY - Unified Telemetry Collector
   # ======================
   alloy:
@@ -311,10 +355,20 @@ services:
     container_name: alloy
     ports:
       - "1234:1234"
+      # OTLP 4317/4318 — only inside Docker network (tempo uses host ports 4317/4318)
     volumes:
-      - ./observability/alloy/config.alloy:/etc/alloy/config.alloy
+      - ./observability/alloy:/etc/alloy:rw
       - ./logs:/logs:ro
-    command: run --server.http.listen-addr=0.0.0.0:1234 --storage.path=/var/lib/alloy /etc/alloy/config.alloy
+    command:
+      - run
+      - --server.http.listen-addr=0.0.0.0:1234
+      - --storage.path=/var/lib/alloy
+      - /etc/alloy
+    depends_on:
+      - prometheus
+      - loki
+      - tempo
+      - blackbox-exporter
     networks:
       - observability
       - microservice-network
@@ -366,6 +420,8 @@ services:
     command:
       - "--config.file=/etc/alertmanager/alertmanager.yml"
       - "--storage.path=/alertmanager"
+    depends_on:
+      - service-registry-api
     networks:
       - observability
       - microservice-network
@@ -378,13 +434,15 @@ services:
     build:
       context: ./observability-dashboard-ui
       dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_API_URL: http://localhost:8085
     container_name: dashboard-ui
     ports:
       - "3002:3000"
     networks:
       - microservice-network
-    environment:
-      - NEXT_PUBLIC_API_URL=http://service-registry-api:8085
+    depends_on:
+      - service-registry-api
     restart: unless-stopped
 
 networks:
